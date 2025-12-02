@@ -27,7 +27,7 @@ description: > # this means to ignore newlines until "baseurl:"
   Website of the Atlas Analytics Lab.
 baseurl: ""
 url: "https://atlasanalyticslab.github.io"
-layout_wide: false # Set to false to restore the previous fixed-width layout with generous side margins.
+layout_wide: true # Set to false to restore the previous fixed-width layout with generous side margins.
 
 include:
   - .htaccess

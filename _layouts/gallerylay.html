@@ -1,0 +1,76 @@
+---
+layout: default
+---
+<!--
+  Gallery Layout (gallerylay.html)
+  
+  Purpose:
+    Custom layout for the Lab Life gallery page with optimized spacing.
+    Respects layout_wide config setting while maximizing usable screen space.
+  
+  Used by:
+    - _pages/gallery.md
+  
+  Features:
+    - Respects layout_wide setting from _config.yml
+    - Layout-wide mode: uses full width with minimal padding (0.75-1.5rem)
+    - Layout-fixed mode: constrains to 1200-1400px max-width
+    - Removes Bootstrap column padding for tighter image packing
+    - Responsive padding adjusts with screen size
+  
+  Dependencies:
+    - _layouts/default.html (parent layout)
+    - _sass/_gallery.scss (gallery grid and card styles)
+    - js/gallery-masonry.js (masonry fallback for browsers without CSS Grid masonry)
+-->
+<style>
+  /* Gallery page layout overrides - respects layout_wide setting from _config.yml */
+  
+  /* Layout-wide mode: maximize horizontal space */
+  body.layout-wide .site-wrapper {
+    max-width: none !important;
+    padding-left: 0.75rem !important;
+    padding-right: 0.75rem !important;
+  }
+  
+  @media (min-width: 768px) {
+    body.layout-wide .site-wrapper {
+      padding-left: 1rem !important;
+      padding-right: 1rem !important;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    body.layout-wide .site-wrapper {
+      padding-left: 1.5rem !important;
+      padding-right: 1.5rem !important;
+    }
+  }
+  
+  /* Layout-fixed mode: constrain width but wider than default pages */
+  body.layout-fixed .site-wrapper {
+    max-width: 1200px !important;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+  
+  @media (min-width: 1400px) {
+    body.layout-fixed .site-wrapper {
+      max-width: 1400px !important;
+      padding-left: 1.5rem !important;
+      padding-right: 1.5rem !important;
+    }
+  }
+  
+  /* Remove Bootstrap col-sm-12 padding to avoid double padding */
+  #galleryid.col-sm-12 {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+</style>
+<div id="galleryid" class="col-sm-12 gallery-page">
+  {{ content }}
+</div>
+
+<!-- Gallery masonry layout script -->
+<script src="{{ site.baseurl }}/js/gallery-masonry.js"></script>
