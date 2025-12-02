@@ -1,9 +1,10 @@
 ---
 title: "Lab Life"
-layout: textlay
+layout: gallerylay
 excerpt: "Atlas Analytics Lab at Concordia University."
 sitemap: false
 permalink: /gallery/
+custom_css: gallery-page
 ---
 <!--
   Lab Life Gallery Page (gallery.md)
@@ -36,17 +37,15 @@ A glimpse into our research group's activities, conferences, talks, and memorabl
 {% assign image_files2 = site.static_files | where: "extname", ".jpeg" %}
 {% assign image_files3 = site.static_files | where: "extname", ".png" %}
 {% assign all_images = image_files | concat: image_files2 | concat: image_files3 %}
+{% assign gallery_images = all_images | where_exp: "item", "item.path contains 'images/picpic/'" | sort: "path" | reverse %}
 
-<div class="row g-4 mb-4" markdown="0">
-{% for image in all_images %}
-  {% if image.path contains 'images/picpic/' %}
-  <div class="col-sm-6 col-lg-4 col-xl-3 d-flex">
-    <div class="gallery-card w-100">
-      <img src="{{ site.url }}{{ site.baseurl }}{{ image.path }}" 
-           class="gallery-img" 
-           alt="Lab activity photo">
-    </div>
+<div class="gallery-container" markdown="0">
+{% for image in gallery_images %}
+  <div class="gallery-card">
+    <img src="{{ site.url }}{{ site.baseurl }}{{ image.path }}" 
+         class="gallery-img" 
+         alt="Lab activity photo"
+         loading="lazy">
   </div>
-  {% endif %}
 {% endfor %}
 </div>

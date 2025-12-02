@@ -1,0 +1,76 @@
+---
+layout: default
+---
+<!--
+  Gallery Layout (gallerylay.html)
+  
+  Purpose:
+    Full-width layout specifically for the gallery/Lab Life page.
+    Respects layout_wide setting while maximizing space utilization.
+  
+  Used by:
+    - _pages/gallery.md
+  
+  Features:
+    - Respects layout_wide config setting
+    - In layout-wide: uses more space with minimal padding
+    - In layout-fixed: constrains to reasonable max-width
+    - Minimal responsive padding in both modes
+    - Masonry layout with automatic image reordering
+  
+  Dependencies:
+    - _layouts/default.html (parent layout)
+    - _sass/_gallery.scss (gallery-specific styles)
+    - js/gallery-masonry.js (masonry layout script)
+-->
+<style>
+  /* Gallery page overrides - respects layout_wide setting */
+  
+  /* Layout-wide mode: use more space */
+  body.layout-wide .site-wrapper {
+    max-width: none !important;
+    padding-left: 0.75rem !important;
+    padding-right: 0.75rem !important;
+  }
+  
+  @media (min-width: 768px) {
+    body.layout-wide .site-wrapper {
+      padding-left: 1rem !important;
+      padding-right: 1rem !important;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    body.layout-wide .site-wrapper {
+      padding-left: 1.5rem !important;
+      padding-right: 1.5rem !important;
+    }
+  }
+  
+  /* Layout-fixed mode: constrain width but still optimize for gallery */
+  body.layout-fixed .site-wrapper {
+    max-width: 1200px !important;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+  
+  @media (min-width: 1400px) {
+    body.layout-fixed .site-wrapper {
+      max-width: 1400px !important;
+      padding-left: 1.5rem !important;
+      padding-right: 1.5rem !important;
+    }
+  }
+  
+  /* Remove col padding for gallery */
+  #galleryid.col-sm-12 {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+</style>
+<div id="galleryid" class="col-sm-12 gallery-page">
+  {{ content }}
+</div>
+
+<!-- Gallery masonry layout script -->
+<script src="{{ site.baseurl }}/js/gallery-masonry.js"></script>
