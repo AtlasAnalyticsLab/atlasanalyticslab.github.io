@@ -1,0 +1,32 @@
+<!--
+  Video Player Component (video-player.html)
+  
+  Purpose:
+    Embeds responsive YouTube videos using 16:9 aspect ratio container.
+  
+  Usage:
+    {% include video-player.html id="dQw4w9WgXcQ" %}
+  
+  Parameters:
+    - id: YouTube video ID (required)
+  
+  Features:
+    - Responsive iframe container
+    - Maintains 16:9 aspect ratio
+    - Fixed dimensions: 700x480px
+  
+  Dependencies:
+    - video-embed.css for .embed-container styling
+  
+  Note:
+    Video dimensions can be customized via width/height attributes
+-->
+<div class="embed-container">
+  <iframe
+      src="https://www.youtube.com/embed/{{ include.id }}"
+      width="700"
+      height="480"
+      frameborder="0"
+      allowfullscreen="true">
+  </iframe>
+</div>

@@ -1,0 +1,39 @@
+{% comment %}
+  Render alumni as a simplified text list with first initial and last name only.
+  
+  Purpose:
+    Display former lab members with minimal personal information.
+    Shows only: First Initial. Last Name, Current Position
+    No social media links or detailed contact information.
+  
+  Usage:
+    {% include alumni-list.html members=site.data.alumni_members %}
+  
+  Display Format:
+    H. He, Graduate student transferred to PhD @ Atlas Analytics Lab
+    D. Gomes, AI Scientist @ Thales
+{% endcomment %}
+
+{% assign alumni = include.members | default: empty | compact %}
+{% if alumni == empty %}
+  <p class="alumni-empty text-muted">Alumni list coming soon.</p>
+{% else %}
+  <ul class="alumni-list">
+    {% for person in alumni %}
+      {% assign display_name = person.name | default: '' | strip %}
+      {% if display_name == '' %}
+        {% continue %}
+      {% endif %}
+      {% comment %} Extract initials from full name {% endcomment %}
+      {% assign name_parts = display_name | split: ' ' %}
+      {% assign first_initial = name_parts[0] | slice: 0 %}
+      {% assign last_name = name_parts | last %}
+      <li class="alumni-list-item">
+        <span class="alumni-name">{{ first_initial }}. {{ last_name }}</span>
+        {% if person.info_current %}
+          <span class="alumni-role">, {{ person.info_current }}</span>
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+{% endif %}

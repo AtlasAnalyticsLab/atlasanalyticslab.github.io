@@ -1,0 +1,46 @@
+#==============================================================================
+# Principal Investigator (_data/principal_investigator.yml)
+#
+# Purpose:
+#   Stores information about the lab director/PI.
+#   Displayed on /team page using _includes/team-grid.html
+#
+# Required Fields:
+#   - name: Full name (required)
+#   - info: Position title (required)
+#
+# Optional Fields:
+#   - photo: Filename in /images/teampic/ (default: bio-photo.jpg)
+#   - email: Email address
+#   - website: Personal website URL
+#   - github: GitHub profile URL
+#   - linkedin: LinkedIn profile URL
+#   - google_scholar: Google Scholar profile URL
+#   - orcid: ORCID URL
+#   - twitter: Twitter/X URL
+#
+# Note:
+#   This file typically contains a single entry for the lab director.
+#
+# Template:
+#   - name:
+#     photo:
+#     info:
+#     email:
+#     website:
+#     google_scholar:
+#     linkedin:
+#==============================================================================
+
+- name: Mahdi S. Hosseini
+  photo: pi-mahdi.jpg
+  info: |
+    Lab Director, Assistant Professor at Concordia University
+    Adjunct Professor at McGill University
+    Affiliate Member of Mila-Quebec AI Institute
+  email: mahdi.hosseini@concordia.ca
+  website: https://www.concordia.ca/faculty/mahdi-hosseini.html
+  mcgill: https://www.mcgill.ca/pathology/dr-mahdi-hosseini
+  mila: https://mila.quebec/en/directory/mahdi-hosseini
+  google_scholar: https://scholar.google.ca/citations?hl=en&user=SO-FFrgAAAAJ&view_op=list_works&sortby=pubdate
+  linkedin: https://ca.linkedin.com/in/mahdi-s-hosseini-491719245

@@ -1,0 +1,70 @@
+#==============================================================================
+# Master's Students (_data/masters.yml)
+#
+# Purpose:
+#   Stores information about current Master's students in the lab.
+#   Displayed on /team page using _includes/team-grid.html
+#
+# Required Fields:
+#   - name: Full name (required)
+#
+# Optional Fields:
+#   - photo: Filename in /images/teampic/ (default: bio-photo.jpg)
+#   - info: "Master's student" or specific program
+#   - duration: Time period (e.g., "2024 - Present")
+#   - email: Email address
+#   - website: Personal website URL
+#   - github: GitHub profile URL
+#   - linkedin: LinkedIn profile URL
+#   - google_scholar: Google Scholar profile URL
+#   - orcid: ORCID URL
+#
+# Template:
+#   - name:
+#     photo:
+#     info: Master's student
+#     duration: YYYY - Present
+#     email:
+#     website:
+#     github:
+#     linkedin:
+#     google_scholar:
+#     orcid:
+#==============================================================================
+
+- name: Yousef Kotp
+  photo: yousef_kotp.jpeg
+  info: |
+    Master's student
+    Co-supervised with Dr. Chris Pal
+  duration: 2024 - Present
+  linkedin: "https://www.linkedin.com/in/yousef-kotp/"
+  website: "https://yousefkotp.com/"
+  google_scholar: "https://scholar.google.com/citations?user=YMSkXbEAAAAJ"
+  github: "https://github.com/yousefkotp"
+  email: "yousefkotp@outlook.com"
+
+- name: Christopher Leclerc
+  photo: christopher_leclerc.jpg
+  info: Master's student
+  duration: 2025 - Present
+  linkedin: "https://ca.linkedin.com/in/chrisleclerc01"
+  github: "https://github.com/ChrisLeclerc"
+  email: "christopher.leclerc@mail.concordia.ca"
+
+- name: Jiahao (Kevin) Cheng
+  info: Master's student
+  duration: 2025 - Present
+  photo: jiahao_cheng.jpg
+  orcid: "https://orcid.org/0009-0005-2266-2691"
+  linkedin: "https://ca.linkedin.com/in/kevincheng1234/en"
+  github: "https://github.com/chengjiahao1234"
+  email: "jiahao.cheng@mail.concordia.ca"
+
+- name: Omar Abdelwahed
+  info: Master's student
+  duration: 2025 - Present
+  photo: omar_abdelwahed.jpeg
+  linkedin: "www.linkedin.com/in/omar-mahmoud-a012402b5"
+  github: "https://github.com/Omarmahmoud711"
+  email: "omar.abdelwahed@mail.concordia.ca"

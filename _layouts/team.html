@@ -1,0 +1,41 @@
+---
+layout: default
+---
+<!--
+  Team Page Layout (team.html)
+  
+  Purpose:
+    Layout for team listing pages that display lab members from YAML data files.
+    Provides a container wrapper with specific styling for team member grids.
+  
+  Used by:
+    - _pages/team.md
+  
+  Features:
+    - Dedicated team-wrapper class for consistent styling
+    - Works with team-grid.html and alumni-list.html includes
+    - Supports multiple member categories (PI, postdocs, PhD, masters, collaborators, alumni)
+  
+  Dependencies:
+    - _layouts/default.html (parent layout)
+    - _includes/team-grid.html (for grid display of members with photos)
+    - _includes/alumni-list.html (for text-only alumni listing)
+    - _data/principal_investigator.yml
+    - _data/postdocs.yml
+    - _data/phd_students.yml
+    - _data/masters.yml
+    - _data/team_collaborators.yml
+    - _data/alumni_members.yml
+  
+  Content Structure:
+    The team.md page typically includes:
+    1. Principal Investigator section
+    2. Post-Doctoral Fellows section
+    3. PhD Students section
+    4. Master's Students section
+    5. Collaborators section
+    6. Alumni section
+-->
+<div id="team" class="team-wrapper">
+  {{ content }}
+</div>

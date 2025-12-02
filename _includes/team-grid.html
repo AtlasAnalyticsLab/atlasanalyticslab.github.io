@@ -1,0 +1,136 @@
+{% comment %}
+  Render a responsive grid of people cards.
+
+  Usage:
+    {% include team-grid.html members=site.data.postdocs show_role=true %}
+
+  Expected member fields (from your _data/*.yml):
+    - name: "Jane Doe"            (required)
+    - info: "PhD Student"         (optional)
+    - photo: "jane.jpg"           (optional; falls back to bio-photo.jpg)
+    - email / github / linkedin / google_scholar / orcid / twitter (optional)
+    - links:                      (optional; array of {url,type,label,icon})
+        - { url: "https://...", type: "website" }
+{% endcomment %}
+
+{% assign members = include.members %}
+{% if members == nil %}
+  {% assign members = '' | split: '' %}
+{% endif %}
+
+<div class="team-grid">
+  {% for member in members %}
+    {% unless member.name %}{% continue %}{% endunless %}
+    {% assign display_name = member.name | strip %}
+    {% if display_name == '' or display_name == 'None at the moment.' %}{% continue %}{% endif %}
+
+    {% assign photo = member.photo | default: 'bio-photo.jpg' %}
+    {%- comment -%}
+      Check if the specified photo file exists in site.static_files.
+      If not found, fall back to default bio-photo.jpg.
+    {%- endcomment -%}
+    {% assign photo_exists = false %}
+    {% assign photo_check_path = '/images/teampic/' | append: photo %}
+    {% for file in site.static_files %}
+      {% if file.path == photo_check_path %}
+        {% assign photo_exists = true %}
+        {% break %}
+      {% endif %}
+    {% endfor %}
+    {% unless photo_exists %}
+      {% assign photo = 'bio-photo.jpg' %}
+    {% endunless %}
+    {%- comment -%}
+      Use a root/relative path so it works in dev and prod.
+      relative_url automatically prepends baseurl if set.
+    {%- endcomment -%}
+    {% assign photo_path = '/images/teampic/' | append: photo | relative_url %}
+
+    <article class="team-card">
+      <div class="team-photo">
+        <img src="{{ photo_path }}" alt="Portrait of {{ member.name | escape }}">
+      </div>
+
+      <div class="team-body">
+        <h4 class="team-name">{{ member.name }}</h4>
+
+        {% if include.show_role != false and member.info %}
+          <p class="team-role">{{ member.info | newline_to_br }}</p>
+        {% endif %}
+
+        <div class="team-links" aria-label="Contact and profile links for {{ member.name | escape }}">
+          {% assign has_links = false %}
+
+          {%- comment -%}
+            Display links in consistent order for all team members:
+            1. Personal website
+            2. McGill University profile
+            3. Mila Quebec AI Institute profile
+            4. LinkedIn
+            5. Google Scholar
+            6. GitHub
+            7. ORCID
+            8. Twitter/X
+            9. Email
+            10. Custom links (from member.links array)
+          {%- endcomment -%}
+
+          {% if member.website %}
+            {% include team-link.html url=member.website type='website' %}
+            {% assign has_links = true %}
+          {% endif %}
+          {% if member.mcgill %}
+            {% include team-link.html url=member.mcgill type='mcgill' %}
+            {% assign has_links = true %}
+          {% endif %}
+          {% if member.mila %}
+            {% include team-link.html url=member.mila type='mila' %}
+            {% assign has_links = true %}
+          {% endif %}
+          {% if member.linkedin %}
+            {% include team-link.html url=member.linkedin type='linkedin' %}
+            {% assign has_links = true %}
+          {% endif %}
+          {% if member.google_scholar %}
+            {% include team-link.html url=member.google_scholar type='scholar' %}
+            {% assign has_links = true %}
+          {% endif %}
+          {% if member.github %}
+            {% include team-link.html url=member.github type='github' %}
+            {% assign has_links = true %}
+          {% endif %}
+          {% if member.orcid %}
+            {% include team-link.html url=member.orcid type='orcid' %}
+            {% assign has_links = true %}
+          {% endif %}
+          {% if member.twitter %}
+            {% include team-link.html url=member.twitter type='twitter' %}
+            {% assign has_links = true %}
+          {% endif %}
+          {% if member.email %}
+            {% capture mailto %}mailto:{{ member.email }}{% endcapture %}
+            {% include team-link.html url=mailto type='email' %}
+            {% assign has_links = true %}
+          {% endif %}
+
+          {% if member.links %}
+            {% for external in member.links %}
+              {% assign link_url = external.url | default: '' %}
+              {% assign link_type = external.type | default: '' | downcase %}
+              {% assign link_label = external.label | default: '' %}
+              {% assign link_icon = external.icon | default: '' %}
+              {% if link_url != '' %}
+                {% include team-link.html url=link_url type=link_type label=link_label icon=link_icon %}
+                {% assign has_links = true %}
+              {% endif %}
+            {% endfor %}
+          {% endif %}
+
+          {% unless has_links %}
+            <span class="team-link-placeholder text-muted">Links coming soon</span>
+          {% endunless %}
+        </div>
+      </div>
+    </article>
+  {% endfor %}
+</div>

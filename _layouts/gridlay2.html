@@ -1,0 +1,29 @@
+---
+layout: default
+---
+<!--
+  Grid Layout 2 (gridlay2.html)
+  
+  Purpose:
+    Alternative grid layout with narrower margins optimized for research theme cards.
+    Provides full-width container for displaying research areas and project galleries.
+  
+  Used by:
+    - (Previously used by research.md and research_results.md - now deleted)
+    - Can be repurposed for future grid-based content pages
+  
+  Features:
+    - Full-width single column (col-sm-12)
+    - Optimized for card-based layouts
+    - Narrower margins than gridlay.html
+  
+  Dependencies:
+    - _layouts/default.html (parent layout)
+  
+  Differences from gridlay.html:
+    - gridlay.html: Used for publications (potentially multi-column)
+    - gridlay2.html: Used for research themes (full-width cards)
+-->
+<div id="grid2id" class="col-sm-12">
+  {{ content }}
+</div>

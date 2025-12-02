@@ -1,0 +1,26 @@
+#==============================================================================
+# Git Attributes (.gitattributes)
+#
+# Purpose:
+#   Defines attributes for Git to handle files correctly.
+#   Controls language detection, line endings, and merge strategies.
+#
+# Settings:
+#   - Mark vendor/plugin files as linguist-vendored (excluded from stats)
+#   - Use union merge for CHANGELOG.md and history files
+#   - Treat .md files as text
+#
+# Documentation:
+#   https://git-scm.com/docs/gitattributes
+#==============================================================================
+
+assets/fonts/*                  linguist-vendored
+assets/js/main.min.js           linguist-vendored
+assets/js/lunr/*                linguist-vendored
+assets/js/plugins/*             linguist-vendored
+assets/js/vendor/*              linguist-vendored
+_sass/minimal-mistakes/vendor/* linguist-vendored
+CHANGELOG.md                    text merge=union
+docs/_docs/18-history.md        text merge=union
+
+*.md                            text

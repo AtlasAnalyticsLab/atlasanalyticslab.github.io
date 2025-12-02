@@ -1,0 +1,73 @@
+name: Bug Report
+description: Report a problem with the Atlas Analytics Lab website
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Before opening a bug report, please:
+
+        - Check [existing issues](https://github.com/AtlasAnalyticsLab/AtlasAnalyticsLab.github.io/issues)
+          to avoid duplicates
+        - Try running `bundle exec jekyll clean` and `bundle exec jekyll serve` to see
+          if the issue persists
+        - Check the documentation at [README.md](../../README.md) and
+          [DEVELOPMENT.md](../../DEVELOPMENT.md)
+
+        If the issue still occurs, please continue below.
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment Information
+      description: |
+        Please provide details about your environment. This helps us reproduce and fix the issue.
+      value: |-
+        - Jekyll version: (run `bundle exec jekyll --version`)
+        - Ruby version: (run `ruby --version`)
+        - Operating system: (e.g., macOS 14, Ubuntu 22.04, Windows 11)
+        - Browser: (e.g., Chrome 120, Safari 17, Firefox 121)
+        - URL where issue occurs: (e.g., homepage, /publications, /team)
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: Expected behavior
+      description: |
+        Please describe the expected behavior and the actual result you got.
+      placeholder: >
+        What is it you expected to happen? This should be a description of how the
+        functionality you tried to use is supposed to work.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps-to-reproduce
+    attributes:
+      label: Steps to reproduce the behavior
+      description: |
+        Describe the steps you took for this problem to come up. Such as: you installed
+        the theme, customized _config.yml, added your own posts, and started up a
+        Jekyll server locally.
+
+        If an error occurred on GitHub Pages when pushing, please test a local version
+        following these setup instructions:
+        https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-jekyll/
+
+        Then provide a complete log by running `bundle exec jekyll build --trace --verbose`
+        and include this output in the filed issue.
+
+        Screenshots can also be included if they help illustrate a behavior.
+    validations:
+      required: true
+
+  - type: textarea
+    id: other
+    attributes:
+      label: Other
+      description: |
+        Please provide a code repository, gist, code snippet, sample files,
+        screenshots, or anything else you think will aid in reproducing the issue.
+    validations:
+      required: false

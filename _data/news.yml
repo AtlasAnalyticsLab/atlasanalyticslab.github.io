@@ -1,0 +1,140 @@
+#==============================================================================
+# News Entries (_data/news.yml)
+#
+# Purpose:
+#   Stores lab news and announcements displayed on homepage and /allnews page.
+#   Maximum 5 most recent entries shown in sidebar.
+#
+# Usage:
+#   Add new entries at the TOP of the list (reverse chronological order).
+#   Displayed by: _includes/news.html and _pages/allnews.md
+#
+# Entry Format:
+#   - date: November 18, 2025
+#     headline: "Brief news description with [optional link](https://example.com)"
+#
+# Features:
+#   - Supports Markdown links and formatting in headline
+#   - Date format: Month DD, YYYY
+#   - Keep entries concise (1-2 sentences)
+#
+#------------------------------------------------------------------------------
+# EMOJI SUPPORT
+#------------------------------------------------------------------------------
+# YES! You can add emojis directly in the headline text:
+#
+# Method 1: Copy-paste emoji characters (recommended)
+#   - date: November 18, 2025
+#     headline: "🎉 Congratulations to John for winning the Best Paper Award!"
+#
+# Method 2: Use HTML emoji codes
+#   - date: November 18, 2025
+#     headline: "&#127881; New paper accepted at CVPR 2025!"
+#
+# Common emojis:
+#   🎉 &#127881; (celebration)
+#   🎊 &#127882; (confetti)
+#   🎓 &#127891; (graduation)
+#   🏆 &#127942; (trophy)
+#   📄 &#128196; (paper)
+#   🔬 &#128300; (microscope)
+#   💡 &#128161; (light bulb)
+#   🚀 &#128640; (rocket)
+#   ⭐ &#11088; (star)
+#   👏 &#128079; (clapping)
+#   🎂 &#127874; (birthday cake)
+#   🌟 &#127775; (glowing star)
+#   ✨ &#10024; (sparkles)
+#   🔥 &#128293; (fire)
+#   💪 &#128170; (strong)
+#
+#   For more emojis, check: https://www.quackit.com/character_sets/emoji/emoji_v3.0/unicode_emoji_v3.0_characters_all.cfm 
+#                        or https://unicode.org/emoji/charts/full-emoji-list.html
+#
+#------------------------------------------------------------------------------
+# FONT & SIZE CUSTOMIZATION
+#------------------------------------------------------------------------------
+# You can use HTML tags within the headline for custom styling:
+#
+# Bold text:
+#   headline: "**Bold with Markdown** or <strong>Bold with HTML</strong>"
+#
+# Italic text:
+#   headline: "*Italic with Markdown* or <em>Italic with HTML</em>"
+#
+# Custom font size (use <span> with inline style):
+#   headline: '<span style="font-size: 1.2em;">Larger text</span> normal text'
+#   headline: '<span style="font-size: 0.9em;">Smaller text</span>'
+#
+# Custom color:
+#   headline: '<span style="color: #951D33;">Red text (lab color)</span>'
+#   headline: '<span style="color: #28a745;">Green text</span>'
+#
+# Combine multiple styles:
+#   headline: '🎉 <strong><span style="font-size: 1.3em; color: #951D33;">Big News!</span></strong> Regular text here'
+#
+# Important notes:
+#   - Use single quotes around headline if it contains HTML with double quotes
+#   - The markdownify filter processes Markdown before rendering HTML
+#   - Keep styling consistent across news entries for professional appearance
+#   - Test in both light and dark modes if using custom colors
+#
+#------------------------------------------------------------------------------
+# GLOBAL STYLING
+#------------------------------------------------------------------------------
+# To change default font/size for ALL news entries, edit:
+#   - _sass/_components.scss (look for .well class around line 84)
+#   - _includes/news.html (wrap content in <div> with custom class)
+#
+# Example custom class in news.html:
+#   <div class="news-item" style="font-size: 0.95rem;">
+#     {{ article.headline | markdownify }}
+#   </div>
+#
+#==============================================================================
+# EXAMPLES
+#==============================================================================
+# Example 1: Emoji with link
+#   - date: November 18, 2025
+#     headline: "🎉 [Paper accepted at CVPR 2026](https://cvpr.thecvf.com/)!"
+#
+# Example 2: Custom size and color
+#   - date: November 18, 2025
+#     headline: '<span style="font-size: 1.2em; color: #951D33;">🏆 Best Paper Award!</span>'
+#
+# Example 3: Bold with emoji
+#   - date: November 18, 2025
+#     headline: "🎓 **Congratulations** to Zhiyuan Yang on his PhD defense!"
+#
+# Example 4: Multiple emojis
+#   - date: November 18, 2025
+#     headline: "🚀 New lab website launched! ✨ Check it out!"
+#
+# Example 5: Birthday with emoji and styling
+#   - date: November 18, 2025
+#     headline: '🎂 <strong>Happy Birthday</strong> to Omar Abdelwahed!'
+#==============================================================================
+
+- date: November 27, 2025
+  headline: "**We are hiring PhD students!** Join our lab for cutting-edge research in computational pathology. [See details](OPENINGS_LINK)"
+
+- date: November 22, 2025
+  headline: "**LBMamba** accepted in [Transaction on Machine Learning Research (TMLR)](https://openreview.net/forum?id=e1aXaIXblQ)!"
+
+- date: October 25, 2025
+  headline: "**Efficient Self-supervised Barlow Twins** paper accepted in [Elsevier Medical Image Analysis (MedIA)](https://arxiv.org/abs/2411.05959)!"
+
+- date: October 17, 2025
+  headline: "Dr. Hosseini awarded **Canada Foundation for Innovation (CFI) John R. Evans Leaders Fund (JELF)** for \"Scaling Computing Infrastructure for Foundational Modeling in Computational Pathology\"! [Learn more](https://www.concordia.ca/cunews/offices/vprgs/2025/cfi_funding_research_infrastructure_projects.html)"
+
+- date: September 30, 2025
+  headline: "**FRQNT Team Research Project 2025-2026** awarded to Dr. Hassan Rivaz (PI) and Dr. Hosseini (Co-PI)! [Learn more](https://www.concordia.ca/ginacody/news/newsletter/2025-09-30.html)"
+
+- date: September 26, 2025
+  headline: "Dr. Hosseini is serving as a **Lead Area Chair** for [CVPR 2026](https://cvpr.thecvf.com/)!"
+
+- date: April 30, 2024
+  headline: "Dr. Hosseini receives **[Amazon Research Award](https://www.amazon.science/research-awards/recipients/mahdi-s-hosseini)** for \"Toward Auto-Populating Synoptic Reports in Diagnostic Pathology\"!"
+
+- date: October 31, 2022
+  headline: "Dr. Hosseini awarded **NSERC Discovery Grant** for research in computational pathology. [Learn more](https://search.open.canada.ca/grants/record/nserc-crsng%2C110_2022_2023_Q1_2208%2Ccurrent)"

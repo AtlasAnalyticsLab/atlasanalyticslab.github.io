@@ -1,0 +1,39 @@
+#==============================================================================
+# Postdoctoral Fellows (_data/postdocs.yml)
+#
+# Purpose:
+#   Stores information about current postdoctoral researchers in the lab.
+#   Displayed on /team page using _includes/team-grid.html
+#
+# Required Fields:
+#   - name: Full name (required)
+#
+# Optional Fields:
+#   - photo: Filename in /images/teampic/ (default: bio-photo.jpg)
+#   - info: Position title (e.g., "Postdoctoral Researcher")
+#   - email: Email address
+#   - website: Personal website URL
+#   - github: GitHub profile URL
+#   - linkedin: LinkedIn profile URL
+#   - google_scholar: Google Scholar profile URL
+#   - orcid: ORCID URL
+#   - twitter: Twitter/X URL
+#
+# Template:
+#   - name:
+#     photo:
+#     info:
+#     email:
+#     website:
+#     github:
+#     linkedin:
+#     google_scholar:
+#==============================================================================
+
+- name: Ahmed Alagha
+  photo: ahmed_alagha.jpg
+  info: Postdoctoral Researcher
+  github: "https://github.com/AhmedNAlagha"
+  google_scholar: "https://scholar.google.com/citations?user=Ooo2H-8AAAAJ&hl=en&oi=ao"
+  email: "ahmed.alagha@mail.concordia.ca"
+  linkedin: "https://www.linkedin.com/in/ahmed-alagha-845980126"

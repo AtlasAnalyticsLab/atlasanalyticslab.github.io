@@ -1,0 +1,65 @@
+#==============================================================================
+# Team Collaborators (_data/team_collaborators.yml)
+#
+# Purpose:
+#   Records external collaborators supporting lab projects.
+#   Includes co-advisors, visiting students, pathologists, industry partners.
+#
+# Usage:
+#   Add new collaborators at the TOP (most recent first).
+#   Displayed on /team page using _includes/team-grid.html
+#
+# Required Fields:
+#   - name: Full name (required)
+#   - info: Current affiliation and role (required)
+#
+# Optional Fields:
+#   - photo: Filename in /images/teampic/ (default: bio-photo.jpg)
+#   - email: Email address
+#   - website: Personal website URL
+#   - github: GitHub profile URL
+#   - linkedin: LinkedIn profile URL
+#   - google_scholar: Google Scholar profile URL
+#
+# Template:
+#   - name:
+#     photo:
+#     info:
+#     email:
+#     website:
+#     github:
+#     linkedin:
+#     google_scholar:
+#==============================================================================
+
+- name: Jingwei Zhang
+  photo: jingwei_zhang.jpg
+  info: PhD Student, Stony Brook University, US
+  email: "jingwezhang@cs.stonybrook.edu"
+  github: "https://github.com/jingweizhang-xyz/"
+  linkedin: "https://www.linkedin.com/in/jingwei-zhang-5b444b80/"
+  google_scholar: "https://scholar.google.com/citations?user=8yA5YncAAAAJ&hl=en"
+
+- name: Raziyeh (Roza) Dehbozorgi
+  photo: raziyeh_dehbozorgi.jpg
+  info: Research Assistant in Applied Math. and Computer Science, Institute for Advanced Studies in Basic Sciences (IASBS), Iran
+  email: "r.dehbozorgi2012@gmail.com"
+  linkedin: "https://www.linkedin.com/in/raziyeh-dehbozorgi-23531958/"
+  website: "https://rdehbozorgi.github.io/"
+  github: "https://github.com/Rdehbozorgi"
+  google_scholar: "https://scholar.google.com/citations?user=hD6NA08AAAAJ&hl=en&oi=sra"
+
+- name: Sajad Dashti
+  photo: sajad_dashti.jpg
+  info: Recent Msc Graduate, University of Tehran, Iran
+  email: "s.dashti.k@gmail.com"
+  linkedin: "https://www.linkedin.com/in/sajaddashti"
+  github: "https://github.com/sdashti"
+
+- name: Laya Hamehkhani
+  photo: laya_hamehkhani.jpeg
+  info: Recent Graduate, Razi University, Iran
+  email: "laya.hamehkhani@gmail.com"
+  linkedin: "https://www.linkedin.com/in/laya-hamehkhani"
+  github: "https://github.com/laya-hmkh"
+  google_scholar: "https://scholar.google.com/citations?user=4lhuDEwAAAAJ&hl=en"

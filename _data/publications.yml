@@ -1,0 +1,250 @@
+#==============================================================================
+# Publications (_data/publications.yml)
+#
+# Purpose:
+#   Stores all lab publications displayed on /publications page.
+#   Supports articles, conference papers, preprints, and technical reports.
+#
+# Usage:
+#   Add new publications at the TOP of the list (newest first).
+#   Displayed by: _includes/publication-item.html
+#
+# Required Fields:
+#   - id: Unique identifier (Format: "FirstAuthor_Venue_Year")
+#   - title: Full publication title
+#   - authors: Complete author list (use "others" for et al.)
+#   - year: Publication year (YYYY)
+#
+# Optional Fields:
+#   - status: "published" | "accepted" | "preprint" | "under_review"
+#   - type: "article" | "inproceedings" | "preprint" | "techreport"
+#   - journal/booktitle: Venue name
+#   - volume/pages: Citation details
+#   - doi: Digital Object Identifier
+#   - url: Publication webpage
+#   - github: GitHub repository URL
+#   - arxiv: arXiv ID (e.g., "2401.12345")
+#   - list_image: Thumbnail (path relative to root, e.g., "images/pubpic/fig.png")
+#   - highlight: 1 (featured) | 0 (regular)
+#
+# Example Entry:
+#   - id: "Hosseini_JPI2024"
+#     title: "Computational Pathology: A Survey Review"
+#     authors: "Mahdi S. Hosseini, others"
+#     year: 2024
+#     type: "article"
+#     journal: "Journal of Pathology Informatics"
+#     doi: "10.1016/j.jpi.2023.100357"
+#     list_image: "images/pubpic/survey.jpg"
+#==============================================================================
+
+- id: "He_IPMI2025_PathTTT"
+  title: "PathTTT: Test-Time Training with Meta-auxiliary Learning for Pathology Image Classification"
+  authors: "Haoyu He, Mahdi S. Hosseini, Yang Wang"
+  year: 2025
+  status: "published"
+  type: "inproceedings"
+  booktitle: "Information Processing in Medical Imaging (IPMI 2025) – LNCS 15829"
+  url: "https://link.springer.com/chapter/10.1007/978-3-031-96628-6_3"
+  doi: "10.1007/978-3-031-96628-6_3"
+  list_image: "images/pubpic/pathttt.png"
+  highlight: 0
+
+- id: "Yang_arXiv2025_ADPv2"
+  title: "ADPv2: A Hierarchical Histological Tissue Type-Annotated Dataset for Potential Biomarker Discovery of Colorectal Disease"
+  authors: "Zhiyuan Yang, Kai Li, Sophia Ghamoshi Ramandi, Patricia Brassard, Hakim Khellaf, Vincent Quoc-Huy Trinh, Jennifer Zhang, Lina Chen, Corwyn Rowsell, Sonal Varma, Konstantinos N. Plataniotis, Mahdi S. Hosseini"
+  year: 2025
+  status: "under_review"
+  type: "article"
+  journal: "arxiv:2507.05656"
+  url: "https://zenodo.org/records/15307021"
+  arxiv: "2507.05656"
+  list_image: "images/pubpic/adpv2d.png"
+  highlight: 0
+
+- id: "Nasiri_arXiv2025_SPARC"
+  title: "SPARC: Concept-Aligned Sparse Autoencoders for Cross-Model, Cross-Modal Interpretability"
+  authors: "Ali Nasiri-Sarvi, Hassan Rivaz, Mahdi S. Hosseini"
+  year: 2025
+  status: "under_review"
+  type: "article"
+  journal: "arXiv:2507.06265"
+  arxiv: "2507.06265"
+  github: "https://github.com/AtlasAnalyticsLab/SPARC"
+  list_image: "images/pubpic/SPARC.png"
+  highlight: 0
+
+- id: "Zhang_arXiv2025_LBMamba"
+  title: "LBMamba: Locally Bi-directional Mamba"
+  authors: "Jingwei Zhang, Xi Han, Hong Qin, Mahdi S. Hosseini, Dimitris Samaras"
+  year: 2025
+  status: "published"
+  type: "article"
+  journal: "Transactions on Machine Learning Research"
+  issn: "2835-8856"
+  url: "https://openreview.net/pdf?id=e1aXaIXblQ"
+  arxiv: "2506.15976"
+  github: "https://github.com/cvlab-stonybrook/LBMamba"
+  list_image: "images/pubpic/lbmamba.png"
+  highlight: 0
+
+- id: "Sharma_arXiv2025_EfficientPromptsVLMs"
+  title: "Investigating Zero-Shot Diagnostic Pathology in Vision-Language Models with Efficient Prompt Design"
+  authors: "Vineet Sharma, Ahmed Alagha, Hamza Khellaf, Vincent Quoc-Huy Trinh, Mahdi S. Hosseini"
+  year: 2025
+  status: "published"
+  type: "inproceedings"
+  booktitle: "6th International Conference on Deep Learning Theory and Applications (DeLTA 2025)"
+  url: "https://link.springer.com/chapter/10.1007/978-3-032-04339-9_17"
+  arxiv: "2505.00134"
+  doi: "10.1007/978-3-032-04339-9_17"
+  list_image: "images/pubpic/efficient_prompts.png"
+  highlight: 0
+
+- id: "Rostami_arXiv2025_SegmentAnyCrack"
+  title: "Segment Any Crack: Deep Semantic Segmentation Adaptation for Crack Detection"
+  authors: "Ghordsiyeh Rostami, Po-Han Chen, Mahdi S. Hosseini"
+  year: 2025
+  status: "accepted"
+  type: "article"
+  journal: ""
+  url: 
+  arxiv: "2504.14138"
+  github:
+  doi:
+  list_image: "images/pubpic/sac.png"
+  highlight: 0
+
+# - id: "Li_LabInvest2025_IPMN_1606"
+#   title: "1606 Cell-Centered Deep-Learning Feature Extraction Reveals Specific Stromal Features During Intraductal Papillary Mucinous Neoplasm Progression"
+#   authors: "Jiaqi Li, Philippe Brassard, Zhun Yang, Youssef Kotp, Alex,re Montpetit, Bich Nguyen, Guillaume Soucy, Mahdi S. Hosseini"
+#   year: 2025
+#   status: "published"
+#   type: "article"
+#   journal: "Laboratory Investigation"
+#   url: "https://www.laboratoryinvestigation.org/article/S0023-6837(24)03527-X/fulltext"
+#   list_image: "images/pubpic/ipmn_1606.jpg"
+#   highlight: 0
+
+# - id: "Brassard_LabInvest2025_UNI_567"
+#   title: "567 Cell-Centered UNI Feature Extraction Accurately Classifies Colon Polyps, Highlights Microenvironmental Remodeling"
+#   authors: "Philippe Brassard, Hamza Khellaf, Jiaqi Li, Maxime Batardière, Youssef Kotp, Zhun Yang, Alex,re Montpetit, Mahdi S. Hosseini"
+#   year: 2025
+#   status: "published"
+#   type: "article"
+#   journal: "Laboratory Investigation"
+#   url: "https://www.laboratoryinvestigation.org/article/S0023-6837(24)02476-0/fulltext"
+#   list_image: "images/pubpic/uni_567.jpg"
+#   highlight: 0
+
+- id: "Freiche_SPIE2025_US_LatentDiffusion"
+  title: "Ultrasound Image Generation using Latent Diffusion Models"
+  authors: "Baptiste Freiche, Asma El-Khoury, Ali Nasiri-Sarvi, Mahdi S. Hosseini, Daniel Garcia, Adrian Basarab"
+  year: 2025
+  status: "published"
+  type: "inproceedings"
+  booktitle: "Medical Imaging 2025: Ultrasonic Imaging, Tomography (SPIE Vol. 13412)"
+  url: "https://www.spiedigitallibrary.org/conference-proceedings-of-spie/13412/134121F/Ultrasound-image-generation-using-latent-diffusion-models/10.1117/12.3047788.full"
+  arxiv: "2502.08580"
+  github: "https://github.com/Toterino/US-image-generation"
+  doi: "10.1117/12.3047788"
+  list_image: "images/pubpic/ultrasound.png"
+  highlight: 0
+
+- id: "Zhang_CVPR2025_2DMamba"
+  title: "2DMamba: Efficient State Space Model for Image Representation with Applications on Giga-Pixel Whole Slide Image Classification"
+  authors: "Jingwei Zhang, Anh Tien Nguyen, Xi Han, Vincent Quoc-Huy Trinh, Hong Qin, Dimitris Samaras, Mahdi S. Hosseini"
+  year: 2025
+  status: "published"
+  type: "inproceedings"
+  booktitle: "Proceedings of the IEEE/CVF Conference on Computer Vision, Pattern Recognition (CVPR) 2025"
+  url: "https://openaccess.thecvf.com/content/CVPR2025/html/Zhang_2DMamba_Efficient_State_Space_Model_for_Image_Representation_with_Applications_CVPR_2025_paper.html"
+  arxiv: "2412.00678"
+  github: "https://github.com/AtlasAnalyticsLab/2DMamba"
+  doi: "10.1109/cvpr52734.2025.00339"
+  list_image: "images/pubpic/2dmamba.png"
+  highlight: 0
+
+- id: "Thakkar_arXiv2024_DiffusionCompPath"
+  title: "Comparative Analysis of Diffusion Generative Models in Computational Pathology"
+  authors: "Denisha Thakkar, Vincent Quoc-Huy Trinh, Sonal Varma, Samira Ebrahimi Kahou, Hassan Rivaz, Mahdi S. Hosseini"
+  year: 2024
+  status: "under_review"
+  type: "article"
+  journal: "arXiv:2411.15719"
+  arxiv: "2411.15719"
+  github: "https://github.com/AtlasAnalyticsLab/Diffusion4Path"
+  list_image: "images/pubpic/diffusion_comp.png"
+  highlight: 0
+
+- id: "Hosseini_JPI2024_Survey"
+  title: "Computational Pathology: A Survey Review, the Way Forward"
+  authors: "Mahdi S. Hosseini, Babak Ehteshami Bejnordi, Vincent Quoc-Huy Trinh, Lyndon Chan, Danial Hasan, Xiang Li, Shuo Yang, others"
+  year: 2024
+  status: "published"
+  type: "article"
+  journal: "Journal of Pathology Informatics"
+  volume: "15"
+  pages: "100357"
+  url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC10900832/"
+  arxiv: "2304.05482"
+  doi: "10.1016/j.jpi.2023.100357"
+  github: "https://github.com/AtlasAnalyticsLab/CPath_Survey"
+  list_image: "images/pubpic/cpath_survey.jpg"
+  highlight: 0
+
+- id: "Notton_arXiv2024_BarlowTwins_Colon"
+  title: "Efficient Self-Supervised Barlow Twins from Limited Tissue Slide Cohorts for Colonic Pathology Diagnostics"
+  authors: "Charles Notton, Varun Sharma, Vincent Quoc-Huy Trinh, Liang Chen, Ming Xu, Sonal Varma, Mahdi S. Hosseini"
+  year: 2025
+  status: "published"
+  type: "article"
+  journal: "Medical Image Analysis"
+  url: "https://www.semanticscholar.org/paper/Efficient-Self-Supervised-Barlow-Twins-from-Limited-Notton-Sharma/a3e6ce451690f49e78819afa87e6fde6a55b44a0"
+  arxiv: "2411.05959"
+  github: "https://github.com/AtlasAnalyticsLab/PathBT"
+
+  list_image: "images/pubpic/barlow_colon.png"
+  highlight: 0
+
+- id: "Nasiri_LNCS2025_BreastUS_VMamba"
+  title: "Vision Mamba for Classification of Breast Ultrasound Images"
+  authors: "Ali Nasiri-Sarvi, Mahdi S. Hosseini, Hassan Rivaz"
+  year: 2025
+  status: "published"
+  type: "inproceedings"
+  booktitle: "Deep Breast Workshop on AI, Imaging for Diagnostic, Treatment Challenges in Breast Care (LNCS 15451)"
+  url: "https://link.springer.com/chapter/10.1007/978-3-031-77789-9_15"
+  github: "https://github.com/IMPACT-L/BU-Mamba"
+  arxiv: "2407.03552"
+  doi: "10.1007/978-3-031-77789-9_15"
+  list_image: "images/pubpic/breast-mamba.png"
+  highlight: 0
+
+- id: "Gomes_ICLR2025_AdaFisher"
+  title: "AdaFisher: Adaptive Second Order Optimization via Fisher Information"
+  authors: "Daniel Martins Gomes, Yiming Zhang, Evgenii Beliakov, Guillaume Wolf, Mahdi S. Hosseini"
+  year: 2025
+  status: "published"
+  type: "inproceedings"
+  booktitle: "International Conference on Learning Representations (ICLR) 2025"
+  url: "https://openreview.net/pdf?id=puTxuiK2qO"
+  arxiv: "2405.16397"
+  github: "https://github.com/AtlasAnalyticsLab/AdaFisher"
+  poster: "https://iclr.cc/media/iclr-2025/Slides/28275_Uy3dOo0.pdf"
+  list_image: "images/pubpic/adafisher.png"
+  highlight: 0
+
+- id: "Nasiri_CVPRW2024_Vim4Path"
+  title: "Vim4Path: Self-Supervised Vision Mamba for Histopathology Images"
+  authors: "Ali Nasiri-Sarvi, Vincent Quoc-Huy Trinh, Hassan Rivaz, Mahdi S. Hosseini"
+  year: 2024
+  status: "published"
+  type: "inproceedings"
+  booktitle: "Proceedings of the IEEE/CVF Conference on Computer Vision, Pattern Recognition (CVPR) 2024"
+  url: "https://openaccess.thecvf.com/content/CVPR2024W/CVMI/html/Nasiri-Sarvi_Vim4Path_Self-Supervised_Vision_Mamba_for_Histopathology_Images_CVPRW_2024_paper.html"
+  arxiv: "2404.13222"
+  github: "https://github.com/AtlasAnalyticsLab/Vim4Path"
+  doi: "10.1109/cvprw63382.2024.00683"
+  list_image: "images/pubpic/vim4path.png"
+  highlight: 0

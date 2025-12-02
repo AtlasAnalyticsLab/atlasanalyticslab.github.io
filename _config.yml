@@ -1,0 +1,66 @@
+#==============================================================================
+# Jekyll Site Configuration (_config.yml)
+#
+# Purpose:
+#   Main configuration file for the Atlas Analytics Lab Jekyll site.
+#   Controls site-wide settings, build options, and plugin configurations.
+#
+# Important:
+#   Changes to this file require restarting the Jekyll server.
+#   Use 'bundle exec jekyll serve' to test locally.
+#
+# Sections:
+#   - Site settings (title, URL, description)
+#   - Build settings (markdown, sass, includes)
+#   - Kramdown configuration (markdown processor)
+#   - BibTeX filters (publication entries)
+#
+# Attribution:
+#   Website design adapted from https://uslc-lab.github.io/
+#   Developed with AI assistance
+#==============================================================================
+
+# Site settings
+title: Atlas Analytics Lab
+email: mahdi.hosseini@concordia.ca
+description: > # this means to ignore newlines until "baseurl:"
+  Website of the Atlas Analytics Lab.
+baseurl: ""
+url: "https://atlasanalyticslab.github.io"
+layout_wide: false # Set to false to restore the previous fixed-width layout with generous side margins.
+
+include:
+  - .htaccess
+  - _pages
+  - robots.txt
+
+sass:
+  sass_dir: _sass
+
+# Conversion
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
+
+
+
+# Markdown Processing
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+  parse_block_html: true # default for kramdown is false. This will enable using Markdown links
+
+
+  details_link: Details
+
+  query: "@*"
+
+filtered_bibtex_keywords: [abbr, abstract, arxiv, bibtex_show, html, pdf, selected, supp, blog, code, poster, slides, website] # Filter out certain bibtex entry keywords used internally from the bib output

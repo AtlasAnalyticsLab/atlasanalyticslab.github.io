@@ -1,0 +1,35 @@
+#==============================================================================
+# EditorConfig (.editorconfig)
+#
+# Purpose:
+#   Defines coding style conventions for editors and IDEs.
+#   Maintains consistent formatting across different editors.
+#
+# Settings:
+#   - 2-space indentation for all files
+#   - LF line endings (Unix-style)
+#   - UTF-8 character encoding
+#   - Trim trailing whitespace (except Markdown)
+#   - No final newline
+#
+# Support:
+#   Works with VS Code, Sublime Text, Vim, IntelliJ, Atom, etc.
+#   Requires EditorConfig plugin in most editors.
+#
+# Documentation:
+#   https://editorconfig.org
+#==============================================================================
+
+# editorconfig.org
+root = true
+
+[*]
+indent_style = space
+indent_size = 2
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = false
+
+[*.md]
+trim_trailing_whitespace = false

@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 📚 Documentation
+    url: https://github.com/AtlasAnalyticsLab/AtlasAnalyticsLab.github.io/blob/main/README.md
+    about: Check the README for quick start and common tasks
+  - name: 👨‍💻 Development Guide
+    url: https://github.com/AtlasAnalyticsLab/AtlasAnalyticsLab.github.io/blob/main/DEVELOPMENT.md
+    about: Full development documentation and workflow guide
+  - name: 💬 Jekyll Support
+    url: https://talk.jekyllrb.com/
+    about: General Jekyll questions and support

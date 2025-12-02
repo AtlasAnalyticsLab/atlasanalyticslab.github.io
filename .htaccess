@@ -1,0 +1,56 @@
+# .htaccess - Apache Server Configuration
+#
+# Purpose:
+#   Security configurations for Apache web servers.
+#   Note: This file is NOT used by GitHub Pages (which uses nginx).
+#   Included for compatibility if site is hosted elsewhere.
+#
+# Security Features:
+#   - Disable directory browsing
+#   - Custom 404 error handling
+#   - Prevent access to sensitive files
+#   - Rate limiting for crawlers
+
+# Disable directory browsing
+Options -Indexes
+
+# Custom error pages
+ErrorDocument 404 /404.html
+ErrorDocument 403 /404.html
+
+# Prevent access to hidden files (git, etc.)
+<FilesMatch "^\.">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# Prevent access to configuration and data files
+<FilesMatch "\.(yml|yaml|rb)$">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# Rate limiting - prevent excessive requests from same IP
+# Note: This requires mod_ratelimit or mod_evasive to be enabled on server
+<IfModule mod_ratelimit.c>
+    <Location />
+        SetOutputFilter RATE_LIMIT
+        SetEnv rate-limit 400
+    </Location>
+</IfModule>
+
+# Security headers
+<IfModule mod_headers.c>
+    # Prevent clickjacking
+    Header set X-Frame-Options "SAMEORIGIN"
+    
+    # XSS protection
+    Header set X-XSS-Protection "1; mode=block"
+    
+    # Prevent MIME type sniffing
+    Header set X-Content-Type-Options "nosniff"
+    
+    # Referrer policy
+    Header set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
+

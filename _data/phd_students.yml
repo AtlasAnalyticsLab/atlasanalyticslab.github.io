@@ -1,0 +1,74 @@
+#==============================================================================
+# PhD Students (_data/phd_students.yml)
+#
+# Purpose:
+#   Stores information about current PhD students in the lab.
+#   Displayed on /team page using _includes/team-grid.html
+#
+# Usage:
+#   Add new students at the TOP or BOTTOM as preferred.
+#
+# Required Fields:
+#   - name: Full name (required)
+#
+# Optional Fields:
+#   - photo: Filename in /images/teampic/ (default: bio-photo.jpg)
+#   - info: Role/title (e.g., "PhD Student", "PhD Candidate")
+#   - short_bio: Brief description (not currently displayed)
+#   - email: Email address
+#   - website: Personal website URL
+#   - github: GitHub profile URL
+#   - linkedin: LinkedIn profile URL
+#   - google_scholar: Google Scholar profile URL
+#   - orcid: ORCID URL
+#   - twitter: Twitter/X URL
+#   - links: Custom links array with {url, type, label, icon}
+#
+# Display:
+#   Members are displayed as cards with photo, name, role, and social links.
+#   Cards are responsive and adjust to screen size automatically.
+#
+# Template:
+#   - name:
+#     photo:
+#     info:
+#     email:
+#     website:
+#     github:
+#     linkedin:
+#     google_scholar:
+#==============================================================================
+
+- name: Zhiyuan (Joe) Yang
+  photo: zhiyuan_yang.jpg
+  info: PhD Student
+  email: "zhiyuan.yang@mail.concordia.ca"
+  github: "https://github.com/CSMYang"
+  linkedin: "https://www.linkedin.com/in/joe-yang-51b8a1236?originalSubdomain=ca"
+  google_scholar: "https://scholar.google.com/citations?user=LrYx1-IAAAAJ&hl=en"
+
+- name: Ghordsiyeh (Rose) Rostami
+  photo: rose_rostami.jpeg
+  info: |
+    PhD Student
+    Co-supervised with Dr. Po-Han Chen
+  email: "rose.rostami@mail.concordia.ca"
+  github: "https://github.com/RoseRostami"
+  linkedin: "https://www.linkedin.com/in/ghodsiyeh-rostami/"
+  google_scholar: "https://scholar.google.com/citations?user=p0wQZKwAAAAJ&hl=en"
+
+- name: Haoyu He
+  photo: haoyu_he.jpg
+  info: PhD Student
+  email: "h_haoy@live.concordia.ca"
+  google_scholar: "https://scholar.google.com/citations?user=2kGaTpEAAAAJ&hl=en"
+  linkedin: "www.linkedin.com/in/haoyu-he-7a2406242"
+
+- name: Anh Nguyen
+  photo: anh_nguyen.jpg
+  info: |
+    PhD Student, Stony Brook University, US
+    Co-supervised with Dr. Dimitris Samaras
+  email: "atinguyen@cs.stonybrook.edu"
+  website: "https://anhtienng.github.io/"
+  google_scholar: "https://scholar.google.com/citations?user=bddbZYUAAAAJ&hl=en"

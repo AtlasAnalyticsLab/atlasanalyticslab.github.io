@@ -1,0 +1,57 @@
+name: Documentation Update
+description: Found a typo, unclear instructions, or something that needs clarification?
+body:
+  - type: markdown
+    attributes:
+      value: |-
+        Thanks for helping improve our documentation!
+        
+        This template is for issues with README.md, DEVELOPMENT.md, or website content.
+
+  - type: dropdown
+    id: doc-type
+    attributes:
+      label: Documentation Type
+      description: Which documentation needs updating?
+      options:
+        - README.md (quick start guide)
+        - DEVELOPMENT.md (developer documentation)
+        - Website content (text on pages)
+        - Instructions_members.md
+        - CONTRIBUTING.md
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: issue
+    attributes:
+      label: What's the problem?
+      description: |-
+        What is incorrect, unclear, or missing?
+      placeholder: |-
+        Example: "The instructions for adding news items don't mention that items should be added to the TOP of the file"
+    validations:
+      required: true
+
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Suggested improvement
+      description: |-
+        How should we fix or improve this?
+      placeholder: |-
+        Example: "Add a note that says 'Add new items to the TOP of the file' in step 1"
+    validations:
+      required: true
+
+  - type: textarea
+    id: location
+    attributes:
+      label: Location
+      description: |-
+        Where is this in the documentation? (file name, section, line number if known)
+      placeholder: |-
+        Example: "README.md, section 'Updating Content > News & Announcements'"
+    validations:
+      required: false

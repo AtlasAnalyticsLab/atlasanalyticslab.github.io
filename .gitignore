@@ -1,0 +1,51 @@
+#==============================================================================
+# Git Ignore Rules (.gitignore)
+#
+# Purpose:
+#   Specifies intentionally untracked files that Git should ignore.
+#
+# Categories:
+#   - Editor temporary files (Vim, Sublime Text)
+#   - Ruby/Bundler artifacts (gems, vendor/bundle)
+#   - Node.js dependencies (node_modules)
+#   - macOS system files (.DS_Store)
+#   - Jekyll generated files (_site, caches)
+#
+# Note:
+#   Gemfile.lock is tracked to ensure consistent builds
+#   (listed here but overridden in repository)
+#==============================================================================
+
+# Vim
+*~
+*.sw[p_]
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Ruby Gem
+*.gem
+.bundle
+Gemfile.lock
+**/vendor/bundle
+
+# Node.js and NPM
+node_modules
+npm-debug.log*
+package-lock.json
+codekit-config.json
+
+# macOS
+.DS_Store
+
+# Jekyll generated files
+.jekyll-cache
+.jekyll-metadata
+.sass-cache
+_asset_bundler_cache
+_site
+README_WEBMASTER.md
+
+# Other
+.github/RULESET_SETUP.md

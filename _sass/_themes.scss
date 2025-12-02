@@ -1,0 +1,76 @@
+@use "variables" as *;
+
+/*******************************************************************************
+ * CSS custom properties for light/dark themes.
+ * Values are sourced from `_variables.scss` to keep palette definitions centralised.
+ *
+ * Exposed variables (prefixed `--global-*`) maintain backwards compatibility with
+ * existing styles, while the `--atlas-*` variables power the responsive layout and
+ * colour-mode toggle.
+ ******************************************************************************/
+
+:root {
+  color-scheme: light;
+
+  /* Legacy variables still referenced across historical styles. */
+  --global-bg-color: #{$white-color};
+  --global-code-bg-color: #{$code-bg-color-light};
+  --global-text-color: #{$black-color};
+  --global-text-color-light: #{$grey-color};
+  --global-theme-color: #{$purple-color};
+  --global-hover-color: #{$purple-color};
+  --global-footer-bg-color: #{$grey-color-dark};
+  --global-footer-text-color: #{$grey-color-light};
+  --global-footer-link-color: #{$white-color};
+  --global-distill-app-color: #{$grey-color};
+  --global-divider-color: rgba(0, 0, 0, .1);
+  --global-card-bg-color: #{$white-color};
+
+  /* Atlas layout helpers referenced in css/main.scss. */
+  --atlas-body-bg: #ffffff;
+  --atlas-body-text: #212529;
+  --atlas-muted-text: #6c757d;
+  --atlas-link-color: #0d6efd;
+  --atlas-link-hover: #0a58ca;
+  --atlas-surface-bg: #f8f9fa;
+  --atlas-border-color: rgba(0, 0, 0, 0.08);
+  --atlas-navbar-bg: rgba(255, 255, 255, 0.95);
+  --atlas-nav-height: 5.5rem;
+
+  /* Map Bootstrap CSS custom properties so components inherit theme colours. */
+  --bs-body-bg: var(--atlas-body-bg);
+  --bs-body-color: var(--atlas-body-text);
+  --bs-link-color: var(--atlas-link-color);
+  --bs-link-hover-color: var(--atlas-link-hover);
+}
+
+[data-bs-theme='dark'] {
+  color-scheme: dark;
+
+  --global-bg-color: #{$grey-color-dark};
+  --global-code-bg-color: #{$code-bg-color-dark};
+  --global-text-color: #{$grey-color-light};
+  --global-text-color-light: #{$grey-color-light};
+  --global-theme-color: #{$cyan-color};
+  --global-hover-color: #{$cyan-color};
+  --global-footer-bg-color: #{$grey-color-light};
+  --global-footer-text-color: #{$grey-color-dark};
+  --global-footer-link-color: #{$black-color};
+  --global-distill-app-color: #{$grey-color-light};
+  --global-divider-color: #424246;
+  --global-card-bg-color: #{$grey-900};
+
+  --atlas-body-bg: #121212;
+  --atlas-body-text: #e9ecef;
+  --atlas-muted-text: #adb5bd;
+  --atlas-link-color: #66b2ff;
+  --atlas-link-hover: #99ccff;
+  --atlas-surface-bg: #1f1f1f;
+  --atlas-border-color: rgba(255, 255, 255, 0.15);
+  --atlas-navbar-bg: rgba(18, 18, 18, 0.95);
+
+  --bs-body-bg: var(--atlas-body-bg);
+  --bs-body-color: var(--atlas-body-text);
+  --bs-link-color: var(--atlas-link-color);
+  --bs-link-hover-color: var(--atlas-link-hover);
+}

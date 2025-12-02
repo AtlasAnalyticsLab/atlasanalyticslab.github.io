@@ -1,0 +1,67 @@
+{%- comment -%}
+  Team Link Component (team-link.html)
+  
+  Purpose:
+    Renders a single icon-only link for team member social profiles.
+    Provides accessible buttons with semantic type detection.
+  
+  Usage:
+    {% include team-link.html 
+       url="https://github.com/username" 
+       type="github" 
+       label="GitHub profile" 
+    %}
+  
+  Parameters:
+    url   - Absolute or relative URL for the link (required)
+    type  - Semantic type (website, github, linkedin, scholar, orcid, twitter, email, external)
+    label - Optional override for accessible label
+    icon  - Optional Bootstrap Icon class if custom glyph required
+  
+  Features:
+    - Auto-detects appropriate icon based on type
+    - Provides screen-reader friendly labels
+    - Opens links in new tab with security attributes
+  
+  Dependencies:
+    - Bootstrap Icons CDN
+{%- endcomment -%}
+{% assign type = include.type | default: 'external' | downcase %}
+{% assign url = include.url %}
+{% assign label = include.label %}
+{% assign icon = include.icon %}
+
+{% if label == nil or label == '' %}
+  {% case type %}
+    {% when 'website' %}{% assign label = 'Personal website' %}
+    {% when 'mcgill' %}{% assign label = 'McGill University profile' %}
+    {% when 'mila' %}{% assign label = 'Mila Quebec AI Institute profile' %}
+    {% when 'github' %}{% assign label = 'GitHub profile' %}
+    {% when 'linkedin' %}{% assign label = 'LinkedIn profile' %}
+    {% when 'scholar' %}{% assign label = 'Google Scholar profile' %}
+    {% when 'orcid' %}{% assign label = 'ORCID profile' %}
+    {% when 'twitter' %}{% assign label = 'Twitter profile' %}
+    {% when 'email' %}{% assign label = 'Email' %}
+    {% else %}{% assign label = 'External link' %}
+  {% endcase %}
+{% endif %}
+
+{% if icon == nil or icon == '' %}
+  {% case type %}
+    {% when 'website' %}{% assign icon = 'bi-globe2' %}
+    {% when 'mcgill' %}{% assign icon = 'bi-bank' %}
+    {% when 'mila' %}{% assign icon = 'bi-robot' %}
+    {% when 'github' %}{% assign icon = 'bi-github' %}
+    {% when 'linkedin' %}{% assign icon = 'bi-linkedin' %}
+    {% when 'scholar' %}{% assign icon = 'bi-mortarboard-fill' %}
+    {% when 'orcid' %}{% assign icon = 'bi-award-fill' %}
+    {% when 'twitter' %}{% assign icon = 'bi-twitter-x' %}
+    {% when 'email' %}{% assign icon = 'bi-envelope-fill' %}
+    {% else %}{% assign icon = 'bi-box-arrow-up-right' %}
+  {% endcase %}
+{% endif %}
+
+<a class="team-link" href="{{ url }}" target="_blank" rel="noopener" title="{{ label }}">
+  <i class="bi {{ icon }}" aria-hidden="true"></i>
+  <span class="visually-hidden">{{ label }}</span>
+</a>

@@ -1,0 +1,54 @@
+<!--
+  Header Component (header.html)
+  
+  Purpose:
+    Primary site navigation bar with lab branding, page links, and theme toggle.
+  
+  Features:
+    - Responsive navbar with mobile hamburger menu
+    - Fixed-top positioning with shadow
+    - Theme toggle with Auto/Dark/Light modes
+    - Persistent theme preference via localStorage
+  
+  Navigation Pages:
+    - Home, News, Team, Openings, Publications, Funding, Lab Life, Contact
+  
+  Dependencies:
+    - Bootstrap 5 navbar component
+    - theme-toggle.js for theme cycling
+-->
+<!-- Primary site navigation with lab branding, page links, and theme toggle. -->
+<nav class="navbar navbar-expand-lg fixed-top shadow-sm">
+  <div class="container-fluid">
+    <a class="navbar-brand d-flex align-items-center" href="{{ site.url }}{{ site.baseurl }}/">
+      <img src="{{ site.url }}{{ site.baseurl }}/images/logopic/group_logo_medium.png"
+           alt="Atlas Analytics Lab logo"
+           class="me-2">
+      <span>Atlas Analytics Lab</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+            aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="mainNavbar">
+      <!-- Top-level navigation links surfaced in the header. -->
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link" href="{{ site.url }}{{ site.baseurl }}/">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="{{ site.url }}{{ site.baseurl }}/allnews.html">News</a></li>
+        <li class="nav-item"><a class="nav-link" href="{{ site.url }}{{ site.baseurl }}/team/">Team</a></li>
+        <li class="nav-item"><a class="nav-link" href="{{ site.url }}{{ site.baseurl }}/openings">Openings</a></li>
+        <li class="nav-item"><a class="nav-link" href="{{ site.url }}{{ site.baseurl }}/publications/">Publications</a></li>
+        <li class="nav-item"><a class="nav-link" href="{{ site.url }}{{ site.baseurl }}/funding/">Funding</a></li>
+        <li class="nav-item"><a class="nav-link" href="{{ site.url }}{{ site.baseurl }}/gallery/">Lab Life</a></li>
+        <li class="nav-item"><a class="nav-link" href="{{ site.url }}{{ site.baseurl }}/contact/">Contact</a></li>
+      </ul>
+      <!-- Theme toggle cycles Auto → Dark → Light and persists the user's preference. -->
+      <div class="d-lg-flex align-items-center ms-lg-3 mt-3 mt-lg-0">
+        <button class="btn btn-outline-secondary w-100 theme-toggle" type="button" data-theme-toggle aria-live="polite">
+          <span class="theme-toggle-icon" data-theme-icon aria-hidden="true"></span>
+          <span class="theme-toggle-label">Auto</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</nav>

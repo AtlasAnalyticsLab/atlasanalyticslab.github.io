@@ -1,0 +1,64 @@
+#==============================================================================
+# Alumni Members (_data/alumni_members.yml)
+#
+# Purpose:
+#   Records former lab members (graduated students, ex-postdocs, etc.).
+#   Displayed on /team page using _includes/alumni-list.html
+#   Alumni are shown with minimal information: First Initial. Last Name, Current Position
+#   Social media links and contact information are NOT displayed.
+#
+# Required Fields:
+#   - name: Full name (required, will be displayed as First Initial. Last Name)
+#   - info_current: Current position/affiliation (required)
+#
+# Optional Fields (for reference only, not displayed on site):
+#   - photo: Filename in /images/teampic/
+#   - position: Previous role in lab
+#   - duration: Time period in lab (e.g., "2020 - 2023")
+#   - degree: Degree obtained (e.g., "PhD", "MSc")
+#   - thesis: Thesis title
+#   - year: Graduation year
+#   - website: Personal website URL (not displayed)
+#   - github: GitHub profile URL (not displayed)
+#   - linkedin: LinkedIn profile URL (not displayed)
+#   - google_scholar: Google Scholar profile URL (not displayed)
+#   - orcid: ORCID URL (not displayed)
+#
+# Display Format:
+#   H. He, Graduate student transferred to PhD @ Atlas Analytics Lab
+#   D. Gomes, AI Scientist @ Thales
+#
+# Note:
+#   Add new alumni at the TOP (reverse chronological order).
+#
+# Template:
+#   - name:
+#     info_current:
+#==============================================================================
+
+- name: Ali Nasiri-Sarvi
+  info_current: Research Assistant @ Atlas Analytics Lab, Research Associate @ Huawei
+  google_scholar: "https://scholar.google.com/citations?user=FzicxBkAAAAJ"
+  linkedin: "https://ca.linkedin.com/in/ali-nasiri-sarvi"
+
+- name: Haoyu He
+  info_current: Graduated MSc, transferred to PhD @ Atlas Analytics Lab
+
+- name: Damien Martins Gomes
+  info_current: AI Scientist @ Thales
+  google_scholar: "https://scholar.google.ca/citations?user=ivIgsbMAAAAJ"
+  linkedin: "https://fr.linkedin.com/in/damien-martins-gomes/fr"
+
+- name: Vasudev Sharma
+  info_current: ML Developer @ Botni.Vision
+  linkedin: "https://ca.linkedin.com/in/vasudev-sharma-341171256"
+
+- name: Cassandre Notton
+  info_current: ML Engineer @ Quandela
+  google_scholar: "https://scholar.google.com/citations?hl=en&user=H5zKrXcAAAAJ"
+  linkedin: "https://ca.linkedin.com/in/cassandre-notton-69ba6a131"
+
+- name: Denisha Thakkar
+  info_current: ML Egnineer @ CIBC
+  linkedin: "https://ca.linkedin.com/in/denisha-thakkar"
+

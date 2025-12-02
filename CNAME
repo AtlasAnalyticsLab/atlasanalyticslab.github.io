@@ -1,0 +1,18 @@
+#==============================================================================
+# Custom Domain Configuration (CNAME)
+#
+# Purpose:
+#   Specifies custom domain for GitHub Pages deployment.
+#
+# Current Domain:
+#   atlasanalyticslab.github.io
+#
+# Atlas Analytics Lab at Concordia University
+#
+# Note:
+#   This file is automatically created/updated by GitHub Pages
+#   when configuring custom domain in repository settings.
+#   Update this file if migrating to a custom domain.
+#==============================================================================
+
+atlasanalyticslab.github.io

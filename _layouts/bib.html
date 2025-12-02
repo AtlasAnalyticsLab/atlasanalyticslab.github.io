@@ -1,0 +1,88 @@
+---
+---
+<!--
+  Bibliography Entry Layout (bib.html)
+  
+  Purpose:
+    Renders a single bibliographic entry with optional resource
+    buttons and collapsible abstract/bibtex sections.
+  
+  Used by:
+    Bibliography rendering system
+  
+  Features:
+    - Resource link buttons (PDF, DOI, arXiv, etc.)
+    - Collapsible abstract section
+    - Collapsible BibTeX section
+  
+  Dependencies:
+    - entry object with bibliographic metadata
+-->
+
+{% assign bib_show = true %}
+
+<div class="row">
+  <!--
+    Abbr column (commented out):
+    <div class="col-sm-2 abbr">
+      {%- if entry.abbr -%}
+        {%- if site.data.venues[entry.abbr] -%}
+        <abbr class="badge"><a href="{{site.data.venues[entry.abbr].url}}">{{entry.abbr}}</a></abbr>
+        {%- else -%}
+        <abbr class="badge">{{entry.abbr}}</abbr>
+        {%- endif -%}
+      {%- endif -%}
+    </div>
+  -->
+  <!-- Entry bib key -->
+  <div id="{{entry.key}}" class="col-sm-12" display="block">
+    {{ reference | newline_to_br  }}
+    
+          <br/>
+          {% if entry.url %}<a class="btn-pdf" href="{{ entry.url }}" target="_blank" rel="noopener">PDF</a> {% endif %}
+
+          {% if entry.abstract %} 
+            <a data-bs-toggle="collapse" href="#{{key}}-abstract" class="btn-abstract" role="button">ABS</a>
+          {% endif %}
+
+          {% if entry.doi %}<a class="btn-doi" href="http://dx.doi.org/{{ entry.doi }}" target="_blank" rel="noopener">DOI</a> {% endif %}
+
+          {% if entry.arxiv %}<a class="btn-arxiv" href="https://arxiv.org/abs/{{ entry.arxiv }}" target="_blank" rel="noopener">ARXIV</a> {% endif %}
+
+          
+          {% if entry.video %} 
+            <a href="{{ entry.video }}" class="btn-video" role="button">VID</a>
+          {% endif %}
+
+
+          {% if bib_show %} 
+            <a data-bs-toggle="collapse" href="#{{key}}-bib" class="btn-bib" role="button">BIB</a>
+          {% endif %}
+
+
+          
+
+          {% if entry.abstract %}
+          <div class="collapse" id="{{key}}-abstract">
+            <div class="well-abstract">
+            {{entry.abstract}}
+            </div>
+          </div>
+          {% endif %}
+
+          {% if bib_show %} 
+          <div class="collapse" id="{{key}}-bib">
+            <div class="well-bib">
+            {% highlight bibtex %}{{ entry.bibtex | hideCustomBibtex }}{% endhighlight %}
+          </div>
+          </div>
+          {% endif %}
+
+       
+
+          
+
+
+        </div>
+
+      </div>

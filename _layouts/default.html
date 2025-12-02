@@ -1,0 +1,43 @@
+<!--
+  Default Layout (default.html)
+  
+  Purpose:
+    Base template that wraps all pages with header, container, and footer.
+    Provides the core HTML structure for the entire site.
+  
+  Used by:
+    All other layouts inherit from this layout
+  
+  Features:
+    - Includes head.html (metadata, stylesheets, analytics)
+    - Includes header.html (navigation bar)
+    - Includes footer.html (site footer)
+    - Supports layout_wide and layout_fixed modes
+-->
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body class="{% if site.layout_wide %}layout-wide{% else %}layout-fixed{% endif %}">
+
+    {% include header.html %}
+
+    <div class="site-wrapper container-fluid">
+      {{ content }}
+    </div>
+
+    {% include footer.html %}
+
+    <!-- Bootstrap 5 JavaScript bundle (includes Popper for dropdowns, tooltips, etc.) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Theme toggle functionality -->
+    <script src="{{ site.baseurl }}/js/theme-toggle.js"></script>
+    
+    <!-- External links handler - opens external links in new tab -->
+    <script src="{{ site.baseurl }}/js/external-links.js"></script>
+
+  </body>
+
+</html>

@@ -1,0 +1,27 @@
+---
+layout: default
+---
+<!--
+  Text Layout (textlay.html)
+  
+  Purpose:
+    Generic full-width text layout used by most static pages.
+    Provides simple single-column content display.
+  
+  Used by:
+    - _pages/funding.md
+    - _pages/allnews.md
+    - _pages/aboutwebsite.md
+    - _pages/openings.md
+    - _pages/contact.md
+  
+  Features:
+    - Full-width column (col-sm-12)
+    - No sidebars or complex grid
+  
+  Dependencies:
+    - _layouts/default.html (parent layout)
+-->
+<div id="textid" class="col-sm-12">
+  {{ content }}
+</div>

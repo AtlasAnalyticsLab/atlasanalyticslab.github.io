@@ -1,0 +1,17 @@
+#==============================================================================
+# Ruby Version (.ruby-version)
+#
+# Purpose:
+#   Specifies Ruby version for this project.
+#   Used by rbenv, rvm, and CI environments.
+#
+# Version:
+#   3.4.7+ (latest as of October 18, 2025)
+#
+# Note:
+#   We use the latest stable Ruby version. This file is kept synchronized with
+#   Gemfile and .github/workflows/deploy.yml. Feel free to update to newer
+#   versions or open an issue if you encounter compatibility problems.
+#==============================================================================
+
+3.4.7

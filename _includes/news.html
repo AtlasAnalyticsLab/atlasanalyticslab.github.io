@@ -1,0 +1,45 @@
+<!--
+  News Sidebar Widget (news.html)
+  
+  Purpose:
+    Displays the 5 most recent news items from the news.yml data file.
+    Used in the homepage sidebar to keep visitors informed about lab updates.
+  
+  Used by:
+    - _layouts/homelay.html (homepage sidebar)
+  
+  Features:
+    - Displays 5 most recent entries with minimal spacing
+    - Supports Markdown formatting in headlines
+    - Shows date and headline for each news item
+    - Links to full news archive page (/allnews.html)
+  
+  Dependencies:
+    - _data/news.yml (news entries)
+    - _pages/allnews.md (full news archive)
+    - _sass/_components.scss (.well p styling for spacing)
+  
+  Data Structure (_data/news.yml):
+    - date: "15 December 2025"
+    - headline: "Welcome to our new PhD student! [More info](link)"
+  
+  Customization:
+    - Change limit:5 to display more/fewer items
+    - Adjust margin-bottom in div inline style for tighter/looser spacing
+    - Modify .well p margin in _sass/_components.scss for global spacing
+    - Update link path to news archive if page moves
+-->
+<div class="well">
+  <h4>News</h4>
+
+  {% for article in site.data.news limit:5 %}
+  <div style="margin-bottom: 0.5rem;">
+    {{ article.date }}<br>
+    {% capture openings_url %}{{ site.baseurl }}/openings{% endcapture %}
+    {% assign processed_headline = article.headline | replace: 'OPENINGS_LINK', openings_url %}
+    {{ processed_headline | markdownify }}
+  </div>
+  {% endfor %}
+
+  <h4><a href="{{ site.url }}{{ site.baseurl }}/allnews.html">... see all News</a></h4>
+</div>

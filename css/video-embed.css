@@ -1,0 +1,34 @@
+/*******************************************************************************
+ * Video Embed Styles (video-embed.css)
+ *
+ * Purpose:
+ *   Provides responsive 16:9 aspect ratio container for embedded videos
+ *   (YouTube, Vimeo, etc.) that scales with viewport width.
+ *
+ * Author: Nathan Lam (June 2, 2017)
+ *
+ * Usage:
+ *   Wrap iframe/embed in <div class="embed-container">...</div>
+ *   Used by: _includes/video-player.html
+ *
+ * Features:
+ *   - Maintains 16:9 aspect ratio (56.25% padding-bottom)
+ *   - Fully responsive scaling
+ *   - Works with iframe, object, and embed elements
+ ******************************************************************************/
+
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.embed-container iframe, .embed-container object, .embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
