@@ -195,6 +195,17 @@ git push origin feature/team-member-[name]
 # Open PR on GitHub
 ```
 
+#### Adding Gallery Photos
+```bash
+git checkout -b feature/add-gallery-photos-2025-12-02
+# Add photos to images/picpic/
+bundle exec jekyll serve  # Test locally
+git add images/picpic/
+git commit -m "content: add lab photos from [event]"
+git push origin feature/add-gallery-photos-2025-12-02
+# Open PR on GitHub
+```
+
 #### Layout/Design Changes
 ```bash
 git checkout -b feature/[component]-redesign
@@ -294,10 +305,10 @@ git push origin hotfix/critical-issue
 default.html (base template)
 ├── homelay.html (homepage with carousel + news)
 ├── textlay.html (simple text pages)
+├── gallerylay.html (gallery with masonry layout)
 ├── team.html (team member grids)
 ├── publications.html (publication list wrapper)
 ├── gridlay.html (publications grid)
-├── gridlay2.html (generic grid)
 └── bib.html (individual bibliography items)
 ```
 
@@ -323,16 +334,15 @@ default.html (base template)
 - `.github/ISSUE_TEMPLATE/` - Issue templates
 - `bin/deploy` - Manual deployment script
 
-#### Layouts (12 files)
+#### Layouts (8 files)
 1. **default.html** - Base template with `<html>`, header, footer
 2. **homelay.html** - Homepage two-column layout (main content + news sidebar)
 3. **textlay.html** - Full-width text layout for simple pages
-4. **team.html** - Team page with member grids
-5. **publications.html** - Publications page wrapper
-6. **gridlay.html** - Grid layout for publications
-7. **gridlay2.html** - Generic grid layout (available for future use)
+4. **gallerylay.html** - Gallery layout with CSS Grid masonry and optimized spacing
+5. **team.html** - Team page with member grids
+6. **publications.html** - Publications page wrapper
+7. **gridlay.html** - Grid layout for publications
 8. **bib.html** - Individual bibliography item rendering
-9. **piclay.html** - Picture gallery layout (unused, can be deleted)
 
 #### Includes (10 files)
 1. **head.html** - HTML `<head>` section with metadata, stylesheets, CDN links
@@ -364,11 +374,11 @@ default.html (base template)
 5. **funding.md** - Funding acknowledgements
 6. **contact.md** - Contact information and directions
 7. **allnews.md** - Complete news archive
-8. **gallery.md** - Lab life photo gallery
+8. **gallery.md** - Lab life photo gallery with CSS Grid masonry layout
 9. **aboutwebsite.md** - Template usage guide
 10. **404.md** - Custom error page with navigation buttons
 
-#### Stylesheets (6 files)
+#### Stylesheets (7 files)
 1. **css/main.scss** - Main stylesheet entry point (630 lines, cleaned and organized Nov 2025)
    - Imports all SASS partials
    - Defines layout system (layout-wide vs layout-fixed)
@@ -379,14 +389,15 @@ default.html (base template)
 4. **_sass/_components.scss** - Custom components (buttons, panels, cards)
 5. **_sass/_publications.scss** - Publication card styles (30% image width, top-aligned)
 6. **_sass/_themes.scss** - Light/dark theme CSS custom properties
+7. **_sass/_gallery.scss** - Gallery masonry layout styles (CSS Grid with responsive columns)
 
-#### JavaScript (2 files)
+#### JavaScript (3 files)
 1. **js/theme-toggle.js** - Three-state theme controller (light/dark/auto)
-2. **js/npm.js** - Legacy npm-related script (likely unused, can be deleted)
+2. **js/gallery-masonry.js** - Gallery masonry fallback for browsers without CSS Grid masonry support
+3. **js/external-links.js** - Automatically opens external links in new tabs
 
-#### Ruby Plugins (2 files)
-1. **_plugins/hideCustomBibtex.rb** - BibTeX keyword filter
-2. **_plugins/markdown.rb** - Markdown include tag
+#### Ruby Plugins (1 file)
+1. **_plugins/hideCustomBibtex.rb** - BibTeX keyword filter for bibliography entries
 
 #### Image Directories (5 directories, 52+ files)
 1. **images/homepic/** - Homepage carousel (auto-loaded, 4 images)
@@ -867,19 +878,12 @@ headline: "Text with [link](OPENINGS_LINK)"
 - ✅ 22 PDFs from `assets/papers/`
 - ✅ 4 PDFs from `assets/vacancies/`
 
-**Total Deleted:** 24+ items (~2-3MB freed)
-
-### Remaining Cleanup Items (1 item)
-
-1. **`_layouts/piclay.html`** - Picture gallery layout (unused)
-   ```bash
-   rm _layouts/piclay.html
-   ```
+**Total Deleted:** 28+ items (~3MB freed)
 
 ### Files to Keep
 
 **Essential Layouts (8 files):**
-- All active layouts: default, homelay, textlay, team, publications, gridlay, gridlay2, bib
+- All active layouts: default, homelay, textlay, gallerylay, team, publications, gridlay, bib
 
 **Active Data Files (8 files):**
 - All team and content data files in `_data/`
@@ -971,29 +975,6 @@ headline: "Text with [link](OPENINGS_LINK)"
    - Optimize large images
    - Check for slow-loading pages
    - Review CDN performance
-
-### Next Cleanup (Immediate)
-
-```bash
-# Delete remaining unused file
-rm _layouts/piclay.html
-
-# Commit cleanup
-git add -A
-git commit -m "chore: remove unused file (piclay.html)"
-git push
-```
-
-### Next Review
-
-**Scheduled:** December 2025
-
-**Tasks:**
-- [ ] Review and update this documentation
-- [ ] Check for new unused files
-- [ ] Audit image usage
-- [ ] Review security configurations
-- [ ] Update changelog with new features
 
 ---
 

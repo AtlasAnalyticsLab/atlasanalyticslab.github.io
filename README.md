@@ -3,7 +3,8 @@
 Official website for the **Atlas Analytics Lab** at Concordia University, Montreal. We focus on AI research in computational pathology, foundation models, and medical imaging.
 
 **🌐 Live Site:** https://atlasanalyticslab.github.io  
-**📧 Contact:** mahdi.hosseini@concordia.ca
+**📧 Contact:** mahdi.hosseini@concordia.ca  
+**📊 Site Stats:** 8 layouts · 10 includes · 3 JS modules · 10 pages · Clean codebase (Dec 2025 audit)
 
 ---
 
@@ -143,9 +144,22 @@ Simply add images to this directory - they automatically appear in the carousel.
 
 ### Lab Life Gallery
 
-**Directory:** `images/picpic/`
+**Directory:** `images/picpic/`  
+**Layout:** CSS Grid Masonry (auto-reordering for tight packing)
 
 Add photos of lab events, conferences, and activities. They automatically appear on the `/gallery/` page.
+
+**Features:**
+- **Automatic image loading** - Just drop images in `images/picpic/`
+- **Masonry layout** - Images automatically reorder to minimize gaps
+- **Responsive grid** - 1 column (mobile) → 2 (tablet) → 3 (desktop) → 4 (large screens)
+- **Respects layout_wide setting** - Adapts to site-wide layout configuration
+- **Supported formats:** JPG, JPEG, PNG
+
+**How it works:**
+- Images sorted by filename in reverse order (newest first)
+- CSS Grid masonry with JavaScript fallback for browser compatibility
+- No code changes needed when adding/removing photos
 
 ---
 
@@ -222,6 +236,53 @@ yes | bash bin/deploy --src main --deploy gh-pages
 
 ---
 
+## Architecture & Technology
+
+### Core Technologies
+
+**Static Site Generator:**
+- Jekyll 4.4.1 (Ruby-based)
+- Liquid templating engine
+- Kramdown Markdown processor
+
+**Frontend Framework:**
+- Bootstrap 5 (Lumen theme)
+- Custom SCSS modules (5 partials)
+- Responsive design (5 breakpoints: 576px, 768px, 992px, 1200px, 1400px)
+
+**JavaScript Modules (3 files):**
+1. `theme-toggle.js` - Three-state theme switcher (light/dark/auto)
+2. `gallery-masonry.js` - CSS Grid masonry fallback
+3. `external-links.js` - Auto-opens external links in new tabs
+
+**Layout System:**
+- 8 layout templates (`_layouts/`)
+- 10 reusable components (`_includes/`)
+- Layout-wide mode: configurable full-width or fixed 1000px
+
+### File Structure Overview
+
+```
+├── _layouts/          # 8 page layouts (default, homelay, textlay, etc.)
+├── _includes/         # 10 reusable components (header, footer, etc.)
+├── _pages/            # 10 content pages (Markdown)
+├── _data/             # 8 YAML data files (team, publications, news)
+├── _sass/             # 5 SCSS modules (variables, components, themes, etc.)
+├── _plugins/          # 1 Ruby plugin (BibTeX filter)
+├── css/               # Main stylesheet entry point
+├── js/                # 3 JavaScript modules
+├── images/            # 5 subdirectories (team, publications, gallery, etc.)
+└── assets/            # Additional resources (PDFs, documents)
+```
+
+**Code Quality:**
+- Comprehensive inline documentation (all files)
+- Standardized comment headers
+- Zero unused/redundant code (Dec 2025 audit)
+- Clean, maintainable codebase
+
+---
+
 ## Support & Maintenance
 
 ### Troubleshooting
@@ -271,22 +332,34 @@ bundle install
 ## Technology Stack
 
 - **Static Site Generator:** Jekyll 4.4.1
-- **Hosting:** GitHub Pages
+- **Hosting:** GitHub Pages (automatic deployment)
 - **Frontend Framework:** Bootstrap 5 (Lumen theme via jsDelivr CDN)
-- **Template Engine:** Liquid
-- **Styling:** SCSS/SASS
-- **Theme:** Light/Dark mode with auto-detection
+- **Template Engine:** Liquid (Jekyll's templating system)
+- **Styling:** SCSS/SASS with 5 modular partials
+- **JavaScript:** 3 vanilla JS modules (theme switcher, gallery masonry, external links)
+- **Theme:** Light/Dark/Auto mode with CSS custom properties
+- **Ruby Plugin:** 1 custom Liquid filter (BibTeX keyword hiding)
+
+**Build Stats:**
+- 8 layouts, 10 includes, 10 pages
+- 8 YAML data files
+- 5+ image directories with auto-loading
+- Clean codebase (0 unused files as of Dec 2025)
 
 ---
 
 ## Contributing
 
 For lab members and collaborators, see `DEVELOPMENT.md` for detailed development documentation including:
-- Detailed file structure and design decisions
+- Git workflow and branching strategy
+- Detailed file structure and architecture
 - Comment standardization guidelines
-- Development history and changelog
-- Cleanup reports and maintenance tasks
-- URL management and configuration details
+- Development history and changelog  
+- Code cleanup reports
+- Maintenance tasks and verification commands
+- URL management and configuration
+
+Quick member instructions: `.github/Instructions_members.md`
 
 ---
 
@@ -315,4 +388,4 @@ Concordia University, Montreal, QC, Canada
 
 ---
 
-**Last Updated:** December 1, 2025
+**Last Updated:** December 2, 2025

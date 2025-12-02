@@ -2,20 +2,133 @@
  * Gallery Styles (_gallery.scss)
  *
  * Purpose:
- *   Styles for the Lab Life photo gallery page
+ *   Styles for the Lab Life photo gallery page using CSS Grid masonry layout.
  *
  * Features:
- *   - Responsive grid layout with even distribution
- *   - Images maintain their aspect ratios
- *   - Hover effects
- *   - Balanced columns
- *   - Organized display regardless of image dimensions
- *   - Minimal padding for maximum space utilization
+ *   - CSS Grid masonry layout (with JavaScript fallback)
+ *   - Responsive columns: 1 (mobile) → 2 (tablet) → 3 (desktop) → 4 (large)
+ *   - Images maintain aspect ratios and pack tightly
+ *   - Minimal padding optimized per screen size
+ *   - Hover effects with smooth transitions
+ *
+ * Dependencies:
+ *   - gallerylay.html: provides layout overrides
+ *   - gallery-masonry.js: calculates row spans for browsers without masonry support
  *
  * Note:
- *   Most layout overrides are in gallerylay.html as inline styles
- *   for maximum specificity and reliability
+ *   Layout constraints (max-width, padding) are overridden in gallerylay.html
+ *   to respect the layout_wide config setting.
  ******************************************************************************/
+
+/*
+ * Gallery page title and description styling
+ */
+#galleryid {
+  h1, p {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    
+    @media (min-width: 768px) {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+    
+    @media (min-width: 1200px) {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+  }
+}
+
+/*
+ * Gallery grid container
+ * Uses CSS Grid with masonry layout (when supported)
+ * Falls back to calculated row spans via JavaScript
+ */
+.gallery-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  
+  @media (min-width: 576px) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+  }
+  
+  @media (min-width: 768px) {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  @media (min-width: 992px) {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+  
+  @media (min-width: 1200px) {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  
+  @media (min-width: 1400px) {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.75rem;
+  }
+  
+  // Native CSS Grid Masonry (currently only in Firefox)
+  grid-template-rows: masonry;
+  
+  // Fallback for browsers without masonry support
+  // Small grid units allow precise row span calculation
+  @supports not (grid-template-rows: masonry) {
+    grid-auto-rows: 5px;
+  }
+}
+
+/*
+ * Individual gallery card (image wrapper)
+ * Provides shadow, hover effects, and proper sizing
+ */
+.gallery-card {
+  display: block;
+  width: 100%;
+  border: none;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+  overflow: hidden;
+  border-radius: 4px;
+  background: var(--atlas-well-bg, #fff);
+  line-height: 0;
+  height: fit-content;
+  
+  // For browsers without masonry, row span set by JavaScript
+  @supports not (grid-template-rows: masonry) {
+    grid-row-end: span auto;
+  }
+  
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+}
+
+/*
+ * Gallery image styling
+ * Images fill card width and maintain aspect ratio
+ */
+.gallery-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 4px;
+  margin: 0;
+  padding: 0;
+  object-fit: cover;
+  max-width: 100%;
+  vertical-align: bottom;
+}
 
 // Gallery page content styling
 #galleryid {

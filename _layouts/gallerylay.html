@@ -5,28 +5,28 @@ layout: default
   Gallery Layout (gallerylay.html)
   
   Purpose:
-    Full-width layout specifically for the gallery/Lab Life page.
-    Respects layout_wide setting while maximizing space utilization.
+    Custom layout for the Lab Life gallery page with optimized spacing.
+    Respects layout_wide config setting while maximizing usable screen space.
   
   Used by:
     - _pages/gallery.md
   
   Features:
-    - Respects layout_wide config setting
-    - In layout-wide: uses more space with minimal padding
-    - In layout-fixed: constrains to reasonable max-width
-    - Minimal responsive padding in both modes
-    - Masonry layout with automatic image reordering
+    - Respects layout_wide setting from _config.yml
+    - Layout-wide mode: uses full width with minimal padding (0.75-1.5rem)
+    - Layout-fixed mode: constrains to 1200-1400px max-width
+    - Removes Bootstrap column padding for tighter image packing
+    - Responsive padding adjusts with screen size
   
   Dependencies:
     - _layouts/default.html (parent layout)
-    - _sass/_gallery.scss (gallery-specific styles)
-    - js/gallery-masonry.js (masonry layout script)
+    - _sass/_gallery.scss (gallery grid and card styles)
+    - js/gallery-masonry.js (masonry fallback for browsers without CSS Grid masonry)
 -->
 <style>
-  /* Gallery page overrides - respects layout_wide setting */
+  /* Gallery page layout overrides - respects layout_wide setting from _config.yml */
   
-  /* Layout-wide mode: use more space */
+  /* Layout-wide mode: maximize horizontal space */
   body.layout-wide .site-wrapper {
     max-width: none !important;
     padding-left: 0.75rem !important;
@@ -47,7 +47,7 @@ layout: default
     }
   }
   
-  /* Layout-fixed mode: constrain width but still optimize for gallery */
+  /* Layout-fixed mode: constrain width but wider than default pages */
   body.layout-fixed .site-wrapper {
     max-width: 1200px !important;
     padding-left: 1rem !important;
@@ -62,7 +62,7 @@ layout: default
     }
   }
   
-  /* Remove col padding for gallery */
+  /* Remove Bootstrap col-sm-12 padding to avoid double padding */
   #galleryid.col-sm-12 {
     padding-left: 0 !important;
     padding-right: 0 !important;
