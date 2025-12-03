@@ -45,15 +45,15 @@ img {
 }
 
 .navbar-brand img {
-  height: 40px;
+  height: 60px;
 }
 
 html {
-  scroll-padding-top: calc(var(--atlas-nav-height, 5.5rem) + 1rem);
+  scroll-padding-top: calc(var(--atlas-nav-height, 2.75rem) + 1rem);
 }
 
 body {
-  padding-top: calc(var(--atlas-nav-height, 5.5rem) + env(safe-area-inset-top, 0px) + 1rem);
+  padding-top: calc(var(--atlas-nav-height, 2.75rem) + env(safe-area-inset-top, 0px) + 1rem);
   background-color: var(--atlas-body-bg);
   color: var(--atlas-body-text);
   transition: background-color 0.3s ease, color 0.3s ease;
@@ -61,11 +61,11 @@ body {
 
 @media (max-width: 991.98px) {
   :root {
-    --atlas-nav-height: 4.75rem;
+    --atlas-nav-height: 2.375rem;
   }
 
   body {
-    padding-top: calc(var(--atlas-nav-height, 4.75rem) + env(safe-area-inset-top, 0px) + 0.75rem);
+    padding-top: calc(var(--atlas-nav-height, 2.375rem) + env(safe-area-inset-top, 0px) + 0.75rem);
   }
 }
 
