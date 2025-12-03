@@ -32,7 +32,9 @@
 
 - name: Ahmed Alagha
   photo: ahmed_alagha.jpg
-  info: Postdoctoral Researcher
+  info: |
+    Postdoctoral Researcher
+    Co-supervised with Dr. Jamal Bentahar
   github: "https://github.com/AhmedNAlagha"
   google_scholar: "https://scholar.google.com/citations?user=Ooo2H-8AAAAJ&hl=en&oi=ao"
   email: "ahmed.alagha@mail.concordia.ca"
