@@ -9,60 +9,56 @@ permalink: /
   Home Page (home.md)
   
   Purpose:
-    Main landing page with vision statement, hero carousel, and research highlights.
-    Provides first impression of the lab's mission and visual identity.
+    Main landing page with vision statement, institutional logos, and research highlights.
+    Provides first impression of the lab's mission and affiliations.
   
   Layout: homelay (two-column with news sidebar)
   
   Sections:
     - Vision statement (top paragraph)
-    - Hero carousel (auto-generated from /images/homepic/)
+    - Institutional affiliation logos (Concordia, McGill, Mila)
     - Research highlights (key areas)
-    - Funding and partner logos
+    - Funding and partner information
   
   Features:
-    - Dynamic carousel loading all images from /images/homepic/
-    - Bootstrap carousel with 4-second intervals
-    - Responsive image sizing via CSS clamp()
+    - Responsive institutional logo display
+    - Bootstrap grid for logo alignment
+    - Maximum logo height: 120px
   
   Customization:
     - Update vision statement in main paragraph
-    - Add images to /images/homepic/ for carousel
     - Modify research highlights in markdown
-    - Update partner logos at bottom
+    - Update partner information at bottom
 -->
 
-The Atlas Analytics Lab conducts research across computer vision, deep learning, optimization, and natural language processing, with a strong application focus in digital and computational pathology.
-
-<!-- Hero carousel cycling through lab imagery. -->
-<div markdown="0" id="carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000" data-bs-pause="hover">
-    {% assign homepic_files = site.static_files | where_exp: "file", "file.path contains '/images/homepic/'" | sort: "path" %}
-    
-    <div class="carousel-indicators">
-        {% for image in homepic_files %}
-        <button type="button" data-bs-target="#carousel" data-bs-slide-to="{{ forloop.index0 }}" {% if forloop.first %}class="active" aria-current="true"{% endif %} aria-label="Slide {{ forloop.index }}"></button>
-        {% endfor %}
+<!-- Institutional affiliations logos -->
+<div markdown="0" class="institutional-logos text-center py-4">
+  <div class="row justify-content-center align-items-center g-4">
+    <div class="col-md-4 col-sm-6">
+      <img src="{{ site.url }}{{ site.baseurl }}/images/logopic/Concordia_University.png" 
+           alt="Concordia University" 
+           class="img-fluid" 
+           style="max-height: 120px; width: auto;">
     </div>
-
-    <div class="carousel-inner" markdown="0">
-        {% for image in homepic_files %}
-        <div class="carousel-item {% if forloop.first %}active{% endif %}">
-            <img src="{{ site.url }}{{ site.baseurl }}{{ image.path }}" class="d-block w-100" alt="Lab image {{ forloop.index }}" />
-        </div>
-        {% endfor %}
+    <div class="col-md-4 col-sm-6">
+      <img src="{{ site.url }}{{ site.baseurl }}/images/logopic/Mcgill_University.jpg" 
+           alt="McGill University" 
+           class="img-fluid" 
+           style="max-height: 120px; width: auto;">
     </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
+    <div class="col-md-4 col-sm-6">
+      <img src="{{ site.url }}{{ site.baseurl }}/images/logopic/MILA.png" 
+           alt="Mila - Quebec AI Institute" 
+           class="img-fluid" 
+           style="max-height: 120px; width: auto;">
+    </div>
+  </div>
 </div>
+<!-- 
+The Atlas Analytics Lab conducts research across computer vision, deep learning, optimization, and natural language processing, with a strong application focus in digital and computational pathology. -->
 
-
-### Research
+# **Atlas Analytics Lab**
+---
 Our lab primarily develops new deep learning and computer vision methods, with computational pathology serving as a key domain for grounding, validation, and downstream impact. Our research focuses on:
   - **Deep Learning**: Representation Learning and Engineering, Efficient Training, Optimization
   - **Computer Vision**: Self-Supervised Learning (SSL), Hardware-Aware Architecture Design

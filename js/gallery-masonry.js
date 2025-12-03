@@ -106,8 +106,3 @@
     initMasonry();
   }
 })();
-
-  } else {
-    initMasonry();
-  }
-})();

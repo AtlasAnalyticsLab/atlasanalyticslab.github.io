@@ -67,6 +67,12 @@ layout: default
     padding-left: 0 !important;
     padding-right: 0 !important;
   }
+  
+  /* Add bottom spacing to prevent footer overlap */
+  .gallery-page {
+    padding-bottom: 3rem;
+    min-height: calc(100vh - 200px);
+  }
 </style>
 <div id="galleryid" class="col-sm-12 gallery-page">
   {{ content }}
