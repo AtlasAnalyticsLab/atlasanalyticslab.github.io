@@ -1,10 +1,7 @@
 {%- comment -%}
-  Publication card partial:
-  - Displays a thumbnail column (defaults to the lab logo when no list_image is provided).
-  - Renders venue metadata and resource links pulled from _data/publications.yml.
+  Publication list entry rendered in a simple two-column layout (image + text).
 {%- endcomment -%}
 {% assign entry = include.entry | default: empty %}
-{% assign include_year = include.include_year | default: false %}
 {% assign item_id = entry.id | default: entry.title | slugify %}
 
 {% assign list_image = entry.list_image %}
@@ -16,97 +13,56 @@
   {% assign list_image = 'images/logopic/group_logo_medium.png' %}
 {% endif %}
 
-{% assign meta_parts = '' | split: '' %}
+{% comment %}
+  List of possible venue fields in order of preference.
+{%- endcomment -%}
 {% assign venue = entry.journal | default: entry.booktitle | default: entry.publisher | default: entry.school %}
-{% if venue %}
-  {% assign meta_parts = meta_parts | push: venue %}
-{% endif %}
-{% if entry.series %}
-  {% assign meta_parts = meta_parts | push: entry.series %}
-{% endif %}
-{% assign volume_part = '' %}
-{% if entry.volume %}
-  {% assign volume_part = 'Vol. ' | append: entry.volume %}
-{% endif %}
-{% if entry.number %}
-  {% assign number_part = 'No. ' | append: entry.number %}
-  {% if volume_part %}
-    {% assign volume_part = volume_part | append: ', ' | append: number_part %}
-  {% else %}
-    {% assign volume_part = number_part %}
-  {% endif %}
-{% endif %}
-{% if volume_part %}
-  {% assign meta_parts = meta_parts | push: volume_part %}
-{% endif %}
-{% if entry.pages %}
-  {% assign meta_parts = meta_parts | push: 'pp. ' | append: entry.pages %}
-{% endif %}
-{% if entry.month %}
-  {% assign meta_parts = meta_parts | push: entry.month %}
-{% endif %}
-{% if include_year and entry.year %}
-  {% assign meta_parts = meta_parts | push: entry.year %}
-{% endif %}
-{% capture meta_string %}{{ meta_parts | join: ' · ' }}{% endcapture %}
-{% assign meta_string = meta_string | strip %}
+{% assign link_count = 0 %}
+{% if entry.url %}{% assign link_count = link_count | plus: 1 %}{% endif %}
+{% if entry.arxiv %}{% assign link_count = link_count | plus: 1 %}{% endif %}
+{% if entry.github %}{% assign link_count = link_count | plus: 1 %}{% endif %}
+{% if entry.doi %}{% assign link_count = link_count | plus: 1 %}{% endif %}
+{% if entry.video %}{% assign link_count = link_count | plus: 1 %}{% endif %}
+{% if entry.poster %}{% assign link_count = link_count | plus: 1 %}{% endif %}
 
-<li class="publication-item" id="{{ item_id }}">
-  <div class="publication-card publication-card--with-media">
-    <div class="publication-card__media">
+<div class="publication-item" id="{{ item_id }}">
+  <div class="publication-entry">
+    <div class="publication-entry__image">
       <img src="{{ list_image | relative_url }}" alt="Illustration for {{ entry.title | escape }}" loading="lazy">
     </div>
-    <div class="publication-card__body">
-      <div class="publication-title">{{ entry.title }}</div>
+    <div class="publication-entry__details">
+      <p class="publication-entry__title"><strong>{{ entry.title }}</strong></p>
       {% if entry.authors %}
-        <div class="publication-authors">{{ entry.authors }}</div>
+        <p class="publication-entry__authors">{{ entry.authors }}</p>
       {% endif %}
-      {% if meta_string != '' %}
-        <div class="publication-meta">{{ meta_string }}</div>
+      {% if venue %}
+        <p class="publication-entry__venue"><em>{{ venue }}</em></p>
       {% endif %}
       {% if entry.note %}
-        <div class="publication-note">{{ entry.note }}</div>
+        <p class="publication-entry__note">{{ entry.note }}</p>
       {% endif %}
-      <div class="publication-links">
-        {% assign link_count = 0 %}
-        {%- comment -%}
-          Publication links in consistent order:
-          1. Link (project/paper website)
-          2. arXiv
-          3. GitHub
-          4. DOI
-          5. PDF
-          6. Video
-          7. Poster
-        {%- endcomment -%}
-        {% if entry.url %}
-          {% assign link_count = link_count | plus: 1 %}
-          <a class="pub-link" href="{{ entry.url }}">Link</a>
-        {% endif %}
-        {% if entry.arxiv %}
-          {% assign link_count = link_count | plus: 1 %}
-          <a class="pub-link" href="https://arxiv.org/abs/{{ entry.arxiv }}">arXiv</a>
-        {% endif %}
-        {% if entry.github %}
-          {% assign link_count = link_count | plus: 1 %}
-          <a class="pub-link" href="{{ entry.github }}">GitHub</a>
-        {% endif %}
-        {% if entry.doi %}
-          {% assign link_count = link_count | plus: 1 %}
-          <a class="pub-link" href="https://doi.org/{{ entry.doi }}">DOI</a>
-        {% endif %}
-        {% if entry.video %}
-          {% assign link_count = link_count | plus: 1 %}
-          <a class="pub-link" href="{{ entry.video }}">Video</a>
-        {% endif %}
-        {% if entry.poster %}
-          {% assign link_count = link_count | plus: 1 %}
-          <a class="pub-link" href="{{ entry.poster }}">Poster</a>
-        {% endif %}
-        {% if link_count == 0 %}
-          <span class="pub-link placeholder">Links coming soon</span>
-        {% endif %}
-      </div>
+      {% if link_count > 0 %}
+        <p class="publication-entry__links">
+          {% if entry.url %}
+            <a href="{{ entry.url }}">[LINK]</a>
+          {% endif %}
+          {% if entry.arxiv %}
+            <a href="https://arxiv.org/abs/{{ entry.arxiv }}">[ARXIV]</a>
+          {% endif %}
+          {% if entry.github %}
+            <a href="{{ entry.github }}">[CODE]</a>
+          {% endif %}
+          {% if entry.doi %}
+            <a href="https://doi.org/{{ entry.doi }}">[DOI]</a>
+          {% endif %}
+          {% if entry.video %}
+            <a href="{{ entry.video }}">[VIDEO]</a>
+          {% endif %}
+          {% if entry.poster %}
+            <a href="{{ entry.poster }}">[POSTER]</a>
+          {% endif %}
+        </p>
+      {% endif %}
     </div>
   </div>
-</li>
+</div>
