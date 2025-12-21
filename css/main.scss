@@ -485,109 +485,108 @@ p.byline {
 }
 
 /* --------------------------------------------------------------------------
- * Publication cards
+ * Publication list
  * ----------------------------------------------------------------------- */
+.publication-list {
+  margin-top: 1.5rem;
+}
+
+.publication-year-heading {
+  font-size: 1.35rem;
+  font-weight: 600;
+  border-bottom: 1px solid var(--atlas-border-color);
+  padding-bottom: 0.35rem;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.publication-year-group {
+  display: flex;
+  flex-direction: column;
+}
+
 .publication-item {
-  margin-bottom: 1.75rem;
-}
-
-.publication-card {
-  display: flex;
-  flex-direction: row;
-  align-items: stretch;
-  gap: 1.25rem;
-  background-color: var(--atlas-surface-bg);
-  border: 1px solid var(--atlas-border-color);
-  border-radius: 0.9rem;
-  padding: 1.25rem;
-  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
-}
-
-.publication-card--with-media .publication-card__media {
-  flex: 0 0 30%;
-  max-width: 30%;
-  display: flex;
-  align-items: stretch;
-  align-self: stretch;
-  margin: -1.25rem 0 -1.25rem -1.25rem;
+  margin: 0;
   padding: 0;
-  border-radius: 0.9rem 0 0 0.9rem;
-  overflow: hidden;
 }
 
-.publication-card__media img {
-  display: block;
+.publication-entry {
+  display: flex;
+  gap: 1rem;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid var(--atlas-border-color);
+}
+
+.publication-entry:last-child {
+  border-bottom: none;
+}
+
+.publication-entry__image {
+  flex: 0 0 200px;
+  width: 200px;
+  height: 110px;
+}
+
+.publication-entry__image img {
   width: 100%;
   height: 100%;
-  border-radius: 0;
   object-fit: cover;
-  object-position: center top;
   margin: 0 !important;
-  padding: 0;
-  border: none;
+  border-radius: 6px;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.15);
 }
 
-.publication-card__body {
+.publication-entry__details {
   flex: 1 1 auto;
 }
 
-.publication-title {
-  font-weight: 700;
-  font-size: 1.05rem;
-  margin-bottom: 0.25rem;
+.publication-entry__details p {
+  margin: 0.1rem 0;
+  line-height: 1.35;
 }
 
-.publication-authors {
-  color: var(--atlas-muted-text);
-  margin-bottom: 0.35rem;
+.publication-entry__title {
+  margin-top: 0;
+  margin-bottom: 0.15rem;
 }
 
-.publication-meta,
-.publication-note {
-  margin-bottom: 0.35rem;
+.publication-entry__links {
+  margin-top: 0.25rem;
 }
 
-.publication-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  margin-top: 0.5rem;
-}
-
-.pub-link {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 0.85rem;
-  padding: 0.35rem 0.75rem;
-  border-radius: 999px;
-  border: 1px solid var(--atlas-border-color);
-  background-color: var(--atlas-body-bg);
+.publication-entry__links a {
   color: var(--atlas-link-color);
   text-decoration: none;
-  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+  margin-right: 0.5rem;
+  font-size: 0.9rem;
 }
 
-.pub-link:hover,
-.pub-link:focus {
-  background-color: var(--atlas-link-color);
-  color: #fff;
-  border-color: transparent;
+.publication-entry__links a:hover,
+.publication-entry__links a:focus {
+  text-decoration: underline;
 }
 
-.pub-link.placeholder {
-  color: var(--atlas-muted-text);
-  border-style: dashed;
-}
-
-@media (max-width: 767.98px) {
-  .publication-card {
+@media (max-width: 575.98px) {
+  .publication-entry {
     flex-direction: column;
   }
 
-  .publication-card--with-media .publication-card__media,
-  .publication-card__media {
-    max-width: 100%;
-    flex: 0 0 auto;
+  .publication-entry__image {
+    width: 100%;
+    height: auto;
   }
+
+  .publication-entry__image img {
+    height: auto;
+  }
+}
+
+/* Funding logos */
+.funding-logo {
+  width: 100%;
+  max-width: 240px;
+  height: auto;
+  margin: 0 auto 1.5rem;
+  display: block;
+  object-fit: contain;
 }

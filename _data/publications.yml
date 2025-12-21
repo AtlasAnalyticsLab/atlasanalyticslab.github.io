@@ -80,7 +80,7 @@
   year: 2025
   status: "published"
   type: "article"
-  journal: "Transactions on Machine Learning Research"
+  journal: "Transactions on Machine Learning Research (TMLR 2025)"
   issn: "2835-8856"
   url: "https://openreview.net/pdf?id=e1aXaIXblQ"
   arxiv: "2506.15976"
@@ -157,7 +157,7 @@
   year: 2025
   status: "published"
   type: "inproceedings"
-  booktitle: "Proceedings of the IEEE/CVF Conference on Computer Vision, Pattern Recognition (CVPR) 2025"
+  booktitle: "Proceedings of the IEEE/CVF Conference on Computer Vision, Pattern Recognition (CVPR 2025)"
   url: "https://openaccess.thecvf.com/content/CVPR2025/html/Zhang_2DMamba_Efficient_State_Space_Model_for_Image_Representation_with_Applications_CVPR_2025_paper.html"
   arxiv: "2412.00678"
   github: "https://github.com/AtlasAnalyticsLab/2DMamba"
@@ -227,7 +227,7 @@
   year: 2025
   status: "published"
   type: "inproceedings"
-  booktitle: "International Conference on Learning Representations (ICLR) 2025"
+  booktitle: "International Conference on Learning Representations (ICLR 2025)"
   url: "https://openreview.net/pdf?id=puTxuiK2qO"
   arxiv: "2405.16397"
   github: "https://github.com/AtlasAnalyticsLab/AdaFisher"
@@ -241,7 +241,7 @@
   year: 2024
   status: "published"
   type: "inproceedings"
-  booktitle: "Proceedings of the IEEE/CVF Conference on Computer Vision, Pattern Recognition (CVPR) 2024"
+  booktitle: "Proceedings of the IEEE/CVF Conference on Computer Vision, Pattern Recognition (CVPR 2024)"
   url: "https://openaccess.thecvf.com/content/CVPR2024W/CVMI/html/Nasiri-Sarvi_Vim4Path_Self-Supervised_Vision_Mamba_for_Histopathology_Images_CVPRW_2024_paper.html"
   arxiv: "2404.13222"
   github: "https://github.com/AtlasAnalyticsLab/Vim4Path"

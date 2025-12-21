@@ -46,31 +46,31 @@ We are grateful to the following organizations that generously fund our activiti
 <div class="row g-4 align-items-center justify-content-center my-5" markdown="0">
 
 <div class="col-12 col-sm-6 col-md-4 text-center">
-<img src="{{ site.url }}{{ site.baseurl }}/images/logopic/Concordia_University.png" class="img-fluid" style="max-width: 100%; width: 100%;">
+<img src="{{ site.url }}{{ site.baseurl }}/images/logopic/Concordia_University.png" class="img-fluid funding-logo">
 </div>
 
 <div class="col-12 col-sm-6 col-md-4 text-center">
-<img src="{{ site.url }}{{ site.baseurl }}/images/logopic/NSERC_CRSNG.png" class="img-fluid" style="max-width: 100%; width: 100%;">
+<img src="{{ site.url }}{{ site.baseurl }}/images/logopic/NSERC_CRSNG.png" class="img-fluid funding-logo">
 </div>
 
 <div class="col-12 col-sm-6 col-md-4 text-center">
-<img src="{{ site.url }}{{ site.baseurl }}/images/logopic/FRQNT.png" class="img-fluid" style="max-width: 100%; width: 100%;">
+<img src="{{ site.url }}{{ site.baseurl }}/images/logopic/FRQNT.png" class="img-fluid funding-logo">
 </div>
 
 <div class="col-12 col-sm-6 col-md-4 text-center">
-<img src="{{ site.url }}{{ site.baseurl }}/images/logopic/Amazon_Research_Awards.png" class="img-fluid" style="max-width: 100%; width: 100%;">
+<img src="{{ site.url }}{{ site.baseurl }}/images/logopic/Amazon_Research_Awards.png" class="img-fluid funding-logo">
 </div>
 
 <div class="col-12 col-sm-6 col-md-4 text-center">
-<img src="{{ site.url }}{{ site.baseurl }}/images/logopic/CFI.png" class="img-fluid" style="max-width: 100%; width: 100%;">
+<img src="{{ site.url }}{{ site.baseurl }}/images/logopic/CFI.png" class="img-fluid funding-logo">
 </div>
 
 <div class="col-12 col-sm-6 col-md-4 text-center">
-<img src="{{ site.url }}{{ site.baseurl }}/images/logopic/IRICoR.png" class="img-fluid" style="max-width: 100%; width: 100%;">
+<img src="{{ site.url }}{{ site.baseurl }}/images/logopic/IRICoR.png" class="img-fluid funding-logo">
 </div>
 
 <div class="col-12 col-sm-6 col-md-4 text-center">
-<img src="{{ site.url }}{{ site.baseurl }}/images/logopic/Digital_Research_Alliance.png" class="img-fluid" style="max-width: 100%; width: 100%;">
+<img src="{{ site.url }}{{ site.baseurl }}/images/logopic/Digital_Research_Alliance.png" class="img-fluid funding-logo">
 </div>
 
 </div>
