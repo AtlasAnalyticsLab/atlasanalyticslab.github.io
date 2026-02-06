@@ -115,6 +115,9 @@
 #     headline: '🎂 <strong>Happy Birthday</strong> to Omar Abdelwahed!'
 #==============================================================================
 
+- date: February 5, 2026
+  headline: "We've released **AtlasPatch**! Visit the project page [here](https://atlasanalyticslab.github.io/AtlasPatch/)."
+
 - date: November 27, 2025
   headline: "**We are hiring PhD students!** Join our lab for cutting-edge research in computational pathology. [See details](OPENINGS_LINK)"
 

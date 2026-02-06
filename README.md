@@ -211,6 +211,12 @@ This setting affects the entire site including header, footer, and content areas
 
 ---
 
+## Project Sites
+
+- **AtlasPatch:** https://atlasanalyticslab.github.io/AtlasPatch/ (linked from the header -> Projects dropdown)
+
+---
+
 ## Deployment
 
 The site automatically deploys via **GitHub Actions** when you push to the `main` branch.
@@ -388,4 +394,4 @@ Concordia University, Montreal, QC, Canada
 
 ---
 
-**Last Updated:** December 2, 2025
+**Last Updated:** February 6, 2026

@@ -2,7 +2,7 @@
 
 **Internal documentation for Atlas Analytics Lab website developers**
 
-**Last Updated:** December 2, 2025  
+**Last Updated:** February 6, 2026  
 **Repository:** https://github.com/AtlasAnalyticsLab/AtlasAnalyticsLab.github.io  
 **Status:** Actively maintained
 
@@ -714,8 +714,9 @@ headline: "Text with [link](OPENINGS_LINK)"
 ### Notes
 
 - All page content now uses `{{ site.url }}{{ site.baseurl }}/path` or `{{ site.baseurl }}/path` patterns
-- No hardcoded URLs exist in templates, includes, or page content (as of November 27, 2025)
-- Hardcoded URLs only in configuration files (`_config.yml`, `robots.txt`) and documentation
+- No hardcoded *internal* URLs exist in templates, includes, or page content (as of November 27, 2025)
+- External links (e.g., project websites) may use full `https://...` URLs as needed
+- Hardcoded URLs should otherwise be limited to configuration files (`_config.yml`, `robots.txt`) and documentation
 - Repository URL structure follows GitHub Pages naming conventions
 
 ---
