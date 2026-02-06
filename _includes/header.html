@@ -11,7 +11,7 @@
     - Persistent theme preference via localStorage
   
   Navigation Pages:
-    - Home, News, Team, Openings, Publications, Funding, Lab Life, Contact
+    - Home, News, Team, Openings, Publications, Projects, Funding, Lab Life, Contact
   
   Dependencies:
     - Bootstrap 5 navbar component
@@ -38,6 +38,20 @@
         <li class="nav-item"><a class="nav-link" href="{{ site.url }}{{ site.baseurl }}/team/">Team</a></li>
         <li class="nav-item"><a class="nav-link" href="{{ site.url }}{{ site.baseurl }}/openings">Openings</a></li>
         <li class="nav-item"><a class="nav-link" href="{{ site.url }}{{ site.baseurl }}/publications/">Publications</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle dropdown-toggle-no-caret" href="#" id="projectsDropdown" role="button"
+             data-bs-toggle="dropdown" aria-expanded="false">
+            Projects
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="projectsDropdown">
+            <li>
+              <a class="dropdown-item" href="https://atlasanalyticslab.github.io/AtlasPatch/" target="_blank"
+                 rel="noopener noreferrer">
+                AtlasPatch
+              </a>
+            </li>
+          </ul>
+        </li>
         <li class="nav-item"><a class="nav-link" href="{{ site.url }}{{ site.baseurl }}/funding/">Funding</a></li>
         <li class="nav-item"><a class="nav-link" href="{{ site.url }}{{ site.baseurl }}/gallery/">Lab Life</a></li>
         <li class="nav-item"><a class="nav-link" href="{{ site.url }}{{ site.baseurl }}/contact/">Contact</a></li>

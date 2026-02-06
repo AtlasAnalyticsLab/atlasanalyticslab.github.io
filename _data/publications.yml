@@ -38,6 +38,19 @@
 #     list_image: "images/pubpic/survey.jpg"
 #==============================================================================
 
+- id: "Alagha_arXiv2025_AtlasPatch"
+  title: "AtlasPatch: An Efficient and Scalable Tool for Whole Slide Image Preprocessing in Computational Pathology"
+  authors: "Ahmed Alagha, Christopher Leclerc, Yousef Kotp, Omar Abdelwahed, Calvin Moras, Peter Rentopoulos, Rose Rostami, Bich Ngoc Nguyen, Jumanah Baig, Abdelhakim Khellaf, Vincent Quoc-Huy Trinh, Rabeb Mizouni, Hadi Otrok, Jamal Bentahar, Mahdi S. Hosseini"
+  year: 2026
+  status: "under_review"
+  type: "article"
+  journal: "arxiv:2602.03998"
+  url: "https://atlasanalyticslab.github.io/AtlasPatch/"
+  arxiv: "2602.03998"
+  github: "https://github.com/AtlasAnalyticsLab/AtlasPatch"
+  list_image: "images/pubpic/atlaspatch.png"
+  highlight: 0
+
 - id: "He_IPMI2025_PathTTT"
   title: "PathTTT: Test-Time Training with Meta-auxiliary Learning for Pathology Image Classification"
   authors: "Haoyu He, Mahdi S. Hosseini, Yang Wang"
