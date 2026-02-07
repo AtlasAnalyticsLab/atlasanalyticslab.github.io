@@ -564,9 +564,9 @@ front matter...
    - **Impact:** Site-wide - all generated URLs depend on this
    - **Priority:** 🔴 CRITICAL
 
-2. **`robots.txt`** (line 76)
+2. **`robots.txt`** (line 1)
    ```
-   Sitemap: https://atlasanalyticslab.github.io/sitemap.xml
+   Sitemap: {{ site.url }}{{ site.baseurl }}/sitemap.xml
    ```
    - **Purpose:** Tells search engines where to find the sitemap
    - **Impact:** SEO - affects how search engines crawl the site
