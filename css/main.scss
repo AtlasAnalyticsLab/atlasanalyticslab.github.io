@@ -100,7 +100,6 @@ p.byline {
   background-color: var(--atlas-navbar-bg);
   backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--atlas-border-color);
-  min-height: var(--atlas-nav-height);
   transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
@@ -125,8 +124,33 @@ p.byline {
   color: var(--atlas-link-color);
 }
 
-.navbar .dropdown-toggle-no-caret::after {
-  display: none;
+.navbar,
+.navbar .container-fluid,
+.navbar .navbar-collapse,
+.navbar .navbar-nav,
+.navbar .dropdown {
+  overflow: visible;
+}
+
+.navbar .projects-dropdown-toggle {
+  background: transparent;
+  border: 0;
+  padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+}
+
+.navbar .dropdown-menu {
+  z-index: 2000;
+}
+
+.navbar .dropdown-item.project-link-atlaspatch {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: 700;
+  color: #5b5bff;
+}
+
+.navbar .dropdown-item.project-link-atlaspatch:hover,
+.navbar .dropdown-item.project-link-atlaspatch:focus {
+  color: #5b5bff;
 }
 
 .navbar .navbar-toggler {

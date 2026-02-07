@@ -40,20 +40,14 @@
     }
 
     const measuredHeight = Math.round(navbar.getBoundingClientRect().height);
-    const collapseExpanded = navCollapse && navCollapse.classList.contains('show');
-    // Treat the collapse as expanded while Bootstrap is mid-transition to avoid measuring intermediate heights.
-    const isTransitioning = navCollapse && navCollapse.classList.contains('collapsing');
-    const treatAsExpanded = collapseExpanded || isTransitioning;
+    const collapseVisible =
+      navCollapse && (navCollapse.classList.contains('show') || navCollapse.classList.contains('collapsing'));
 
-    if (options.forceBase && !treatAsExpanded && measuredHeight > 0) {
-      baseNavHeight = measuredHeight;
-    } else if (treatAsExpanded && baseNavHeight === null && measuredHeight > 0) {
+    if ((options.forceBase || !collapseVisible) && measuredHeight > 0) {
       baseNavHeight = measuredHeight;
     }
 
-    const targetHeight = treatAsExpanded
-      ? Math.max(measuredHeight, baseNavHeight || measuredHeight)
-      : baseNavHeight || measuredHeight;
+    const targetHeight = baseNavHeight || measuredHeight;
 
     if (targetHeight > 0) {
       html.style.setProperty('--atlas-nav-height', `${targetHeight}px`);

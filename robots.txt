@@ -1,3 +1,7 @@
+---
+layout: null
+permalink: /robots.txt
+---
 # robots.txt - Crawler Access Control
 #
 # Purpose:
@@ -60,17 +64,18 @@ Crawl-delay: 10
 Disallow: /images/
 Disallow: /assets/
 Disallow: /_site/
-Disallow: /css/
-Disallow: /js/
 
 # Allow access to main pages
 Allow: /$
+Allow: /allnews
+Allow: /allnews.html
 Allow: /team
 Allow: /publications
 Allow: /contact
 Allow: /funding
 Allow: /gallery
 Allow: /openings
+Allow: /sitemap.xml
 
 # Sitemap location (helps good crawlers index efficiently)
-Sitemap: https://atlasanalyticslab.github.io/sitemap.xml
+Sitemap: {{ site.url }}{{ site.baseurl }}/sitemap.xml
