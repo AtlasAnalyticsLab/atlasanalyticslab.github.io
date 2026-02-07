@@ -13,18 +13,39 @@ permalink: /robots.txt
 #   - Malicious crawlers may ignore this file
 #   - For GitHub Pages, this provides basic protection
 
-# Allow major search engines with rate limiting
+# Allow major search engines.
+# Note: Googlebot ignores Crawl-delay directives, so we omit it to avoid Search Console warnings.
 User-agent: Googlebot
-Crawl-delay: 10
-Allow: /
+Disallow: /images/
+Disallow: /assets/
+Disallow: /_site/
+Disallow: /bin/
+Disallow: /CNAME
+Disallow: /README.md
+Disallow: /DEVELOPMENT.md
+Disallow: /.htaccess
 
 User-agent: Bingbot
 Crawl-delay: 10
-Allow: /
+Disallow: /images/
+Disallow: /assets/
+Disallow: /_site/
+Disallow: /bin/
+Disallow: /CNAME
+Disallow: /README.md
+Disallow: /DEVELOPMENT.md
+Disallow: /.htaccess
 
 User-agent: Slurp
 Crawl-delay: 10
-Allow: /
+Disallow: /images/
+Disallow: /assets/
+Disallow: /_site/
+Disallow: /bin/
+Disallow: /CNAME
+Disallow: /README.md
+Disallow: /DEVELOPMENT.md
+Disallow: /.htaccess
 
 # Block aggressive/problematic crawlers
 User-agent: MJ12bot
@@ -64,18 +85,14 @@ Crawl-delay: 10
 Disallow: /images/
 Disallow: /assets/
 Disallow: /_site/
+Disallow: /bin/
+Disallow: /CNAME
+Disallow: /README.md
+Disallow: /DEVELOPMENT.md
+Disallow: /.htaccess
 
-# Allow access to main pages
-Allow: /$
-Allow: /allnews
-Allow: /allnews.html
-Allow: /team
-Allow: /publications
-Allow: /contact
-Allow: /funding
-Allow: /gallery
-Allow: /openings
-Allow: /sitemap.xml
+# Allow access to main pages (everything else is allowed by default)
+Allow: /
 
 # Sitemap location (helps good crawlers index efficiently)
 Sitemap: {{ site.url }}{{ site.baseurl }}/sitemap.xml
