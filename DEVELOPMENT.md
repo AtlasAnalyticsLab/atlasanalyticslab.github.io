@@ -614,7 +614,7 @@ If you need to change the website URL:
 
 #### Step 1: Update Critical Configuration
 - [ ] Update `_config.yml` → `url:` field
-- [ ] Update `robots.txt` → `Sitemap:` line
+- [ ] Verify `robots.txt` → `Sitemap:` line (generated from `{{ site.url }}{{ site.baseurl }}`)
 - [ ] Update or remove `CNAME` file if using custom domain
 
 #### Step 2: Test Locally
