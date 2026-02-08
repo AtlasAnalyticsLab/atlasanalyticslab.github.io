@@ -2,6 +2,7 @@
 title: "Lab Life"
 layout: gallerylay
 excerpt: "Atlas Analytics Lab at Concordia University."
+sitemap: false
 permalink: /gallery/
 ---
 <!--

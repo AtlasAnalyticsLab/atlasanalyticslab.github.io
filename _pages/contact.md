@@ -2,6 +2,7 @@
 title: "Atlas Analytics Lab - Contact"
 layout: textlay
 excerpt: "Ways to reach the Atlas Analytics Lab."
+sitemap: false
 permalink: /contact/
 ---
 <!--

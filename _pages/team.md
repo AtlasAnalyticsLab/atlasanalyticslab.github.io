@@ -2,6 +2,7 @@
 title: "Atlas Analytics Lab - Team"
 layout: team
 excerpt: "Team members"
+sitemap: false
 permalink: /team/
 ---
 <!--

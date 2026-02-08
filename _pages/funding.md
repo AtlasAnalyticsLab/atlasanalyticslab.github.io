@@ -2,6 +2,7 @@
 title: "Atlas Analytics Lab - Funding"
 layout: textlay
 excerpt: "Atlas Analytics Lab -- Funding."
+sitemap: false
 permalink: /funding/
 ---
 <!--

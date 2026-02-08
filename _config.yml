@@ -38,6 +38,18 @@ plugins:
   - jekyll-scholar
   - jekyll-sitemap
 
+# Exclude non-page files from sitemap
+defaults:
+  - scope:
+      path: "assets"
+    values:
+      sitemap: false
+
+  - scope:
+      path: "googlecf337ccf1dc755f1.html"
+    values:
+      sitemap: false
+
 sass:
   sass_dir: _sass
 

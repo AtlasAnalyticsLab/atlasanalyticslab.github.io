@@ -2,6 +2,7 @@
 title: "Atlas Analytics Lab - Publications"
 layout: gridlay
 excerpt: "Atlas Analytics Lab -- Publications."
+sitemap: false
 permalink: /publications/
 ---
 <!--
