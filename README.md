@@ -328,7 +328,7 @@ bundle install
 
 ## Security Features
 
-- ✅ **Crawler Protection:** `robots.txt` controls search engine access
+- ✅ **Crawler Protection:** `robots.txt` allows major search engines and blocks known heavy scraper bots
 - ✅ **Custom 404 Page:** User-friendly error handling with navigation
 - ✅ **DDoS Protection:** GitHub Pages + Cloudflare CDN
 - ✅ **Security Headers:** Content security and XSS protection

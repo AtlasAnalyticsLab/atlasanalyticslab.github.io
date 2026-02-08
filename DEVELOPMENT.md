@@ -570,6 +570,7 @@ front matter...
    ```
    - **Purpose:** Tells search engines where to find the sitemap
    - **Impact:** SEO - affects how search engines crawl the site
+   - **Note:** `/sitemap.xml` is generated automatically by the `jekyll-sitemap` plugin (configured in `_config.yml`). Do not maintain a manual `sitemap.xml` file.
    - **Priority:** 🔴 CRITICAL
 
 3. **`CNAME`** (line 19)
@@ -615,6 +616,7 @@ If you need to change the website URL:
 #### Step 1: Update Critical Configuration
 - [ ] Update `_config.yml` → `url:` field
 - [ ] Verify `robots.txt` → `Sitemap:` line (generated from `{{ site.url }}{{ site.baseurl }}`)
+- [ ] Verify `/sitemap.xml` is generated (jekyll-sitemap) and includes key pages
 - [ ] Update or remove `CNAME` file if using custom domain
 
 #### Step 2: Test Locally
@@ -768,9 +770,10 @@ headline: "Text with [link](OPENINGS_LINK)"
 **Security & Protection:**
 - ✅ Enhanced 404 page with navigation buttons and Bootstrap icons
 - ✅ Comprehensive `robots.txt` with crawler access control
-  - Allows: Googlebot, Bingbot, Slurp with 10-second crawl delay
-  - Blocks: MJ12bot, AhrefsBot, SemrushBot, DotBot, PetalBot, DataForSeoBot
-  - Restricts: `/images/`, `/assets/`, `/css/`, `/js/` directories
+  - Allows: major search engines (Googlebot, Bingbot, Slurp, DuckDuckBot, etc.)
+  - Blocks: known heavy scraper / SEO bots (AhrefsBot, SemrushBot, MJ12bot, DotBot, PetalBot, DataForSeoBot)
+  - Avoids `Crawl-delay` (ignored by Googlebot and may trigger Search Console warnings)
+  - Restricts: internal build artifacts only (`/_site/`, `/bin/`)
 - ✅ Apache security configuration (`.htaccess`)
   - Directory browsing disabled
   - Security headers (X-Frame-Options, X-XSS-Protection, etc.)
@@ -968,7 +971,7 @@ headline: "Text with [link](OPENINGS_LINK)"
    - Test theme compatibility
 
 3. **Security Review:**
-   - Review `robots.txt` blocked crawlers
+   - Review `robots.txt` blocked scraper list (and confirm sitemap URL)
    - Update `.htaccess` security headers
    - Check GitHub Pages security settings
 
