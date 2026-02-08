@@ -2,7 +2,6 @@
 title: "News"
 layout: textlay
 excerpt: "Atlas Analytics Lab at Concordia University."
-sitemap: false
 permalink: /allnews.html
 ---
 <!--

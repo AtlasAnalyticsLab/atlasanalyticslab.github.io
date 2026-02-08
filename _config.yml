@@ -34,6 +34,10 @@ include:
   - _pages
   - robots.txt
 
+plugins:
+  - jekyll-scholar
+  - jekyll-sitemap
+
 sass:
   sass_dir: _sass
 

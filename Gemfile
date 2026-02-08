@@ -10,6 +10,7 @@
 # Key Dependencies:
 #   - jekyll 4.4.1+: Static site generator
 #   - jekyll-scholar: BibTeX bibliography support
+#   - jekyll-sitemap: Automatic sitemap.xml generation for search engines
 #   - webrick 1.9+: Ruby web server for local development
 #
 # Installation:
@@ -29,5 +30,6 @@ gem "jekyll", "4.4.1"
 # gem "github-pages", "~> 232", group: :jekyll_plugins
 
 gem "jekyll-scholar", group: :jekyll_plugins
+gem "jekyll-sitemap", group: :jekyll_plugins
 gem "webrick", "~> 1.9"
 gem "wdm", ">= 0.1.0" if Gem.win_platform?

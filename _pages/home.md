@@ -2,7 +2,6 @@
 title: "Atlas Analytics Lab - Home"
 layout: homelay
 excerpt: "Atlas Analytics Lab at Concordia University."
-sitemap: false
 permalink: /
 ---
 <!--
