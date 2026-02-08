@@ -570,6 +570,7 @@ front matter...
    ```
    - **Purpose:** Tells search engines where to find the sitemap
    - **Impact:** SEO - affects how search engines crawl the site
+   - **Note:** `/sitemap.xml` is generated automatically by the `jekyll-sitemap` plugin (configured in `_config.yml`). Do not maintain a manual `sitemap.xml` file.
    - **Priority:** 🔴 CRITICAL
 
 3. **`CNAME`** (line 19)
@@ -615,6 +616,7 @@ If you need to change the website URL:
 #### Step 1: Update Critical Configuration
 - [ ] Update `_config.yml` → `url:` field
 - [ ] Verify `robots.txt` → `Sitemap:` line (generated from `{{ site.url }}{{ site.baseurl }}`)
+- [ ] Verify `/sitemap.xml` is generated (jekyll-sitemap) and includes key pages
 - [ ] Update or remove `CNAME` file if using custom domain
 
 #### Step 2: Test Locally
