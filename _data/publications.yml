@@ -64,6 +64,33 @@
   list_image: "images/pubpic/atlaspatch.png"
   highlight: 0
 
+- id: "Yang_arXiv2025_ADPv2"
+  title: "ADPv2: A Hierarchical Histological Tissue Type-Annotated Dataset for Potential Biomarker Discovery of Colorectal Disease"
+  authors: "Zhiyuan Yang, Kai Li, Sophia Ghamoshi Ramandi, Patricia Brassard, Hakim Khellaf, Vincent Quoc-Huy Trinh, Jennifer Zhang, Lina Chen, Corwyn Rowsell, Sonal Varma, Konstantinos N. Plataniotis, Mahdi S. Hosseini"
+  year: 2025
+  status: "published"
+  type: "article"
+  journal: "Journal of Pathology Informatics"
+  pages: "100537"
+  url: "https://zenodo.org/records/15307021"
+  doi: "10.1016/j.jpi.2025.100537"
+  arxiv: "2507.05656"
+  list_image: "images/pubpic/adpv2d.png"
+  highlight: 0
+
+- id: "Sharma_arXiv2025_EfficientPromptsVLMs"
+  title: "Investigating Zero-Shot Diagnostic Pathology in Vision-Language Models with Efficient Prompt Design"
+  authors: "Vineet Sharma, Ahmed Alagha, Hamza Khellaf, Vincent Quoc-Huy Trinh, Mahdi S. Hosseini"
+  year: 2025
+  status: "published"
+  type: "inproceedings"
+  booktitle: "6th International Conference on Deep Learning Theory and Applications (DeLTA 2025)"
+  url: "https://link.springer.com/chapter/10.1007/978-3-032-04339-9_17"
+  arxiv: "2505.00134"
+  doi: "10.1007/978-3-032-04339-9_17"
+  list_image: "images/pubpic/efficient_prompts.png"
+  highlight: 0
+  
 - id: "He_IPMI2025_PathTTT"
   title: "PathTTT: Test-Time Training with Meta-auxiliary Learning for Pathology Image Classification"
   authors: "Haoyu He, Mahdi S. Hosseini, Yang Wang"
@@ -74,18 +101,6 @@
   url: "https://link.springer.com/chapter/10.1007/978-3-031-96628-6_3"
   doi: "10.1007/978-3-031-96628-6_3"
   list_image: "images/pubpic/pathttt.png"
-  highlight: 0
-
-- id: "Yang_arXiv2025_ADPv2"
-  title: "ADPv2: A Hierarchical Histological Tissue Type-Annotated Dataset for Potential Biomarker Discovery of Colorectal Disease"
-  authors: "Zhiyuan Yang, Kai Li, Sophia Ghamoshi Ramandi, Patricia Brassard, Hakim Khellaf, Vincent Quoc-Huy Trinh, Jennifer Zhang, Lina Chen, Corwyn Rowsell, Sonal Varma, Konstantinos N. Plataniotis, Mahdi S. Hosseini"
-  year: 2025
-  status: "under_review"
-  type: "article"
-  journal: "arxiv:2507.05656"
-  url: "https://zenodo.org/records/15307021"
-  arxiv: "2507.05656"
-  list_image: "images/pubpic/adpv2d.png"
   highlight: 0
 
 - id: "Nasiri_arXiv2025_SPARC"
@@ -112,19 +127,6 @@
   arxiv: "2506.15976"
   github: "https://github.com/cvlab-stonybrook/LBMamba"
   list_image: "images/pubpic/lbmamba.png"
-  highlight: 0
-
-- id: "Sharma_arXiv2025_EfficientPromptsVLMs"
-  title: "Investigating Zero-Shot Diagnostic Pathology in Vision-Language Models with Efficient Prompt Design"
-  authors: "Vineet Sharma, Ahmed Alagha, Hamza Khellaf, Vincent Quoc-Huy Trinh, Mahdi S. Hosseini"
-  year: 2025
-  status: "published"
-  type: "inproceedings"
-  booktitle: "6th International Conference on Deep Learning Theory and Applications (DeLTA 2025)"
-  url: "https://link.springer.com/chapter/10.1007/978-3-032-04339-9_17"
-  arxiv: "2505.00134"
-  doi: "10.1007/978-3-032-04339-9_17"
-  list_image: "images/pubpic/efficient_prompts.png"
   highlight: 0
 
 - id: "Rostami_arXiv2025_SegmentAnyCrack"
