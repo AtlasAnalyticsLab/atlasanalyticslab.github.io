@@ -38,6 +38,19 @@
 #     list_image: "images/pubpic/survey.jpg"
 #==============================================================================
 
+- id: "Ali_arXiv2026_MonoLoss"
+  title: "MonoLoss: A Training Objective for Interpretable Monosemantic Representations"
+  authors: "Ali Nasiri-Sarvi, Anh Tien Nguyen, Hassan Rivaz, Dimitris Samaras, Mahdi S. Hosseini"
+  year: 2026
+  status: "under_review"
+  type: "article"
+  journal: "arXiv:2602.12403"
+  url: "https://atlasanalyticslab.github.io/MonoLoss/"
+  arxiv: "2602.12403"
+  github: "https://github.com/AtlasAnalyticsLab/MonoLoss"
+  list_image: "images/pubpic/monoloss.png"
+  highlight: 0
+
 - id: "Alagha_arXiv2025_AtlasPatch"
   title: "AtlasPatch: An Efficient and Scalable Tool for Whole Slide Image Preprocessing in Computational Pathology"
   authors: "Ahmed Alagha, Christopher Leclerc, Yousef Kotp, Omar Abdelwahed, Calvin Moras, Peter Rentopoulos, Rose Rostami, Bich Ngoc Nguyen, Jumanah Baig, Abdelhakim Khellaf, Vincent Quoc-Huy Trinh, Rabeb Mizouni, Hadi Otrok, Jamal Bentahar, Mahdi S. Hosseini"
@@ -117,14 +130,17 @@
 - id: "Rostami_arXiv2025_SegmentAnyCrack"
   title: "Segment Any Crack: Deep Semantic Segmentation Adaptation for Crack Detection"
   authors: "Ghordsiyeh Rostami, Po-Han Chen, Mahdi S. Hosseini"
-  year: 2025
-  status: "accepted"
+  year: 2026
+  status: "published"
   type: "article"
-  journal: ""
-  url: 
+  journal: "Journal of Computing in Civil Engineering"
+  volume: "40"
+  issue: "3"
+  pages: "04026020"
+  url: "https://ascelibrary.org/doi/pdf/10.1061/JCCEE5.CPENG-7090"
   arxiv: "2504.14138"
-  github:
-  doi:
+  github: 
+  doi: "10.1061/JCCEE5.CPENG-7090"
   list_image: "images/pubpic/sac.png"
   highlight: 0
 
