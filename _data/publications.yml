@@ -194,33 +194,33 @@
   list_image: "images/pubpic/sac.png"
   highlight: 0
 
-- id: "Brassard_LabInvest2025_UNI_567"
-  title: "567 Cell-Centered UNI Feature Extraction Accurately Classifies Colon Polyps and Highlights Microenvironmental Remodeling"
-  authors: "Patricia Brassard, Abdelhakim Khellaf, Jia Lin Li, Maelle Batardiere, Yousef Kotp, Zhiyuan Yang, Alexandra Montpetit, Genevieve Soucy, Bich Nguyen, Mahdi S. Hosseini, Vincent Quoc-Huy Trinh"
-  year: 2025
-  status: "published"
-  type: "article"
-  journal: "Laboratory Investigation"
-  volume: "105"
-  issue: "3"
-  pages: "102798"
-  url: "https://www.laboratoryinvestigation.org/article/S0023-6837(24)02476-0/fulltext"
-  doi: "10.1016/j.labinv.2024.102798"
-  highlight: 0
+# - id: "Brassard_LabInvest2025_UNI_567"
+#   title: "567 Cell-Centered UNI Feature Extraction Accurately Classifies Colon Polyps and Highlights Microenvironmental Remodeling"
+#   authors: "Patricia Brassard, Abdelhakim Khellaf, Jia Lin Li, Maelle Batardiere, Yousef Kotp, Zhiyuan Yang, Alexandra Montpetit, Genevieve Soucy, Bich Nguyen, Mahdi S. Hosseini, Vincent Quoc-Huy Trinh"
+#   year: 2025
+#   status: "published"
+#   type: "article"
+#   journal: "Laboratory Investigation"
+#   volume: "105"
+#   issue: "3"
+#   pages: "102798"
+#   url: "https://www.laboratoryinvestigation.org/article/S0023-6837(24)02476-0/fulltext"
+#   doi: "10.1016/j.labinv.2024.102798"
+#   highlight: 0
 
-- id: "Li_LabInvest2025_IPMN_1606"
-  title: "1606 Cell-Centered Deep-Learning Feature Extraction Reveals Specific Stromal Features During Intraductal Papillary Mucinous Neoplasm Progression"
-  authors: "Jia Lin Li, Patricia Brassard, Zhiyuan Yang, Yousef Kotp, Alexandra Montpetit, Bich Nguyen, Genevieve Soucy, Mahdi S. Hosseini, Vincent Quoc-Huy Trinh, Abdelhakim Khellaf"
-  year: 2025
-  status: "published"
-  type: "article"
-  journal: "Laboratory Investigation"
-  volume: "105"
-  issue: "3"
-  pages: "103849"
-  url: "https://www.laboratoryinvestigation.org/article/S0023-6837(24)03527-X/fulltext"
-  doi: "10.1016/j.labinv.2024.103849"
-  highlight: 0
+# - id: "Li_LabInvest2025_IPMN_1606"
+#   title: "1606 Cell-Centered Deep-Learning Feature Extraction Reveals Specific Stromal Features During Intraductal Papillary Mucinous Neoplasm Progression"
+#   authors: "Jia Lin Li, Patricia Brassard, Zhiyuan Yang, Yousef Kotp, Alexandra Montpetit, Bich Nguyen, Genevieve Soucy, Mahdi S. Hosseini, Vincent Quoc-Huy Trinh, Abdelhakim Khellaf"
+#   year: 2025
+#   status: "published"
+#   type: "article"
+#   journal: "Laboratory Investigation"
+#   volume: "105"
+#   issue: "3"
+#   pages: "103849"
+#   url: "https://www.laboratoryinvestigation.org/article/S0023-6837(24)03527-X/fulltext"
+#   doi: "10.1016/j.labinv.2024.103849"
+#   highlight: 0
 
 - id: "Freiche_SPIE2025_US_LatentDiffusion"
   title: "Ultrasound Image Generation using Latent Diffusion Models"
