@@ -214,6 +214,7 @@ This setting affects the entire site including header, footer, and content areas
 ## Project Sites
 
 - **AtlasPatch:** https://atlasanalyticslab.github.io/AtlasPatch/ (linked from the header -> Projects dropdown)
+- **MOOZY:** https://atlasanalyticslab.github.io/MOOZY/ (linked from the header -> Projects dropdown)
 
 ---
 
