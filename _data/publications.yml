@@ -38,6 +38,52 @@
 #     list_image: "images/pubpic/survey.jpg"
 #==============================================================================
 
+- id: "Rostami_arXiv2026_FisherAdapTune"
+  title: "Fisher-Guided Progressive Parameter Selection for Adaptive Fine-Tuning"
+  authors: "Ghodsiyeh Rostami, Po-Han Chen, Mahdi S. Hosseini"
+  year: 2026
+  status: "under_review"
+  type: "article"
+  journal: "arXiv:2606.10196"
+  arxiv: "2606.10196"
+  github: "https://github.com/AtlasAnalyticsLab/FisherAdapTune"
+  highlight: 0
+
+- id: "Yang_arXiv2026_TokenEfficientVLM"
+  title: "Simple Token-Efficient Vision-Language Model for Case-level Pathology Synoptic Report Generation"
+  authors: "Zhiyuan Yang, Jiahao Cheng, Vincent Quoc-Huy Trinh, Mahdi S. Hosseini"
+  year: 2026
+  status: "under_review"
+  type: "article"
+  journal: "arXiv:2605.30716"
+  arxiv: "2605.30716"
+  highlight: 0
+
+- id: "Kotp_arXiv2026_MOOZY"
+  title: "MOOZY: A Patient-First Foundation Model for Computational Pathology"
+  authors: "Yousef Kotp, Vincent Quoc-Huy Trinh, Christopher Pal, Mahdi S. Hosseini"
+  year: 2026
+  status: "under_review"
+  type: "article"
+  journal: "arXiv:2603.27048"
+  arxiv: "2603.27048"
+  highlight: 0
+
+- id: "Notton_MedIA2026_BarlowTwins_Colon"
+  title: "Efficient Self-Supervised Barlow Twins from Limited Tissue Slide Cohorts for Colonic Pathology Diagnostics"
+  authors: "Charles Notton, Varun Sharma, Vincent Quoc-Huy Trinh, Liang Chen, Ming Xu, Sonal Varma, Mahdi S. Hosseini"
+  year: 2026
+  status: "published"
+  type: "article"
+  journal: "Medical Image Analysis"
+  volume: "111"
+  pages: "104004"
+  arxiv: "2411.05959"
+  github: "https://github.com/AtlasAnalyticsLab/PathBT"
+  doi: "10.1016/j.media.2026.104004"
+  list_image: "images/pubpic/barlow_colon.png"
+  highlight: 0
+
 - id: "Ali_arXiv2026_MonoLoss"
   title: "MonoLoss: A Training Objective for Interpretable Monosemantic Representations"
   authors: "Ali Nasiri-Sarvi, Anh Tien Nguyen, Hassan Rivaz, Dimitris Samaras, Mahdi S. Hosseini"
@@ -52,8 +98,8 @@
   highlight: 0
 
 - id: "Alagha_arXiv2025_AtlasPatch"
-  title: "AtlasPatch: An Efficient and Scalable Tool for Whole Slide Image Preprocessing in Computational Pathology"
-  authors: "Ahmed Alagha, Christopher Leclerc, Yousef Kotp, Omar Abdelwahed, Calvin Moras, Peter Rentopoulos, Rose Rostami, Bich Ngoc Nguyen, Jumanah Baig, Abdelhakim Khellaf, Vincent Quoc-Huy Trinh, Rabeb Mizouni, Hadi Otrok, Jamal Bentahar, Mahdi S. Hosseini"
+  title: "AtlasPatch: Efficient Tissue Detection and High-throughput Patch Extraction for Computational Pathology at Scale"
+  authors: "Ahmed Alagha, Christopher Leclerc, Yousef Kotp, Omar Metwally, Calvin Moras, Peter Rentopoulos, Ghodsiyeh Rostami, Bich Ngoc Nguyen, Jumanah Baig, Abdelhakim Khellaf, Vincent Quoc-Huy Trinh, Rabeb Mizouni, Hadi Otrok, Jamal Bentahar, Mahdi S. Hosseini"
   year: 2026
   status: "under_review"
   type: "article"
@@ -67,10 +113,11 @@
 - id: "Yang_arXiv2025_ADPv2"
   title: "ADPv2: A Hierarchical Histological Tissue Type-Annotated Dataset for Potential Biomarker Discovery of Colorectal Disease"
   authors: "Zhiyuan Yang, Kai Li, Sophia Ghamoshi Ramandi, Patricia Brassard, Hakim Khellaf, Vincent Quoc-Huy Trinh, Jennifer Zhang, Lina Chen, Corwyn Rowsell, Sonal Varma, Konstantinos N. Plataniotis, Mahdi S. Hosseini"
-  year: 2025
+  year: 2026
   status: "published"
   type: "article"
   journal: "Journal of Pathology Informatics"
+  volume: "20"
   pages: "100537"
   url: "https://zenodo.org/records/15307021"
   doi: "10.1016/j.jpi.2025.100537"
@@ -103,13 +150,14 @@
   list_image: "images/pubpic/pathttt.png"
   highlight: 0
 
-- id: "Nasiri_arXiv2025_SPARC"
-  title: "SPARC: Concept-Aligned Sparse Autoencoders for Cross-Model, Cross-Modal Interpretability"
+- id: "Nasiri_TMLR2026_SPARC"
+  title: "SPARC: Concept-Aligned Sparse Autoencoders for Cross-Model and Cross-Modal Interpretability"
   authors: "Ali Nasiri-Sarvi, Hassan Rivaz, Mahdi S. Hosseini"
-  year: 2025
-  status: "under_review"
+  year: 2026
+  status: "published"
   type: "article"
-  journal: "arXiv:2507.06265"
+  journal: "Transactions on Machine Learning Research (TMLR 2026)"
+  url: "https://openreview.net/forum?id=IJfvoc2GbZ"
   arxiv: "2507.06265"
   github: "https://github.com/AtlasAnalyticsLab/SPARC"
   list_image: "images/pubpic/SPARC.png"
@@ -146,27 +194,33 @@
   list_image: "images/pubpic/sac.png"
   highlight: 0
 
-# - id: "Li_LabInvest2025_IPMN_1606"
-#   title: "1606 Cell-Centered Deep-Learning Feature Extraction Reveals Specific Stromal Features During Intraductal Papillary Mucinous Neoplasm Progression"
-#   authors: "Jiaqi Li, Philippe Brassard, Zhun Yang, Youssef Kotp, Alex,re Montpetit, Bich Nguyen, Guillaume Soucy, Mahdi S. Hosseini"
-#   year: 2025
-#   status: "published"
-#   type: "article"
-#   journal: "Laboratory Investigation"
-#   url: "https://www.laboratoryinvestigation.org/article/S0023-6837(24)03527-X/fulltext"
-#   list_image: "images/pubpic/ipmn_1606.jpg"
-#   highlight: 0
+- id: "Brassard_LabInvest2025_UNI_567"
+  title: "567 Cell-Centered UNI Feature Extraction Accurately Classifies Colon Polyps and Highlights Microenvironmental Remodeling"
+  authors: "Patricia Brassard, Abdelhakim Khellaf, Jia Lin Li, Maelle Batardiere, Yousef Kotp, Zhiyuan Yang, Alexandra Montpetit, Genevieve Soucy, Bich Nguyen, Mahdi S. Hosseini, Vincent Quoc-Huy Trinh"
+  year: 2025
+  status: "published"
+  type: "article"
+  journal: "Laboratory Investigation"
+  volume: "105"
+  issue: "3"
+  pages: "102798"
+  url: "https://www.laboratoryinvestigation.org/article/S0023-6837(24)02476-0/fulltext"
+  doi: "10.1016/j.labinv.2024.102798"
+  highlight: 0
 
-# - id: "Brassard_LabInvest2025_UNI_567"
-#   title: "567 Cell-Centered UNI Feature Extraction Accurately Classifies Colon Polyps, Highlights Microenvironmental Remodeling"
-#   authors: "Philippe Brassard, Hamza Khellaf, Jiaqi Li, Maxime Batardière, Youssef Kotp, Zhun Yang, Alex,re Montpetit, Mahdi S. Hosseini"
-#   year: 2025
-#   status: "published"
-#   type: "article"
-#   journal: "Laboratory Investigation"
-#   url: "https://www.laboratoryinvestigation.org/article/S0023-6837(24)02476-0/fulltext"
-#   list_image: "images/pubpic/uni_567.jpg"
-#   highlight: 0
+- id: "Li_LabInvest2025_IPMN_1606"
+  title: "1606 Cell-Centered Deep-Learning Feature Extraction Reveals Specific Stromal Features During Intraductal Papillary Mucinous Neoplasm Progression"
+  authors: "Jia Lin Li, Patricia Brassard, Zhiyuan Yang, Yousef Kotp, Alexandra Montpetit, Bich Nguyen, Genevieve Soucy, Mahdi S. Hosseini, Vincent Quoc-Huy Trinh, Abdelhakim Khellaf"
+  year: 2025
+  status: "published"
+  type: "article"
+  journal: "Laboratory Investigation"
+  volume: "105"
+  issue: "3"
+  pages: "103849"
+  url: "https://www.laboratoryinvestigation.org/article/S0023-6837(24)03527-X/fulltext"
+  doi: "10.1016/j.labinv.2024.103849"
+  highlight: 0
 
 - id: "Freiche_SPIE2025_US_LatentDiffusion"
   title: "Ultrasound Image Generation using Latent Diffusion Models"
@@ -180,6 +234,16 @@
   github: "https://github.com/Toterino/US-image-generation"
   doi: "10.1117/12.3047788"
   list_image: "images/pubpic/ultrasound.png"
+  highlight: 0
+
+- id: "Rostami_ISARC2025_CrackRecognition"
+  title: "Deep Learning for Automated Crack Recognition: Insights, Challenges, and Future Directions"
+  authors: "Ghodsiyeh Rostami, Po-Han Chen, Mahdi S. Hosseini"
+  year: 2025
+  status: "published"
+  type: "inproceedings"
+  booktitle: "Proceedings of the International Symposium on Automation and Robotics in Construction (ISARC 2025)"
+  doi: "10.22260/ISARC2025/0160"
   highlight: 0
 
 - id: "Zhang_CVPR2025_2DMamba"
@@ -222,20 +286,6 @@
   doi: "10.1016/j.jpi.2023.100357"
   github: "https://github.com/AtlasAnalyticsLab/CPath_Survey"
   list_image: "images/pubpic/cpath_survey.jpg"
-  highlight: 0
-
-- id: "Notton_arXiv2024_BarlowTwins_Colon"
-  title: "Efficient Self-Supervised Barlow Twins from Limited Tissue Slide Cohorts for Colonic Pathology Diagnostics"
-  authors: "Charles Notton, Varun Sharma, Vincent Quoc-Huy Trinh, Liang Chen, Ming Xu, Sonal Varma, Mahdi S. Hosseini"
-  year: 2025
-  status: "published"
-  type: "article"
-  journal: "Medical Image Analysis"
-  url: "https://www.semanticscholar.org/paper/Efficient-Self-Supervised-Barlow-Twins-from-Limited-Notton-Sharma/a3e6ce451690f49e78819afa87e6fde6a55b44a0"
-  arxiv: "2411.05959"
-  github: "https://github.com/AtlasAnalyticsLab/PathBT"
-
-  list_image: "images/pubpic/barlow_colon.png"
   highlight: 0
 
 - id: "Nasiri_LNCS2025_BreastUS_VMamba"
