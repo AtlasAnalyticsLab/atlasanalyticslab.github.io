@@ -1,8 +1,8 @@
 #==============================================================================
-# Research Interns (_data/research_interns.yml)
+# Internships (_data/internships.yml)
 #
 # Purpose:
-#   Stores information about research interns in the lab.
+#   Stores information about lab internship members.
 #   Displayed on /team page using _includes/team-grid.html
 #
 # Required Fields:

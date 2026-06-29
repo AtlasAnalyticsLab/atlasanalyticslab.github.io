@@ -10,7 +10,7 @@ permalink: /team/
   
   Purpose:
     Displays all lab members organized by role with responsive cards.
-    Shows PI, postdocs, PhD students, Master's students, research interns, collaborators, and alumni.
+    Shows PI, postdocs, PhD students, Master's students, internships, collaborators, and alumni.
   
   Layout: team (extends default)
   
@@ -19,7 +19,7 @@ permalink: /team/
     - _data/postdocs.yml
     - _data/phd_students.yml
     - _data/masters.yml
-    - _data/research_interns.yml
+    - _data/internships.yml
     - _data/team_collaborators.yml
     - _data/alumni_members.yml
   
@@ -64,9 +64,9 @@ permalink: /team/
 {% include team-grid.html members=site.data.masters show_role=true %}
 </div>
 
-### Research Interns
+### Internships
 <div markdown="0">
-{% include team-grid.html members=site.data.research_interns show_role=true %}
+{% include team-grid.html members=site.data.internships show_role=true %}
 </div>
 
 ### Collaborators
