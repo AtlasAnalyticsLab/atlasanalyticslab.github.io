@@ -101,7 +101,6 @@
   status: "under_review"
   type: "article"
   journal: "arXiv:2602.12403"
-  url: "https://atlasanalyticslab.github.io/MonoLoss/"
   arxiv: "2602.12403"
   github: "https://github.com/AtlasAnalyticsLab/MonoLoss"
   list_image: "images/pubpic/monoloss.png"
@@ -117,6 +116,8 @@
   url: "https://atlasanalyticslab.github.io/AtlasPatch/"
   arxiv: "2602.03998"
   github: "https://github.com/AtlasAnalyticsLab/AtlasPatch"
+  huggingface: "https://huggingface.co/AtlasAnalyticsLab/AtlasPatch"
+  pypi: "https://pypi.org/project/atlas-patch/"
   list_image: "images/pubpic/atlaspatch.png"
   highlight: 0
 
@@ -132,6 +133,7 @@
   url: "https://zenodo.org/records/15307021"
   doi: "10.1016/j.jpi.2025.100537"
   arxiv: "2507.05656"
+  github: "https://github.com/AtlasAnalyticsLab/ADPv2"
   list_image: "images/pubpic/adpv2d.png"
   highlight: 0
 
@@ -182,7 +184,7 @@
   type: "article"
   journal: "Transactions on Machine Learning Research (TMLR 2025)"
   issn: "2835-8856"
-  url: "https://openreview.net/pdf?id=e1aXaIXblQ"
+  url: "https://openreview.net/forum?id=e1aXaIXblQ"
   arxiv: "2506.15976"
   github: "https://github.com/cvlab-stonybrook/LBMamba"
   doi: "10.48550/arXiv.2506.15976"
@@ -258,6 +260,7 @@
   url: "https://www.iaarc.org/publications/2025_proceedings_of_the_42nd_isarc_montreal_canada/deep_learning_for_automated_crack_recognition_insights_challenges_and_future_directions.html"
   doi: "10.22260/ISARC2025/0160"
   video: "https://www.youtube.com/watch?v=QzHvcjeCmUA"
+  list_image: "images/pubpic/CrackRecognition2025.png"
   highlight: 0
 
 - id: "Zhang_CVPR2025_2DMamba"
@@ -323,7 +326,7 @@
   status: "published"
   type: "inproceedings"
   booktitle: "International Conference on Learning Representations (ICLR 2025)"
-  url: "https://openreview.net/pdf?id=puTxuiK2qO"
+  url: "https://openreview.net/forum?id=puTxuiK2qO"
   arxiv: "2405.16397"
   github: "https://github.com/AtlasAnalyticsLab/AdaFisher"
   doi: "10.48550/arXiv.2405.16397"
