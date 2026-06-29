@@ -115,6 +115,18 @@
 #     headline: '🎂 <strong>Happy Birthday</strong> to Omar Abdelwahed!'
 #==============================================================================
 
+- date: June 17, 2026
+  headline: "**MOOZY** accepted in [European Conference on Computer Vision (ECCV 2026)](https://eccv.ecva.net/Conferences/2026)! [Project page](https://atlasanalyticslab.github.io/MOOZY/)."
+
+- date: April 30, 2026
+  headline: "**Simple Token-Efficient VLM** paper accepted in [International Conference on Deep Learning Theory and Applications (DeLTA 2026)](https://www.insticc.org/node/technicalprogram/DeLTA/2026)!"
+
+- date: March 20, 2026
+  headline: "**SPARC** accepted in [Transactions on Machine Learning Research (TMLR)](https://openreview.net/forum?id=IJfvoc2GbZ)!"
+
+- date: February 6, 2026
+  headline: "**Segment Any Crack** paper published in [Journal of Computing in Civil Engineering](https://ascelibrary.org/doi/10.1061/JCCEE5.CPENG-7090)!"
+
 - date: February 5, 2026
   headline: "We've released **AtlasPatch**! Visit the project page [here](https://atlasanalyticslab.github.io/AtlasPatch/)."
 

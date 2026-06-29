@@ -5,7 +5,7 @@
 #   Specifies Ruby gem dependencies for Jekyll site build.
 #
 # Ruby Version:
-#   3.4.7+ (latest stable as of October 18, 2025)
+#   3.4.7+; tested with Ruby 4.0.5
 #
 # Key Dependencies:
 #   - jekyll 4.4.1+: Static site generator
@@ -24,7 +24,7 @@
 
 source 'https://rubygems.org'
 
-ruby "3.4.7"
+ruby ">= 3.4.7", "< 5.0"
 
 gem "jekyll", "4.4.1"
 # gem "github-pages", "~> 232", group: :jekyll_plugins
