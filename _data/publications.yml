@@ -60,6 +60,7 @@
   type: "inproceedings"
   booktitle: "International Conference on Deep Learning Theory and Applications (DeLTA 2026)"
   arxiv: "2605.30716"
+  doi: "10.48550/arXiv.2605.30716"
   list_image: "images/pubpic/PathoVLM.png"
   highlight: 0
 
@@ -75,6 +76,7 @@
   github: "https://github.com/AtlasAnalyticsLab/MOOZY"
   huggingface: "https://huggingface.co/AtlasAnalyticsLab/MOOZY"
   pypi: "https://pypi.org/project/moozy/"
+  doi: "10.48550/arXiv.2603.27048"
   list_image: "images/pubpic/MOOZY.png"
   highlight: 0
 
@@ -171,6 +173,7 @@
   url: "https://openreview.net/forum?id=IJfvoc2GbZ"
   arxiv: "2507.06265"
   github: "https://github.com/AtlasAnalyticsLab/SPARC"
+  doi: "10.48550/arXiv.2507.06265"
   list_image: "images/pubpic/SPARC.png"
   highlight: 0
 
@@ -185,6 +188,7 @@
   url: "https://openreview.net/forum?id=e1aXaIXblQ"
   arxiv: "2506.15976"
   github: "https://github.com/cvlab-stonybrook/LBMamba"
+  doi: "10.48550/arXiv.2506.15976"
   list_image: "images/pubpic/lbmamba.png"
   highlight: 0
 
@@ -326,6 +330,7 @@
   url: "https://openreview.net/forum?id=puTxuiK2qO"
   arxiv: "2405.16397"
   github: "https://github.com/AtlasAnalyticsLab/AdaFisher"
+  doi: "10.48550/arXiv.2405.16397"
   poster: "https://iclr.cc/media/iclr-2025/Slides/28275_Uy3dOo0.pdf"
   list_image: "images/pubpic/adafisher.png"
   highlight: 0
