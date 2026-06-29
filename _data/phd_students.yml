@@ -57,16 +57,6 @@
   linkedin: "https://www.linkedin.com/in/ghodsiyeh-rostami/"
   google_scholar: "https://scholar.google.com/citations?user=p0wQZKwAAAAJ&hl=en"
 
-- name: Jiahao (Kevin) Cheng
-  info: PhD Student
-  duration: 2025 - Present
-  photo: jiahao_cheng.jpg
-  orcid: "https://orcid.org/0009-0005-2266-2691"
-  linkedin: "https://ca.linkedin.com/in/kevincheng1234/en"
-  google_scholar: "https://scholar.google.com/citations?hl=en&user=QzOrYGgAAAAJ"
-  github: "https://github.com/chengjiahao1234"
-  email: "jiahao.cheng@mail.concordia.ca"
-
 - name: Haoyu He
   photo: haoyu_he.jpg
   info: PhD Student
@@ -82,3 +72,13 @@
   email: "atinguyen@cs.stonybrook.edu"
   website: "https://anhtienng.github.io/"
   google_scholar: "https://scholar.google.com/citations?user=bddbZYUAAAAJ&hl=en"
+
+- name: Jiahao (Kevin) Cheng
+  info: PhD Student
+  duration: 2025 - Present
+  photo: jiahao_cheng.jpg
+  orcid: "https://orcid.org/0009-0005-2266-2691"
+  linkedin: "https://ca.linkedin.com/in/kevincheng1234/en"
+  google_scholar: "https://scholar.google.com/citations?hl=en&user=QzOrYGgAAAAJ"
+  github: "https://github.com/chengjiahao1234"
+  email: "jiahao.cheng@mail.concordia.ca"
