@@ -30,6 +30,13 @@
 #     google_scholar:
 #==============================================================================
 
+- name: Laya Rafiee Sevyeri
+  info: Postdoctoral Researcher
+  linkedin: "https://ca.linkedin.com/in/laya-rafiee"
+  google_scholar: "https://scholar.google.com/citations?hl=en&user=-hIQXcQAAAAJ"
+  github: "https://github.com/LayaaRS"
+  twitter: "https://x.com/LayaRafiee"
+
 - name: Ahmed Alagha
   photo: ahmed_alagha.jpg
   info: |

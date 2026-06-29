@@ -1,0 +1,43 @@
+#==============================================================================
+# Visiting Students and Interns (_data/visiting_students.yml)
+#
+# Purpose:
+#   Stores information about visiting students and research interns in the lab.
+#   Displayed on /team page using _includes/team-grid.html
+#
+# Required Fields:
+#   - name: Full name (required)
+#
+# Optional Fields:
+#   - photo: Filename in /images/teampic/ (default: bio-photo.jpg)
+#   - info: Role/title or home institution
+#   - duration: Time period (e.g., "2026 - Present")
+#   - email: Email address
+#   - website: Personal website URL
+#   - github: GitHub profile URL
+#   - linkedin: LinkedIn profile URL
+#   - google_scholar: Google Scholar profile URL
+#   - orcid: ORCID URL
+#
+# Template:
+#   - name:
+#     photo:
+#     info:
+#     duration:
+#     email:
+#     website:
+#     github:
+#     linkedin:
+#     google_scholar:
+#     orcid:
+#==============================================================================
+
+- name: Nathanaël Jacquier
+  info: Research Intern
+  duration: 2026 - Present
+  linkedin: "https://fr.linkedin.com/in/nathana%C3%ABl-jacquier-a37302298"
+
+- name: Bao Lugherini
+  info: Research Intern
+  duration: 2026 - Present
+  linkedin: "https://fr.linkedin.com/in/baolgr"
