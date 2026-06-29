@@ -32,11 +32,6 @@
 #     orcid:
 #==============================================================================
 
-- name: Tat Loai Dieu Lieu
-  info: Master's student
-  duration: 2026 - Present
-  linkedin: "https://ca.linkedin.com/in/tat-loai-dieu-lieu-08a6b2136"
-
 - name: Christopher Leclerc
   photo: christopher_leclerc.jpg
   info: Master's student
@@ -45,6 +40,11 @@
   github: "https://github.com/ChrisLeclerc"
   google_scholar: "https://scholar.google.com/citations?hl=en&user=FfHBTpQAAAAJ"
   email: "christopher.leclerc@mail.concordia.ca"
+
+- name: Tat Loai Dieu Lieu
+  info: Master's student
+  duration: 2026 - Present
+  linkedin: "https://ca.linkedin.com/in/tat-loai-dieu-lieu-08a6b2136"
 
 # - name: Omar Abdelwahed
 #   info: Master's student
