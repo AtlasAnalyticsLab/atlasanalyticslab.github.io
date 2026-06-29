@@ -1,8 +1,8 @@
 #==============================================================================
-# Visiting Students and Interns (_data/visiting_students.yml)
+# Research Interns (_data/research_interns.yml)
 #
 # Purpose:
-#   Stores information about visiting students and research interns in the lab.
+#   Stores information about research interns in the lab.
 #   Displayed on /team page using _includes/team-grid.html
 #
 # Required Fields:
