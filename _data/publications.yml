@@ -255,7 +255,9 @@
   status: "published"
   type: "inproceedings"
   booktitle: "Proceedings of the International Symposium on Automation and Robotics in Construction (ISARC 2025)"
+  url: "https://www.iaarc.org/publications/2025_proceedings_of_the_42nd_isarc_montreal_canada/deep_learning_for_automated_crack_recognition_insights_challenges_and_future_directions.html"
   doi: "10.22260/ISARC2025/0160"
+  video: "https://www.youtube.com/watch?v=QzHvcjeCmUA"
   highlight: 0
 
 - id: "Zhang_CVPR2025_2DMamba"
