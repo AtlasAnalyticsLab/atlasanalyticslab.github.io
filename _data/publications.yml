@@ -23,6 +23,8 @@
 #   - doi: Digital Object Identifier
 #   - url: Publication webpage
 #   - github: GitHub repository URL
+#   - huggingface: Hugging Face model/dataset/space URL
+#   - pypi: Python package URL
 #   - arxiv: arXiv ID (e.g., "2401.12345")
 #   - list_image: Thumbnail (path relative to root, e.g., "images/pubpic/fig.png")
 #   - highlight: 1 (featured) | 0 (regular)
@@ -53,9 +55,9 @@
   title: "Simple Token-Efficient Vision-Language Model for Case-level Pathology Synoptic Report Generation"
   authors: "Zhiyuan Yang, Jiahao Cheng, Vincent Quoc-Huy Trinh, Mahdi S. Hosseini"
   year: 2026
-  status: "under_review"
-  type: "article"
-  journal: "arXiv:2605.30716"
+  status: "published"
+  type: "inproceedings"
+  booktitle: "International Conference on Deep Learning Theory and Applications (DeLTA 2026)"
   arxiv: "2605.30716"
   highlight: 0
 
@@ -63,10 +65,15 @@
   title: "MOOZY: A Patient-First Foundation Model for Computational Pathology"
   authors: "Yousef Kotp, Vincent Quoc-Huy Trinh, Christopher Pal, Mahdi S. Hosseini"
   year: 2026
-  status: "under_review"
-  type: "article"
-  journal: "arXiv:2603.27048"
+  status: "published"
+  type: "inproceedings"
+  booktitle: "European Conference on Computer Vision (ECCV 2026)"
+  url: "https://atlasanalyticslab.github.io/MOOZY/"
   arxiv: "2603.27048"
+  github: "https://github.com/AtlasAnalyticsLab/MOOZY"
+  huggingface: "https://huggingface.co/AtlasAnalyticsLab/MOOZY"
+  pypi: "https://pypi.org/project/moozy/"
+  list_image: "images/pubpic/MOOZY.png"
   highlight: 0
 
 - id: "Notton_MedIA2026_BarlowTwins_Colon"

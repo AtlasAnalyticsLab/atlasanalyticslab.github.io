@@ -21,6 +21,8 @@
 {% if entry.url %}{% assign link_count = link_count | plus: 1 %}{% endif %}
 {% if entry.arxiv %}{% assign link_count = link_count | plus: 1 %}{% endif %}
 {% if entry.github %}{% assign link_count = link_count | plus: 1 %}{% endif %}
+{% if entry.huggingface %}{% assign link_count = link_count | plus: 1 %}{% endif %}
+{% if entry.pypi %}{% assign link_count = link_count | plus: 1 %}{% endif %}
 {% if entry.doi %}{% assign link_count = link_count | plus: 1 %}{% endif %}
 {% if entry.video %}{% assign link_count = link_count | plus: 1 %}{% endif %}
 {% if entry.poster %}{% assign link_count = link_count | plus: 1 %}{% endif %}
@@ -51,6 +53,12 @@
           {% endif %}
           {% if entry.github %}
             <a href="{{ entry.github }}">[CODE]</a>
+          {% endif %}
+          {% if entry.huggingface %}
+            <a href="{{ entry.huggingface }}">[HUGGINGFACE]</a>
+          {% endif %}
+          {% if entry.pypi %}
+            <a href="{{ entry.pypi }}">[PYPI]</a>
           {% endif %}
           {% if entry.doi %}
             <a href="https://doi.org/{{ entry.doi }}">[DOI]</a>
