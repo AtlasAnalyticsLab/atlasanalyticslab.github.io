@@ -142,15 +142,28 @@ p.byline {
   z-index: 2000;
 }
 
-.navbar .dropdown-item.project-link-featured {
+.navbar .dropdown-item.project-link-atlaspatch,
+.navbar .dropdown-item.project-link-moozy {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
   font-weight: 700;
+}
+
+.navbar .dropdown-item.project-link-atlaspatch {
   color: #5b5bff;
 }
 
-.navbar .dropdown-item.project-link-featured:hover,
-.navbar .dropdown-item.project-link-featured:focus {
+.navbar .dropdown-item.project-link-atlaspatch:hover,
+.navbar .dropdown-item.project-link-atlaspatch:focus {
   color: #5b5bff;
+}
+
+.navbar .dropdown-item.project-link-moozy {
+  color: var(--atlas-body-text);
+}
+
+.navbar .dropdown-item.project-link-moozy:hover,
+.navbar .dropdown-item.project-link-moozy:focus {
+  color: var(--atlas-body-text);
 }
 
 .navbar .navbar-toggler {
