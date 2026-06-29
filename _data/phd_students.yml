@@ -62,7 +62,7 @@
   info: PhD Student
   email: "h_haoy@live.concordia.ca"
   google_scholar: "https://scholar.google.com/citations?user=2kGaTpEAAAAJ&hl=en"
-  linkedin: "www.linkedin.com/in/haoyu-he-7a2406242"
+  linkedin: "https://www.linkedin.com/in/haoyu-he-7a2406242"
 
 - name: Anh Nguyen
   photo: anh_nguyen.jpg
@@ -71,7 +71,10 @@
     Co-supervised with Dr. Dimitris Samaras
   email: "atinguyen@cs.stonybrook.edu"
   website: "https://anhtienng.github.io/"
+  github: "https://github.com/anhtienng"
+  linkedin: "https://www.linkedin.com/in/tien-anh-nguyen-a3371016a"
   google_scholar: "https://scholar.google.com/citations?user=bddbZYUAAAAJ&hl=en"
+  twitter: "https://twitter.com/anhnguyen1526"
 
 - name: Jiahao (Kevin) Cheng
   info: PhD Student
