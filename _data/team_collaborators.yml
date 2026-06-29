@@ -57,10 +57,10 @@
   email: "s.dashti.k@gmail.com"
   linkedin: "https://www.linkedin.com/in/sajaddashti"
   github: "https://github.com/sdashti"
-  links:
-    - url: "https://openreview.net/profile?id=~Sajad_Dashti_Khavidaki1"
-      type: external
-      label: "OpenReview profile"
+  # links:
+  #   - url: "https://openreview.net/profile?id=~Sajad_Dashti_Khavidaki1"
+  #     type: external
+  #     label: "OpenReview profile"
 
 - name: Laya Hamehkhani
   photo: laya_hamehkhani.jpeg
