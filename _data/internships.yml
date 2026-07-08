@@ -1,0 +1,48 @@
+#==============================================================================
+# Internships (_data/internships.yml)
+#
+# Purpose:
+#   Stores information about lab internship members.
+#   Displayed on /team page using _includes/team-grid.html
+#
+# Required Fields:
+#   - name: Full name (required)
+#
+# Optional Fields:
+#   - photo: Filename in /images/teampic/ (default: bio-photo.jpg)
+#   - info: Role/title or home institution
+#   - duration: Time period (e.g., "2026 - Present")
+#   - email: Email address
+#   - website: Personal website URL
+#   - github: GitHub profile URL
+#   - linkedin: LinkedIn profile URL
+#   - google_scholar: Google Scholar profile URL
+#   - orcid: ORCID URL
+#
+# Template:
+#   - name:
+#     photo:
+#     info:
+#     duration:
+#     email:
+#     website:
+#     github:
+#     linkedin:
+#     google_scholar:
+#     orcid:
+#==============================================================================
+
+- name: Nathanaël Jacquier
+  photo: nathanael_jacquier.png
+  info: Research Intern
+  duration: 2026 - Present
+  linkedin: "https://fr.linkedin.com/in/nathana%C3%ABl-jacquier-a37302298"
+  email: "nathanael.jacquier@student-cs.fr"
+
+- name: Bao Lugherini
+  photo: bao_lugherini.jpeg
+  info: Research Intern
+  duration: 2026 - Present
+  linkedin: "https://fr.linkedin.com/in/baolgr"
+  github: "https://github.com/baolgr"
+  email: "bao.lugherini@student-cs.fr"

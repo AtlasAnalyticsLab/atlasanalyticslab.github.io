@@ -36,6 +36,13 @@
 #     info_current:
 #==============================================================================
 
+- name: Yousef Kotp
+  info_current: MSc Graduate, Computational Scientist Catalyst @ Sanofi
+  website: "https://yousefkotp.com/"
+  google_scholar: "https://scholar.google.com/citations?user=YMSkXbEAAAAJ"
+  linkedin: "https://www.linkedin.com/in/yousef-kotp/"
+  github: "https://github.com/yousefkotp"
+
 - name: Ali Nasiri-Sarvi
   info_current: MSc Graduate, Research Assistant @ Atlas Analytics Lab, Research Associate @ Huawei
   google_scholar: "https://scholar.google.com/citations?user=FzicxBkAAAAJ"
@@ -61,4 +68,3 @@
 - name: Denisha Thakkar
   info_current: MSc Graduate, ML Engineer @ CIBC
   linkedin: "https://ca.linkedin.com/in/denisha-thakkar"
-

@@ -102,6 +102,7 @@ Add new items to the **top** of the file. Supports Markdown formatting:
 - `_data/postdocs.yml` - Postdoctoral fellows
 - `_data/phd_students.yml` - PhD students
 - `_data/masters.yml` - Master's students
+- `_data/internships.yml` - Internship members
 - `_data/team_collaborators.yml` - External collaborators
 - `_data/alumni_members.yml` - Former members
 
