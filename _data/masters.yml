@@ -41,10 +41,13 @@
   google_scholar: "https://scholar.google.com/citations?hl=en&user=FfHBTpQAAAAJ"
   email: "christopher.leclerc@mail.concordia.ca"
 
-- name: Tat Loai Dieu Lieu
+- name: Dieu Lieu
+  photo: dieu_lieu.png
   info: Master's student
   duration: 2026 - Present
   linkedin: "https://ca.linkedin.com/in/tat-loai-dieu-lieu-08a6b2136"
+  github: "https://github.com/loaidieu"
+  email: "loaidieu@gmail.com"
 
 # - name: Omar Abdelwahed
 #   info: Master's student
