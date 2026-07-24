@@ -59,7 +59,10 @@
   status: "published"
   type: "inproceedings"
   booktitle: "International Conference on Deep Learning Theory and Applications (DeLTA 2026)"
+  url: "https://atlasanalyticslab.github.io/PathoSynVLM/"
   arxiv: "2605.30716"
+  github: "https://github.com/AtlasAnalyticsLab/PathoSynVLM"
+  huggingface: "https://huggingface.co/AtlasAnalyticsLab/PathoSynVLM"
   doi: "10.48550/arXiv.2605.30716"
   list_image: "images/pubpic/PathoVLM.png"
   highlight: 0
