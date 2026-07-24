@@ -36,6 +36,12 @@
 #     info_current:
 #==============================================================================
 
+- name: Omar Metwally
+  info_current: MSc Graduate, PhD Student @ Health-X Lab, Concordia University
+  website: "https://www.healthx-lab.ca/people.html"
+  linkedin: "https://ca.linkedin.com/in/omar-metwally-a012402b5"
+  github: "https://github.com/Omarmahmoud711"
+
 - name: Yousef Kotp
   info_current: MSc Graduate, Computational Scientist Catalyst @ Sanofi
   website: "https://yousefkotp.com/"
