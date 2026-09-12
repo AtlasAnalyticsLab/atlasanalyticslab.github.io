@@ -47,7 +47,6 @@
   status: "published"
   type: "inproceedings"
   booktitle: "British Machine Vision Conference (BMVC 2026)"
-  note: "Accepted for oral presentation"
   url: "https://atlasanalyticslab.github.io/GatedSRP/"
   arxiv: "2608.08374"
   github: "https://github.com/AtlasAnalyticsLab/GatedSRP"
