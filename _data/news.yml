@@ -115,6 +115,11 @@
 #     headline: '🎂 <strong>Happy Birthday</strong> to Omar Abdelwahed!'
 #==============================================================================
 
+# Date follows BMVC's presentation-format notification schedule, not a paper-specific email:
+# https://bmvc2026.bmva.org/dates/
+- date: August 21, 2026
+  headline: "**GatedSRP** accepted for **oral presentation** at [British Machine Vision Conference (BMVC 2026)](https://bmvc2026.bmva.org/)! [Project page](https://atlasanalyticslab.github.io/GatedSRP/)."
+
 - date: June 17, 2026
   headline: "**MOOZY** accepted in [European Conference on Computer Vision (ECCV 2026)](https://eccv.ecva.net/Conferences/2026)! [Project page](https://atlasanalyticslab.github.io/MOOZY/)."
 
