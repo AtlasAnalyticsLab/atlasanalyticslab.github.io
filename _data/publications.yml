@@ -40,6 +40,33 @@
 #     list_image: "images/pubpic/survey.jpg"
 #==============================================================================
 
+- id: "Yang_BMVC2026_GatedSRP"
+  title: "Gated Spatial Redundancy Projection for Pathology Transformer Attentions"
+  authors: "Zhiyuan Yang, Jiahao Cheng, Vincent Quoc-Huy Trinh, Mahdi S. Hosseini"
+  year: 2026
+  status: "published"
+  type: "inproceedings"
+  booktitle: "British Machine Vision Conference (BMVC 2026)"
+  note: "Accepted for oral presentation"
+  url: "https://atlasanalyticslab.github.io/GatedSRP/"
+  arxiv: "2608.08374"
+  github: "https://github.com/AtlasAnalyticsLab/GatedSRP"
+  doi: "10.48550/arXiv.2608.08374"
+  list_image: "images/pubpic/gatedsrp.png"
+  highlight: 0
+
+- id: "Jacquier_arXiv2026_BeyondHardBudget"
+  title: "Beyond the Hard Budget: Sparsity Regularizers for More Interpretable Top-k Sparse Autoencoders"
+  authors: "Nathanaël Jacquier, Maria Vakalopoulou, Mahdi S. Hosseini"
+  year: 2026
+  status: "under_review"
+  type: "article"
+  journal: "arXiv:2606.27321"
+  arxiv: "2606.27321"
+  doi: "10.48550/arXiv.2606.27321"
+  list_image: "images/pubpic/beyond_hard_budget.jpg"
+  highlight: 0
+
 - id: "Rostami_arXiv2026_FisherAdapTune"
   title: "Fisher-Guided Progressive Parameter Selection for Adaptive Fine-Tuning"
   authors: "Ghodsiyeh Rostami, Po-Han Chen, Mahdi S. Hosseini"
