@@ -37,11 +37,11 @@
       {% if entry.authors %}
         <p class="publication-entry__authors">{{ entry.authors }}</p>
       {% endif %}
-      {% if venue %}
-        <p class="publication-entry__venue"><em>{{ venue }}</em></p>
-      {% endif %}
-      {% if entry.note %}
-        <p class="publication-entry__note">{{ entry.note }}</p>
+      {% if venue or entry.note %}
+        <p class="publication-entry__venue">
+          {% if venue %}<em>{{ venue }}</em>{% endif %}
+          {% if entry.note %}<strong>{{ entry.note }}</strong>{% endif %}
+        </p>
       {% endif %}
       {% if link_count > 0 %}
         <p class="publication-entry__links">
