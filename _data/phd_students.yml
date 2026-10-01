@@ -92,3 +92,13 @@
   email: "juliewechsler2@gmail.com"
   github: "https://github.com/ghoulie-jpg"
   linkedin: "https://www.linkedin.com/in/julie-wechsler/"
+
+- name: Herman Tcheneghon Motcheyo
+  photo: herman_tcheneghon_motcheyo.jpg
+  info: PhD Student
+  email: "herman.tcheneghonmotcheyo@mail.concordia.ca"
+  # Alternative email (not displayed): hermanmotcheyo@gmail.com
+  website: "https://herman-motcheyo.github.io/"
+  github: "https://github.com/Herman-Motcheyo"
+  linkedin: "https://www.linkedin.com/in/herman-tcheneghon-motcheyo-8b95a7180/"
+  google_scholar: "https://scholar.google.com/citations?user=JSF9iuIAAAAJ&hl=en"
