@@ -8,6 +8,7 @@
     - name: "Jane Doe"            (required)
     - info: "PhD Student"         (optional)
     - photo: "jane.jpg"           (optional; falls back to bio-photo.jpg)
+    - photo_position: "center top" (optional; defaults to centered cropping)
     - email / github / linkedin / google_scholar / orcid / twitter (optional)
     - links:                      (optional; array of {url,type,label,icon})
         - { url: "https://...", type: "website" }
@@ -48,7 +49,7 @@
 
     <article class="team-card">
       <div class="team-photo">
-        <img src="{{ photo_path }}" alt="Portrait of {{ member.name | escape }}">
+        <img src="{{ photo_path }}" alt="Portrait of {{ member.name | escape }}"{% if member.photo_position and photo_exists %} style="object-position: {{ member.photo_position | escape }};"{% endif %}>
       </div>
 
       <div class="team-body">

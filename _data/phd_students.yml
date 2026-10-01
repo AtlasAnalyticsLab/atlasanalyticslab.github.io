@@ -13,6 +13,7 @@
 #
 # Optional Fields:
 #   - photo: Filename in /images/teampic/ (default: bio-photo.jpg)
+#   - photo_position: Optional CSS object-position for portrait framing
 #   - info: Role/title (e.g., "PhD Student", "PhD Candidate")
 #   - short_bio: Brief description (not currently displayed)
 #   - email: Email address
@@ -95,6 +96,7 @@
 
 - name: Herman Tcheneghon Motcheyo
   photo: herman_tcheneghon_motcheyo.jpg
+  photo_position: "center top"
   info: PhD Student
   email: "herman.tcheneghonmotcheyo@mail.concordia.ca"
   # Alternative email (not displayed): hermanmotcheyo@gmail.com
