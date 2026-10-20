@@ -115,6 +115,16 @@
 #     headline: '🎂 <strong>Happy Birthday</strong> to Omar Abdelwahed!'
 #==============================================================================
 
+# Date follows the workshop's notification schedule, not a paper-specific email:
+# https://rl-experimental-sciences-workshop.github.io/
+- date: September 29, 2026
+  headline: "**WSI-Lab** accepted for **oral presentation** at [NeurIPS Workshop 2026](https://rl-experimental-sciences-workshop.github.io/)! [Paper](https://openreview.net/forum?id=y5vMVs7QSp)."
+
+# Date follows ACCV's paper decision notification schedule, not a paper-specific email:
+# https://accv2026.org/submissions/author-guidelines/
+- date: September 20, 2026
+  headline: "**MFE-MIL** paper accepted in [Asian Conference on Computer Vision (ACCV 2026)](https://accv2026.org/)! [Paper](https://arxiv.org/abs/2610.10225)."
+
 # Date follows BMVC's presentation-format notification schedule, not a paper-specific email:
 # https://bmvc2026.bmva.org/dates/
 - date: August 21, 2026
