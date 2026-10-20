@@ -18,8 +18,8 @@ permalink: /publications/
     - _data/publications.yml
   
   Sections:
-    1. Published (status: "published", grouped by year, newest first)
-    2. Under Review / Under Revision (status: "under_review")
+    1. Published / Accepted (status: "published" or "accepted", newest year first)
+    2. Preprints / Under Review / Under Revision (status: "preprint" or "under_review")
     
   Components:
     - publication-item.html (renders individual publication cards)
@@ -38,12 +38,12 @@ permalink: /publications/
 ## List of Publications
 
 {% assign all_publications = site.data.publications | default: empty | compact %}
-{% assign published_entries = all_publications | where: 'status', 'published' %}
-{% assign under_review_entries = all_publications | where: 'status', 'under_review' %}
+{% assign published_entries = all_publications | where_exp: 'entry', 'entry.status == "published" or entry.status == "accepted"' %}
+{% assign under_review_entries = all_publications | where_exp: 'entry', 'entry.status == "under_review" or entry.status == "preprint"' %}
 
 {% if published_entries.size > 0 %}
-<!-- Published entries grouped by year for clarity -->
-### Published
+<!-- Published and accepted entries grouped by year for clarity -->
+### Published / Accepted
 <div class="publication-list" markdown="0">
   {%- assign published_years = published_entries | map: 'year' | compact | uniq | sort | reverse -%}
   {%- for y in published_years -%}
@@ -62,8 +62,8 @@ permalink: /publications/
 {% endif %}
 
 {% if under_review_entries.size > 0 %}
-<!-- Under-review entries grouped separately but using the same compact layout -->
-### Under Review / Under Revision
+<!-- Preprints and under-review entries use the same compact layout -->
+### Preprints / Under Review / Under Revision
 <div class="publication-list" markdown="0">
   {%- assign review_years = under_review_entries | map: 'year' | compact | uniq | sort | reverse -%}
   {%- for y in review_years -%}

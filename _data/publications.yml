@@ -41,6 +41,54 @@
 #     list_image: "images/pubpic/survey.jpg"
 #==============================================================================
 
+- id: "Rostami_arXiv2026_InspectAnyCrack"
+  title: "Inspect Any Crack: An Automated End-to-End Crack Segmentation and Severity Assessment Framework"
+  authors: "Ghodsiyeh Rostami, Po-Han Chen, Mahdi S. Hosseini"
+  year: 2026
+  status: "preprint"
+  type: "preprint"
+  journal: "arXiv:2610.14274"
+  arxiv: "2610.14274"
+  doi: "10.48550/arXiv.2610.14274"
+  list_image: "images/pubpic/inspect_any_crack.png"
+  highlight: 0
+
+- id: "He_ACCV2026_MFEMIL"
+  title: "Masked Feature Encoding for Large-Scale Whole Slide Image Representation"
+  authors: "Haoyu He, Basile Tessier-Cloutier, Yang Wang, Mahdi S. Hosseini"
+  year: 2026
+  status: "accepted"
+  type: "inproceedings"
+  booktitle: "Asian Conference on Computer Vision (ACCV 2026)"
+  arxiv: "2610.10225"
+  github: "https://github.com/AtlasAnalyticsLab/MFE-MIL"
+  doi: "10.48550/arXiv.2610.10225"
+  list_image: "images/pubpic/mfe_mil.png"
+  highlight: 0
+
+- id: "Alagha_NeurIPSW2026_WSILab"
+  title: "WSI-Lab: A Pathologist-Inspired, High-Throughput RL Environment for Sequential Whole-Slide Analysis"
+  authors: "Ahmed Alagha, Hadi Otrok, Rabeb Mizouni, Jamal Bentahar, Mahdi S. Hosseini"
+  year: 2026
+  status: "accepted"
+  type: "inproceedings"
+  booktitle: "NeurIPS Workshop 2026"
+  note: "Oral"
+  url: "https://openreview.net/forum?id=y5vMVs7QSp"
+  highlight: 0
+
+- id: "Yang_arXiv2026_CrossResolutionDistillation"
+  title: "What Makes High-Magnification Knowledge Transferable? A Study of Cross-Resolution Distillation in Whole-Slide Imaging"
+  authors: "Zhiyuan Yang, Jiahao Cheng, Mahdi S. Hosseini"
+  year: 2026
+  status: "under_review"
+  type: "preprint"
+  journal: "arXiv:2609.36407"
+  arxiv: "2609.36407"
+  doi: "10.48550/arXiv.2609.36407"
+  list_image: "images/pubpic/cross_resolution_distillation.png"
+  highlight: 0
+
 - id: "Yang_BMVC2026_GatedSRP"
   title: "Gated Spatial Redundancy Projection for Pathology Transformer Attentions"
   authors: "Zhiyuan Yang, Jiahao Cheng, Vincent Quoc-Huy Trinh, Mahdi S. Hosseini"
