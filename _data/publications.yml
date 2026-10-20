@@ -75,6 +75,7 @@
   booktitle: "NeurIPS Workshop 2026"
   note: "Oral"
   url: "https://openreview.net/forum?id=y5vMVs7QSp"
+  list_image: "images/pubpic/wsi_lab.png"
   highlight: 0
 
 - id: "Yang_arXiv2026_CrossResolutionDistillation"
