@@ -30,7 +30,7 @@
 <div class="publication-item" id="{{ item_id }}">
   <div class="publication-entry">
     <div class="publication-entry__image">
-      <img src="{{ list_image | relative_url }}" alt="Illustration for {{ entry.title | escape }}" loading="lazy">
+      <img src="{{ list_image | relative_url }}" alt="Illustration for {{ entry.title | escape }}" loading="lazy"{% if entry.list_image_fit == 'contain' %} style="object-fit: contain; background-color: #fff;"{% endif %}>
     </div>
     <div class="publication-entry__details">
       <p class="publication-entry__title"><strong>{{ entry.title }}</strong></p>

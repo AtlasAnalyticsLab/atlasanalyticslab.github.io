@@ -28,6 +28,7 @@
 #   - pypi: Python package URL
 #   - arxiv: arXiv ID (e.g., "2401.12345")
 #   - list_image: Thumbnail (path relative to root, e.g., "images/pubpic/fig.png")
+#   - list_image_fit: "contain" for a complete figure on white (default: cropped cover)
 #   - highlight: 1 (featured) | 0 (regular)
 #
 # Example Entry:
@@ -40,6 +41,94 @@
 #     doi: "10.1016/j.jpi.2023.100357"
 #     list_image: "images/pubpic/survey.jpg"
 #==============================================================================
+
+# New entries checked against the PI's Google Scholar and primary sources on 2026-10-20.
+- id: "Rostami_arXiv2026_InspectAnyCrack"
+  title: "Inspect Any Crack: An Automated End-to-End Crack Segmentation and Severity Assessment Framework"
+  authors: "Ghodsiyeh Rostami, Po-Han Chen, Mahdi S. Hosseini"
+  year: 2026
+  status: "preprint"
+  type: "preprint"
+  journal: "arXiv:2610.14274"
+  arxiv: "2610.14274"
+  doi: "10.48550/arXiv.2610.14274"
+  # Figure 1: https://arxiv.org/html/2610.14274v1#S4.F1
+  list_image: "images/pubpic/inspect_any_crack.png"
+  list_image_fit: "contain"
+  highlight: 0
+
+- id: "He_ACCV2026_MFEMIL"
+  title: "Masked Feature Encoding for Large-Scale Whole Slide Image Representation"
+  authors: "Haoyu He, Basile Tessier-Cloutier, Yang Wang, Mahdi S. Hosseini"
+  year: 2026
+  status: "accepted"
+  type: "inproceedings"
+  booktitle: "Asian Conference on Computer Vision (ACCV 2026)"
+  arxiv: "2610.10225"
+  github: "https://github.com/AtlasAnalyticsLab/MFE-MIL"
+  doi: "10.48550/arXiv.2610.10225"
+  # Figure 1: https://arxiv.org/html/2610.10225v1#S1.F1
+  list_image: "images/pubpic/mfe_mil.png"
+  list_image_fit: "contain"
+  highlight: 0
+
+- id: "Pelloux_medRxiv2026_C3PRO"
+  title: "An interpretable cell-centric representation of pancreatic ductal adenocarcinoma matches multiple-instance learning for clinical outcomes and leads to novel pathologist-driven histological biomarkers"
+  authors: "Maxence Pelloux, Catherine TL Tran, Jumanah Baig, Abdelhakim Khellaf, Sally Lang Huang, Olivier Tung Nguyen, Maëlle Batardière, Sarah-Slim Diwan, Zhiyuan Yang, Jia-Lin Li, Vyky Vu, Simon F Roy, Geneviève Soucy, Bich Ngoc Nguyen, Basile Tessier-Cloutier, Mahdi S Hosseini, David JHF Knapp, Séverine Valmary-Degano, Vincent QH Trinh"
+  year: 2026
+  status: "preprint"
+  type: "preprint"
+  journal: "medRxiv:2026.10.03.26364596"
+  url: "https://www.medrxiv.org/content/10.64898/2026.10.03.26364596v1"
+  github: "https://github.com/PathSpace/c3pro_pancreas"
+  doi: "10.64898/2026.10.03.26364596"
+  # Figure 1: https://www.medrxiv.org/content/10.64898/2026.10.03.26364596v1.full#F1
+  list_image: "images/pubpic/c3pro.jpg"
+  list_image_fit: "contain"
+  highlight: 0
+
+- id: "Alagha_NeurIPSW2026_WSILab"
+  title: "WSI-Lab: A Pathologist-Inspired, High-Throughput RL Environment for Sequential Whole-Slide Analysis"
+  authors: "Ahmed Alagha, Hadi Otrok, Rabeb Mizouni, Jamal Bentahar, Mahdi S. Hosseini"
+  year: 2026
+  status: "accepted"
+  type: "inproceedings"
+  booktitle: "NeurIPS Workshop on Reinforcement Learning for Experimental Sciences (RL4XS 2026)"
+  note: "Oral"
+  # Venue, authors, and paper URL are listed on the PI's Google Scholar record:
+  # https://scholar.google.ca/citations?view_op=view_citation&hl=en&user=SO-FFrgAAAAJ&citation_for_view=SO-FFrgAAAAJ:SpbeaW3--B0C
+  url: "https://openreview.net/forum?id=y5vMVs7QSp"
+  # No verified public paper figure yet; use the existing lab-logo fallback.
+  list_image_fit: "contain"
+  highlight: 0
+
+- id: "Yang_arXiv2026_CrossResolutionDistillation"
+  title: "What Makes High-Magnification Knowledge Transferable? A Study of Cross-Resolution Distillation in Whole-Slide Imaging"
+  authors: "Zhiyuan Yang, Jiahao Cheng, Mahdi S. Hosseini"
+  year: 2026
+  status: "under_review"
+  type: "preprint"
+  journal: "arXiv:2609.36407"
+  arxiv: "2609.36407"
+  doi: "10.48550/arXiv.2609.36407"
+  # Figure 1: https://arxiv.org/html/2609.36407v2#S1.F1
+  list_image: "images/pubpic/cross_resolution_distillation.png"
+  list_image_fit: "contain"
+  highlight: 0
+
+- id: "Batardiere_bioRxiv2026_SpatialMultiomics"
+  title: "Spatial multi-omics resolve epithelium-fibroblast gradients and highlight NESTIN-NOTCH1-expressing subepithelial fibroblasts during human pancreatic tumorigenesis"
+  authors: "Maëlle Batardière, Myriam Iliana Ibanez-Rios, Abdelhakim Khellaf, Elham Dianati, Sarah-Slim Diwan, Maxence Pelloux, Alexandre Archambault-Marsan, Camille Beaussier, Jade Diwan, Sasha Sapon-Cousineau, Jumanah Baig, Ayman Shoukari, Zean Ghanmeh, Zhiyuan Yang, Melisa Farias Gonzalez, Jia-Lin Li, Ali Kassab, Leonardo Lando, Philippe Lefrancois, Simon Turcotte, Youngmin A Lee, Simon F Roy, Mahdi S Hosseini, Basile Tessier-Cloutier, Marcus CB Tan, Kathleen E DelGiorno, David JHF Knapp, Vincent Q Trinh"
+  year: 2026
+  status: "preprint"
+  type: "preprint"
+  journal: "bioRxiv:2026.09.04.749182"
+  url: "https://www.biorxiv.org/content/10.64898/2026.09.04.749182v1"
+  doi: "10.64898/2026.09.04.749182"
+  # Figure 1: https://www.biorxiv.org/content/10.64898/2026.09.04.749182v1.full#F1
+  list_image: "images/pubpic/spatial_multiomics_ipmn.jpg"
+  list_image_fit: "contain"
+  highlight: 0
 
 - id: "Yang_BMVC2026_GatedSRP"
   title: "Gated Spatial Redundancy Projection for Pathology Transformer Attentions"
