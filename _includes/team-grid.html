@@ -65,8 +65,8 @@
           {%- comment -%}
             Display links in consistent order for all team members:
             1. Personal website
-            2. McGill University profile
-            3. Mila Quebec AI Institute profile
+            2. Mila Quebec AI Institute profile
+            3. McGill University profile
             4. LinkedIn
             5. Google Scholar
             6. GitHub
@@ -80,12 +80,12 @@
             {% include team-link.html url=member.website type='website' %}
             {% assign has_links = true %}
           {% endif %}
-          {% if member.mcgill %}
-            {% include team-link.html url=member.mcgill type='mcgill' %}
-            {% assign has_links = true %}
-          {% endif %}
           {% if member.mila %}
             {% include team-link.html url=member.mila type='mila' %}
+            {% assign has_links = true %}
+          {% endif %}
+          {% if member.mcgill %}
+            {% include team-link.html url=member.mcgill type='mcgill' %}
             {% assign has_links = true %}
           {% endif %}
           {% if member.linkedin %}
