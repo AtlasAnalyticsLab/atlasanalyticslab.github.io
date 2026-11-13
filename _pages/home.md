@@ -65,7 +65,7 @@ Our lab primarily develops new deep learning and computer vision methods, with c
 
 
 ### About us
-The Atlas Analytics Lab operates within [Concordia University](https://www.concordia.ca/)’s [Department of Computer Science and Software Engineering (CSSE)](https://www.concordia.ca/ginacody/computer-science-software-eng.html) and is directed by Dr. Mahdi S. Hosseini, [Gina Cody Research Chair](https://www.concordia.ca/faculty/mahdi-hosseini.html), Adjunct Professor in Pathology at [McGill University](https://www.mcgill.ca/pathology/dr-mahdi-hosseini), and Affiliate Member of [Mila – Quebec AI Institute](https://mila.quebec/en/directory/mahdi-hosseini).
+The Atlas Analytics Lab operates within [Concordia University](https://www.concordia.ca/)’s [Department of Computer Science and Software Engineering (CSSE)](https://www.concordia.ca/ginacody/computer-science-software-eng.html) and is directed by Dr. Mahdi S. Hosseini, [Gina Cody Research Chair](https://www.concordia.ca/faculty/mahdi-hosseini.html), Associate Academic Member of [Mila – Quebec AI Institute](https://mila.quebec/en/directory/mahdi-hosseini), and Adjunct Professor in Pathology at [McGill University](https://www.mcgill.ca/pathology/dr-mahdi-hosseini).
 We maintain strong collaborations with clinical partners such as [CHUM](https://www.chumontreal.qc.ca/) and [Sunnybrook Hospital](https://sunnybrook.ca/) to develop clinically driven AI solutions.
 
  **Opportunities are available for PhD students to join our expanding team.** [(more info)]({{ site.url }}{{ site.baseurl }}/openings) **!**
