@@ -7,7 +7,7 @@
 #
 # Process:
 #   1. Checkout repository code
-#   2. Setup Ruby 3.4.7+ environment
+#   2. Setup the latest Ruby 3.4 patch release
 #   3. Cache bundler dependencies
 #   4. Install gems and build Jekyll site
 #   5. Upload built site as artifact
@@ -15,8 +15,8 @@
 #
 # Environment:
 #   - Runner: ubuntu-latest
-#   - Ruby: 3.4.7 (latest stable as of November 2025)
-#   - Bundler: 2.7.2+ (latest stable)
+#   - Ruby: Latest 3.4.x (compatible with newer GitHub-hosted runner images)
+#   - Bundler: Version recorded in Gemfile.lock
 #   - Jekyll: 4.4.1
 #
 # Deployment:
@@ -59,7 +59,7 @@ jobs:
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.4.7'
+          ruby-version: '3.4' # New runner images only provide recent patch releases.
           bundler-cache: true  # Automatically cache gems
           
       - name: Setup Pages
