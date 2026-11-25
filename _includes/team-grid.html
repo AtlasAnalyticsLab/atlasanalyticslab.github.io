@@ -4,6 +4,9 @@
   Usage:
     {% include team-grid.html members=site.data.postdocs show_role=true %}
 
+  Optional parameters:
+    - name_heading: 'h5' for cards nested under an h4 subgroup; defaults to h4.
+
   Expected member fields (from your _data/*.yml):
     - name: "Jane Doe"            (required)
     - info: "PhD Student"         (optional)
@@ -53,7 +56,11 @@
       </div>
 
       <div class="team-body">
-        <h4 class="team-name">{{ member.name }}</h4>
+        {% if include.name_heading == 'h5' %}
+          <h5 class="team-name">{{ member.name }}</h5>
+        {% else %}
+          <h4 class="team-name">{{ member.name }}</h4>
+        {% endif %}
 
         {% if include.show_role != false and member.info %}
           <p class="team-role">{{ member.info | newline_to_br }}</p>

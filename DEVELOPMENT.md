@@ -356,15 +356,23 @@ default.html (base template)
 9. **analytics.html** - Google Analytics tracking code
 10. **video-player.html** - Responsive video embed helper
 
-#### Data Files (8 YAML files)
+#### Data Files (9 YAML files)
 1. **news.yml** - Lab news and announcements (add newest at TOP)
 2. **publications.yml** - Publication list with metadata (add newest at TOP)
 3. **principal_investigator.yml** - PI information
 4. **postdocs.yml** - Postdoctoral fellows
 5. **phd_students.yml** - PhD students
 6. **masters.yml** - Master's students
-7. **team_collaborators.yml** - External collaborators
-8. **alumni_members.yml** - Former lab members
+7. **internships.yml** - Master's research interns
+8. **team_collaborators.yml** - External collaborators
+9. **alumni_members.yml** - Former lab members
+
+On the team page, `masters.yml` and `internships.yml` appear as equal-level
+subgroups under **Master's-Level Researchers**: **Master's Students** and
+**Master's Research Interns**. Keep the two data files separate and preserve
+member order within each file. Their existing `#msc-students` and `#internships`
+anchors remain available. Cards within these subgroups use `name_heading='h5'`
+with `team-grid.html` to preserve the heading hierarchy without changing styling.
 
 #### Markdown Pages (10 files)
 1. **home.md** - Homepage with vision statement and carousel
